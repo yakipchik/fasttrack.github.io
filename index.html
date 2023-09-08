@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Fast Track</title>
+		<link rel="stylesheet" href="./fonts/stylesheet.css" />
+		<link rel="stylesheet" href="./css/layout.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="./css/index.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header-body">
+					<a href="/" class="logo">
+						<div class="logo-img">
+							<img
+								src="./img/logo.png"
+								alt="являемся частью интермодальной цепочки перевозок Азия — Европа/СНГ"
+							/>
+						</div>
+						<span class="logo-line"></span>
+						<span class="logo-text">
+							являемся частью интермодальной цепочки перевозок Азия — Европа/СНГ
+						</span>
+					</a>
+					<a href="#" class="header-link">Контакты</a>
+				</div>
+			</div>
+		</header>
+		<div class="header-mobile">
+			<a href="/" class="logo">
+				<div class="logo-img">
+					<img
+						src="./img/logo.png"
+						alt="являемся частью интермодальной цепочки перевозок Азия — Европа/СНГ"
+					/>
+				</div>
+				<span class="logo-line"></span>
+				<span class="logo-text">
+					являемся частью интермодальной цепочки перевозок Азия — Европа/СНГ
+				</span>
+			</a>
+			<button type="button" class="burger"></button>
+		</div>
+		<div class="header-popup">
+			<div class="header-popup__body">
+				<div class="header-popup__cap">
+					<div class="logo-img">
+						<img
+							src="./img/logo.png"
+							alt="являемся частью интермодальной цепочки перевозок Азия — Европа/СНГ"
+						/>
+					</div>
+					<button type="button" class="burger open"></button>
+				</div>
+				<div class="header-popup__links">
+					<a href="/" class="header-link">Главная</a>
+					<a href="#" class="header-link">Контакты</a>
+				</div>
+				<button type="button" class="main-btn btn-scroll__form">
+					Оставить заявку
+				</button>
+			</div>
+		</div>
+		<main>
+			<section class="home" id="home">
+				<div class="container">
+					<div class="home-body">
+						<h1 class="home-title">
+							Доставка грузов<br />
+							из Китая в Россию
+						</h1>
+						<div class="home-info">
+							<p class="home-text">
+								Предоставляем полный комплект услуг по первозке, под ключ
+							</p>
+							<button type="button" class="main-btn home-btn btn-scroll__form">
+								Оставить заявку
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="home-img">
+					<img src="./img/home.png" alt="name" />
+				</div>
+			</section>
+
+			<section class="transport" id="transport">
+				<div class="container">
+					<div class="transport-cards">
+						<div class="transport-card">
+							<div class="transport-img">
+								<img
+									src="./img/transport/1.png"
+									alt="Авиаперевозки"
+									class="desktop"
+								/>
+								<img
+									src="./img/transport/1-mob.png"
+									alt="Авиаперевозки"
+									class="mobile"
+								/>
+							</div>
+							<h3 class="transport-text">Авиаперевозки</h3>
+						</div>
+						<div class="transport-card">
+							<div class="transport-img">
+								<img
+									src="./img/transport/2.png"
+									alt="Железнодорожные перевозки"
+									class="desktop"
+								/>
+								<img
+									src="./img/transport/2-mob.png"
+									alt="Железнодорожные перевозки"
+									class="mobile"
+								/>
+							</div>
+							<h3 class="transport-text desktop">Железнодорожные перевозки</h3>
+							<h3 class="transport-text mobile">Ж/Д перевозки</h3>
+						</div>
+						<div class="transport-card">
+							<div class="transport-img">
+								<img
+									src="./img/transport/3.png"
+									alt="Морские перевозки"
+									class="desktop"
+								/>
+								<img
+									src="./img/transport/3-mob.png"
+									alt="Морские перевозки"
+									class="mobile"
+								/>
+							</div>
+							<h3 class="transport-text">Морские перевозки</h3>
+						</div>
+						<div class="transport-card">
+							<div class="transport-img">
+								<img
+									src="./img/transport/4.png"
+									alt="Автомобильные перевозки"
+									class="desktop"
+								/>
+								<img
+									src="./img/transport/4-mob.png"
+									alt="Автомобильные перевозки"
+									class="mobile"
+								/>
+							</div>
+							<h3 class="transport-text">Автомобильные перевозки</h3>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="routes" id="routes">
+				<div class="routes-container">
+					<div class="routes-block">
+						<div class="routes-body">
+							<div class="routes-img">
+								<img
+									src="./img/routes.png"
+									alt="Основные маршруты"
+									class="desktop"
+								/>
+								<img
+									src="./img/routes-mob.png"
+									alt="Основные маршруты"
+									class="mobile"
+								/>
+							</div>
+							<div class="routes-wrapper">
+								<div class="routes-info">
+									<h2 class="routes-title">Основные маршруты</h2>
+									<div class="routes-cards">
+										<div class="routes-card">
+											<h4 class="routes-heading">Из китайских портов:</h4>
+											<ul class="routes-list routes-from">
+												<li>Шанхай</li>
+												<li>Шэньчжэнь</li>
+												<li>Циндао</li>
+												<li>Гуанчжоу</li>
+												<li>Тяньцзинь</li>
+												<li>Далянь</li>
+												<li>Баюйцюань</li>
+											</ul>
+										</div>
+										<div class="routes-card">
+											<h4 class="routes-heading">В российские порты:</h4>
+											<ul class="routes-list routes-to">
+												<li>Владивосток</li>
+												<li>Находка</li>
+												<li>Санкт-Петербург</li>
+												<li>Новороссийск</li>
+												<li>Мурманск</li>
+												<li>Нижний Новгород</li>
+												<li>Екатеринбург</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="routes-delivery">
+									<p class="routes-delivery__heading"><span>7-25</span> дней</p>
+									<p class="routes-delivery__text">средний срок груза в пути</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="cargo" id="cargo">
+				<div class="container">
+					<h2 class="cargo-title">Виды перевозимых грузов</h2>
+					<div class="cargo-cards">
+						<div class="cargo-card">
+							<div class="cargo-img">
+								<img src="./img/cargo/1.png" alt="Генеральные" />
+							</div>
+							<h3 class="cargo-text">Генеральные</h3>
+						</div>
+						<div class="cargo-card">
+							<div class="cargo-img">
+								<img src="./img/cargo/2.png" alt="Крупногабаритные" />
+							</div>
+							<h3 class="cargo-text">Крупногабаритные</h3>
+						</div>
+						<div class="cargo-card">
+							<div class="cargo-img">
+								<img src="./img/cargo/3.png" alt="Балкерные" />
+							</div>
+							<h3 class="cargo-text">Балкерные</h3>
+						</div>
+						<div class="cargo-card">
+							<div class="cargo-img">
+								<img src="./img/cargo/4.png" alt="Перевозка шпунта" />
+							</div>
+							<h3 class="cargo-text">Перевозка шпунта</h3>
+						</div>
+						<div class="cargo-card">
+							<div class="cargo-img">
+								<img src="./img/cargo/5.png" alt="Контейнерные" />
+							</div>
+							<h3 class="cargo-text">Контейнерные</h3>
+						</div>
+						<div class="cargo-card">
+							<div class="cargo-img">
+								<img src="./img/cargo/6.png" alt="Сборные" />
+							</div>
+							<h3 class="cargo-text">Сборные</h3>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="gallery" id="gallery">
+				<div class="swiper gallery-swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="./img/gallery/1.png" alt="name" />
+						</div>
+						<div class="swiper-slide">
+							<img src="./img/gallery/2.png" alt="name" />
+						</div>
+						<div class="swiper-slide">
+							<img src="./img/gallery/3.png" alt="name" />
+						</div>
+						<div class="swiper-slide">
+							<img src="./img/gallery/4.png" alt="name" />
+						</div>
+						<div class="swiper-slide">
+							<img src="./img/gallery/5.png" alt="name" />
+						</div>
+						<div class="swiper-slide">
+							<img src="./img/gallery/1.png" alt="name" />
+						</div>
+						<div class="swiper-slide">
+							<img src="./img/gallery/2.png" alt="name" />
+						</div>
+						<div class="swiper-slide">
+							<img src="./img/gallery/3.png" alt="name" />
+						</div>
+						<div class="swiper-slide">
+							<img src="./img/gallery/4.png" alt="name" />
+						</div>
+						<div class="swiper-slide">
+							<img src="./img/gallery/5.png" alt="name" />
+						</div>
+						<div class="swiper-slide">
+							<img src="./img/gallery/1.png" alt="name" />
+						</div>
+						<div class="swiper-slide">
+							<img src="./img/gallery/2.png" alt="name" />
+						</div>
+						<div class="swiper-slide">
+							<img src="./img/gallery/3.png" alt="name" />
+						</div>
+						<div class="swiper-slide">
+							<img src="./img/gallery/4.png" alt="name" />
+						</div>
+						<div class="swiper-slide">
+							<img src="./img/gallery/5.png" alt="name" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="contacts" id="contacts">
+				<div class="container">
+					<div class="contacts-body">
+						<form action="./form/send.php" method="post" class="contacts-form">
+							<div class="contacts-content">
+								<h2 class="contacts-title">
+									Узнайте стоимость и условия доставки:
+								</h2>
+
+								<div class="contacts-wrapper">
+									<div class="contacts-row">
+										<h3 class="contacts-heading icon-info">
+											Контактная информация
+										</h3>
+										<div class="contacts-grid">
+											<div class="main-input__wrapper">
+												<input
+													type="text"
+													name="name"
+													placeholder="Имя *"
+													class="main-input"
+												/>
+											</div>
+											<div class="main-input__wrapper">
+												<input
+													type="tel"
+													name="phone"
+													placeholder="Телефон *"
+													class="main-input"
+													data-tel-input
+													maxlength="18"
+												/>
+											</div>
+											<div class="main-input__wrapper">
+												<input
+													type="email"
+													name="email"
+													placeholder="E-mail *"
+													class="main-input"
+												/>
+											</div>
+										</div>
+									</div>
+									<div class="contacts-row">
+										<h3 class="contacts-heading icon-decr">Описание груза</h3>
+										<div class="contacts-grid">
+											<div class="main-input__wrapper">
+												<textarea
+													name="description"
+													placeholder="Опишите что нужно доставить"
+													class="main-textarea"
+												></textarea>
+											</div>
+										</div>
+									</div>
+									<div class="contacts-row">
+										<h3 class="contacts-heading icon-route">Маршрут</h3>
+										<div class="contacts-grid">
+											<div class="main-input__wrapper">
+												<input
+													type="text"
+													name="sending"
+													placeholder="Город отправки *"
+													class="main-input"
+												/>
+											</div>
+											<div class="main-input__wrapper">
+												<input
+													type="text"
+													name="appointments"
+													placeholder="Город назначения *"
+													class="main-input"
+												/>
+											</div>
+											<button type="submit" class="main-btn contacts-btn">
+												Отправить заявку
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-body">
+					<a href="/" class="logo">
+						<div class="logo-img">
+							<img
+								src="./img/logo.png"
+								alt="являемся частью интермодальной цепочки перевозок Азия — Европа/СНГ"
+							/>
+						</div>
+						<span class="logo-line"></span>
+						<span class="logo-text">
+							являемся частью интермодальной цепочки перевозок Азия — Европа/СНГ
+						</span>
+					</a>
+					<div class="footer-links">
+						<a href="#" class="footer-link">Главная</a>
+						<a href="#" class="footer-link">Контакты</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="success-popup">
+			<div>
+				<img src="./img/popup.svg" alt="Ваша заявка отправлена" />
+			</div>
+			<h3>Ваша заявка отправлена</h3>
+			<p>Мы свяжемся с вами в течение дня</p>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+		<script src="./js/index.js"></script>
+	</body>
+</html>
