@@ -1,12 +1,29 @@
 document.addEventListener("DOMContentLoaded", () => {
 	gsap.registerPlugin(ScrollToPlugin);
 
+	let disableScroll = function () {
+		let pagePosition = window.scrollY;
+		document.body.classList.add("disable-scroll");
+		document.body.dataset.position = pagePosition;
+		document.body.style.top = -pagePosition + "px";
+	};
+
+	let enableScroll = function () {
+		let pagePosition = parseInt(document.body.dataset.position, 10);
+		document.body.style.top = "auto";
+		document.body.classList.remove("disable-scroll");
+		window.scroll({ top: pagePosition, left: 0 });
+		document.body.removeAttribute("data-position");
+	};
+
 	document.querySelectorAll(".btn-scroll__form").forEach((btn) => {
 		btn.addEventListener("click", () => {
 			let offHeader = 0;
-			if (window.innerWidth < 576) {
-				offHeader = 40;
+			if (window.innerWidth <= 450) {
+				offHeader = 90;
 			}
+			document.querySelector(".header-popup").classList.remove("open");
+			enableScroll();
 			gsap.to(window, {
 				duration: 2,
 				scrollTo: { y: ".contacts-form", offsetY: offHeader, autoKill: true },
@@ -19,14 +36,17 @@ document.addEventListener("DOMContentLoaded", () => {
 		btn.addEventListener("click", () => {
 			if (btn.classList.contains("open")) {
 				document.querySelector(".header-popup").classList.remove("open");
+				enableScroll();
 			} else {
 				document.querySelector(".header-popup").classList.add("open");
+				disableScroll();
 			}
 		});
 	});
 	document.querySelector(".header-popup").addEventListener("click", (e) => {
 		if (e.target.classList.contains("header-popup")) {
 			document.querySelector(".header-popup").classList.remove("open");
+			enableScroll();
 		}
 	});
 

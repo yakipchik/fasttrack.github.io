@@ -86,7 +86,8 @@
 					</div>
 				</div>
 				<div class="home-img">
-					<img src="./img/home.png" alt="name" />
+					<!-- <img src="./img/home.png" alt="name" /> -->
+					<video src="./video/fasttrack.MP4" autoplay loop muted playsinline></video>
 				</div>
 			</section>
 
@@ -419,11 +420,14 @@
 		</footer>
 
 		<div class="success-popup">
-			<div>
-				<img src="./img/popup.svg" alt="Ваша заявка отправлена" />
+			<div class="success-popup__body">
+				<button type="button" class="success-popup__close"></button>
+				<div class="success-popup__img">
+					<img src="./img/popup.svg" alt="Ваша заявка отправлена" />
+				</div>
+				<h3 class="success-popup__title">Ваша заявка отправлена</h3>
+				<p class="success-popup__text">Мы свяжемся с вами в течение дня</p>
 			</div>
-			<h3>Ваша заявка отправлена</h3>
-			<p>Мы свяжемся с вами в течение дня</p>
 		</div>
 
 		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>

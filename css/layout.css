@@ -3,6 +3,15 @@ body {
   font-family: Mont, "sans-serif";
   font-size: 20px;
 }
+body.disable-scroll {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
 
 *,
 *::after,
@@ -385,4 +394,85 @@ img {
 
 .success-popup {
   display: none;
+  background: rgba(28, 30, 32, 0.6);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 20px;
+  overflow: auto;
+  z-index: 30;
+}
+.success-popup.open {
+  display: flex;
+}
+.success-popup__body {
+  max-width: 460px;
+  width: 100%;
+  border-radius: 20px;
+  background: #fff;
+  margin: auto;
+  padding: 30px 20px 40px 20px;
+  position: relative;
+}
+.success-popup__close {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg clip-path='url(%23clip0_2068_1222)'%3e%3cpath d='M20 1.57135L18.4286 0L10 8.42897L1.57135 0L0 1.57135L8.42865 10L0 18.4286L1.57135 20L10 11.5714L18.4286 20L20 18.4286L11.5714 10L20 1.57135Z' fill='%2308B419'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='clip0_2068_1222'%3e%3crect width='20' height='20' fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e ");
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  z-index: 2;
+}
+@media (max-width: 576px) {
+  .success-popup__close {
+    width: 17px;
+    height: 17px;
+  }
+}
+.success-popup__img {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px auto;
+}
+.success-popup__title {
+  max-width: 300px;
+  width: 100%;
+  color: #1c1e20;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 31.25px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto 15px auto;
+}
+@media (max-width: 576px) {
+  .success-popup__title {
+    font-size: 25px;
+    line-height: 31.25px;
+  }
+}
+.success-popup__text {
+  max-width: 160px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17.5px;
+  text-align: center;
+  margin: 0 auto;
+}
+@media (max-width: 576px) {
+  .success-popup__text {
+    font-size: 14px;
+    line-height: 17.5px;
+  }
 }/*# sourceMappingURL=layout.css.map */
