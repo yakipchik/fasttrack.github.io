@@ -62,6 +62,13 @@ document.addEventListener("DOMContentLoaded", () => {
 				spaceBetween: 40,
 			},
 		},
+
+		speed: 6000,
+		autoplay: {
+			delay: 1,
+		},
+		allowTouchMove: false,
+		disableOnInteraction: true,
 	});
 
 	var phoneInputs = document.querySelectorAll("input[data-tel-input]");
@@ -129,15 +136,39 @@ document.addEventListener("DOMContentLoaded", () => {
 		phoneInput.addEventListener("paste", onPhonePaste, false);
 	}
 
+	// Отправка формы
+	function send(event, php) {
+		event.preventDefault ? event.preventDefault() : (event.returnValue = false);
+		var req = new XMLHttpRequest();
+		req.open("POST", php, true);
+		req.onload = function () {
+			if (req.status >= 200 && req.status < 400) {
+				json = JSON.parse(this.response);
+				if (json.result == "success") {
+					event.reset();
+					document.querySelector(".success-popup").classList.add("open");
+					event.querySelector("button").disabled = false;
+				} else {
+					alert("Ошибка. Сообщение не отправлено");
+					event.querySelector("button").disabled = false;
+				}
+			} else {
+				alert("Ошибка сервера. Повторите отправку");
+				event.querySelector("button").disabled = false;
+			}
+		};
+		req.onerror = function () {
+			alert("Ошибка отправки запроса");
+			event.querySelector("button").disabled = false;
+		};
+		req.send(new FormData(event));
+	}
+
 	let forms = document.querySelectorAll("form");
 	forms.forEach((form) => {
 		form.addEventListener("submit", function (event) {
 			event.preventDefault();
-			fetch(form.action, {
-				method: "post",
-				body: new URLSearchParams(new FormData(form)), // for application/x-www-form-urlencoded
-				// body: new FormData(form) // for multipart/form-data
-			});
+			send(event, form.action);
 		});
 	});
 });

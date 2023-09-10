@@ -89,10 +89,15 @@
 		grid-auto-rows: minmax(450px, auto);
 		align-content: end;
 		align-items: end;
+		@media (max-width: 1300px) {
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			grid-auto-rows: minmax(400px, auto);
+		}
 		@media (max-width: 768px) {
-			grid-template-columns: 1fr;
+			grid-auto-rows: minmax(350px, auto);
 		}
 		@media (max-width: 425px) {
+			grid-template-columns: 1fr;
 			grid-auto-rows: minmax(130px, auto);
 		}
 	}
@@ -504,6 +509,10 @@
 .gallery-swiper {
 	padding: 0 40px;
 
+	.swiper-wrapper {
+		transition-timing-function: linear;
+	}
+
 	.swiper-slide {
 		max-width: 450px;
 		width: 100%;
@@ -522,6 +531,8 @@
 
 		img {
 			border-radius: 20px;
+			user-select: none;
+			pointer-events: none;
 		}
 	}
 }
