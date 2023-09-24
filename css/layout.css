@@ -362,8 +362,10 @@ img {
 }
 .header-popup__body .header-link {
   font-size: 16px;
+  font-weight: 600;
   line-height: 20px;
   justify-content: start;
+  text-transform: uppercase;
 }
 .header-popup__cap {
   width: 100%;
@@ -373,7 +375,7 @@ img {
 }
 .header-popup__links {
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 20px;
 }
 
 .burger {

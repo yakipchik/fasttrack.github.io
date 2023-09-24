@@ -1,0 +1,132 @@
+.home {
+	margin-bottom: 180px !important;
+	@media (max-width: 450px) {
+		padding-top: 140px;
+		margin-bottom: 80px !important;
+	}
+	&-body {
+		display: grid;
+		grid-template-columns: minmax(400px, 1fr) minmax(280px, 885px);
+		grid-gap: 0 20px;
+		@media (max-width: 1060px) {
+			// grid-template-columns: 1fr;
+			display: flex;
+			flex-direction: column;
+			grid-gap: unset;
+			grid-template-columns: auto;
+		}
+	}
+	&-info {
+		display: flex;
+		flex-direction: column;
+	}
+	&-title {
+		color: #1c1e20;
+		font-size: 40px;
+		font-weight: 800;
+		line-height: 50px;
+		text-transform: uppercase;
+		margin-bottom: 60px;
+		@media (max-width: 768px) {
+			font-size: 35px;
+			line-height: 38.25px;
+			margin-bottom: 45px;
+		}
+		@media (max-width: 576px) {
+			font-size: 25px;
+			line-height: 31.25px;
+			margin-bottom: 30px;
+		}
+	}
+	&-cards {
+		display: grid;
+		grid-gap: 35px;
+		justify-content: start;
+		margin-bottom: 130px;
+		@media (max-width: 1060px) {
+			grid-gap: 15px;
+			margin-bottom: 30px;
+		}
+	}
+	&-card {
+		display: grid;
+		grid-gap: 10px;
+		justify-content: start;
+		@media (max-width: 1060px) {
+			grid-gap: 5px;
+		}
+	}
+	&-heading {
+		color: #7e7e7e;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 20px;
+		text-transform: uppercase;
+		@media (max-width: 576px) {
+			font-size: 13px;
+			line-height: 16.25px;
+		}
+	}
+	&-link,
+	&-text {
+		color: #1c1e20;
+		font-size: 25px;
+		font-weight: 400;
+		line-height: 31.25px;
+		@media (max-width: 576px) {
+			font-size: 15px;
+			line-height: 18.75px;
+		}
+	}
+	&-link {
+		display: grid;
+		grid-auto-flow: column;
+		grid-gap: 10px;
+		justify-content: start;
+		align-items: center;
+		font-weight: 600;
+		@media (max-width: 576px) {
+			grid-gap: 7px;
+		}
+		&::before {
+			content: "";
+			width: 18px;
+			height: 18px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			@media (max-width: 576px) {
+				width: 12px;
+				height: 12px;
+			}
+		}
+		&.phone::before {
+			background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg clip-path='url(%23clip0_2243_1583)'%3e%3cpath d='M17.421 12.96C17.3718 12.921 13.8 10.3464 12.8196 10.5312C12.3516 10.614 12.084 10.9332 11.547 11.5722C11.4606 11.6754 11.253 11.9226 11.0916 12.0984C10.7522 11.9877 10.4212 11.853 10.101 11.6952C8.44831 10.8906 7.113 9.55529 6.3084 7.9026C6.15052 7.58245 6.01577 7.2514 5.9052 6.912C6.0816 6.75 6.3288 6.5424 6.4344 6.4536C7.0704 5.9196 7.3902 5.652 7.473 5.1828C7.6428 4.2108 5.07 0.6144 5.043 0.582C4.92627 0.415242 4.77393 0.276518 4.597 0.175862C4.42008 0.0752062 4.22299 0.0151369 4.02 0C2.9772 0 0 3.8622 0 4.5126C0 4.5504 0.0546 8.3928 4.7928 13.2126C9.6078 17.9454 13.4496 18 13.4874 18C14.1384 18 18 15.0228 18 13.98C17.985 13.7777 17.9253 13.5813 17.8252 13.4049C17.7251 13.2285 17.587 13.0765 17.421 12.96Z' fill='%2308B419'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='clip0_2243_1583'%3e%3crect width='18' height='18' fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e ");
+		}
+		&.email::before {
+			background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg clip-path='url(%23clip0_2243_1577)'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.44251 2.83092L6.85503 8.24579C8.03552 9.42401 9.9652 9.42503 11.1467 8.24579L16.5592 2.83092C16.572 2.8182 16.5818 2.80282 16.588 2.78586C16.5942 2.76891 16.5966 2.75081 16.595 2.73283C16.5934 2.71485 16.5879 2.69745 16.5788 2.68184C16.5697 2.66624 16.5574 2.65283 16.5425 2.64255C15.9905 2.25754 15.3188 2.0293 14.5953 2.0293H3.40647C2.68291 2.0293 2.01123 2.25758 1.45918 2.64255C1.44435 2.65283 1.43196 2.66624 1.42289 2.68184C1.41382 2.69745 1.40829 2.71485 1.4067 2.73283C1.40511 2.75081 1.40749 2.76891 1.41368 2.78586C1.41987 2.80282 1.42971 2.8182 1.44251 2.83092ZM-0.00390516 5.43963C-0.00434585 4.88945 0.129363 4.34745 0.385638 3.8606C0.394585 3.84344 0.407455 3.82863 0.423202 3.81737C0.43895 3.80612 0.45713 3.79874 0.476267 3.79583C0.495403 3.79293 0.514954 3.79458 0.533332 3.80065C0.55171 3.80673 0.568396 3.81705 0.582034 3.83078L5.92604 9.17479C7.61831 10.8695 10.3824 10.8705 12.0757 9.17479L17.4197 3.83078C17.4333 3.81705 17.45 3.80673 17.4684 3.80065C17.4868 3.79458 17.5063 3.79293 17.5255 3.79583C17.5446 3.79874 17.5628 3.80612 17.5785 3.81737C17.5943 3.82863 17.6072 3.84344 17.6161 3.8606C17.8724 4.34746 18.0061 4.88945 18.0056 5.43963V12.5589C18.0056 14.4408 16.4748 15.9693 14.5953 15.9693H3.40647C1.52696 15.9693 -0.00390516 14.4408 -0.00390516 12.5589V5.43963Z' fill='%2308B419'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='clip0_2243_1577'%3e%3crect width='18' height='18' fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e ");
+		}
+	}
+	&-btn {
+		width: auto;
+		padding: 10px 80px;
+		margin-right: auto;
+		@media (max-width: 576px) {
+			margin-right: 0;
+			width: 100%;
+			padding: 10px;
+		}
+	}
+	&-map {
+		width: 100%;
+		min-height: 380px;
+		height: 100%;
+		border-radius: 40px;
+		@media (max-width: 1060px) {
+			margin-bottom: 20px;
+		}
+		@media (max-width: 576px) {
+			border-radius: 30px;
+		}
+	}
+}
