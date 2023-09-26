@@ -98,6 +98,15 @@ document.addEventListener("DOMContentLoaded", () => {
 				elem.classList.contains("gallery-popup") ||
 				elem.classList.contains("gallery-popup__body")
 			) {
+				document
+					.querySelectorAll(".gallery-popup__swiper-slide")
+					.forEach((elem) => {
+						const videos = elem.querySelectorAll("video");
+						videos.forEach((video) => {
+							video.pause();
+							video.currentTime = 0;
+						});
+					});
 				document.querySelector(".gallery-popup").classList.remove("open");
 				enableScroll();
 			}
