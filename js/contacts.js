@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		if (btn) {
 			const body = document.querySelector(".home-body");
 			const info = document.querySelector(".home-info");
-			if (window.innerWidth <= 1060) {
+			if (window.innerWidth <= 1000) {
 				body.appendChild(btn);
 			} else {
 				info.appendChild(btn);

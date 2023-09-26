@@ -12,7 +12,7 @@
   grid-template-columns: minmax(400px, 1fr) minmax(280px, 885px);
   grid-gap: 0 20px;
 }
-@media (max-width: 1060px) {
+@media (max-width: 1000px) {
   .home-body {
     display: flex;
     flex-direction: column;
@@ -32,14 +32,7 @@
   text-transform: uppercase;
   margin-bottom: 60px;
 }
-@media (max-width: 768px) {
-  .home-title {
-    font-size: 35px;
-    line-height: 38.25px;
-    margin-bottom: 45px;
-  }
-}
-@media (max-width: 576px) {
+@media (max-width: 1280px) {
   .home-title {
     font-size: 25px;
     line-height: 31.25px;
@@ -52,7 +45,13 @@
   justify-content: start;
   margin-bottom: 130px;
 }
-@media (max-width: 1060px) {
+@media (max-width: 1280px) {
+  .home-cards {
+    grid-gap: 20px;
+    margin-bottom: 90px;
+  }
+}
+@media (max-width: 768px) {
   .home-cards {
     grid-gap: 15px;
     margin-bottom: 30px;
@@ -63,7 +62,7 @@
   grid-gap: 10px;
   justify-content: start;
 }
-@media (max-width: 1060px) {
+@media (max-width: 1280px) {
   .home-card {
     grid-gap: 5px;
   }
@@ -75,7 +74,7 @@
   line-height: 20px;
   text-transform: uppercase;
 }
-@media (max-width: 576px) {
+@media (max-width: 1280px) {
   .home-heading {
     font-size: 13px;
     line-height: 16.25px;
@@ -87,7 +86,7 @@
   font-weight: 400;
   line-height: 31.25px;
 }
-@media (max-width: 576px) {
+@media (max-width: 1280px) {
   .home-link, .home-text {
     font-size: 15px;
     line-height: 18.75px;
@@ -101,7 +100,7 @@
   align-items: center;
   font-weight: 600;
 }
-@media (max-width: 576px) {
+@media (max-width: 1280px) {
   .home-link {
     grid-gap: 7px;
   }
@@ -114,7 +113,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media (max-width: 576px) {
+@media (max-width: 1280px) {
   .home-link::before {
     width: 12px;
     height: 12px;
@@ -144,13 +143,9 @@
   height: 100%;
   border-radius: 40px;
 }
-@media (max-width: 1060px) {
-  .home-map {
-    margin-bottom: 20px;
-  }
-}
-@media (max-width: 576px) {
+@media (max-width: 1280px) {
   .home-map {
     border-radius: 30px;
+    margin-bottom: 20px;
   }
 }/*# sourceMappingURL=contacts.css.map */
