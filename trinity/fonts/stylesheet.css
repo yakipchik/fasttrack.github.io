@@ -1,0 +1,12 @@
+@font-face {
+	font-family: "Mabry Pro";
+	src: url("MabryPro-Regular.eot");
+	src: local("Mabry Pro"), local("MabryPro-Regular"),
+		url("MabryPro-Regular.eot?#iefix") format("embedded-opentype"),
+		url("MabryPro-Regular.woff2") format("woff2"),
+		url("MabryPro-Regular.woff") format("woff"),
+		url("MabryPro-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

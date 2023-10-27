@@ -1,0 +1,153 @@
+html,
+body,
+main {
+	height: 100%;
+}
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	display: block;
+	object-fit: cover;
+}
+
+.home {
+	display: flex;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+}
+
+.home-cards {
+	max-width: 640px;
+	width: 100%;
+	display: grid;
+	grid-auto-flow: column;
+	grid-gap: 50px 20px;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
+}
+@media (max-width: 425px) {
+	.home-cards {
+		grid-auto-flow: row;
+		justify-content: center;
+	}
+}
+.home-card {
+	display: grid;
+	grid-gap: 14px;
+	justify-content: center;
+	position: relative;
+}
+@media (max-width: 768px) {
+	.home-card {
+		grid-gap: 0;
+	}
+}
+.home-card:hover .home-img {
+	animation: bounce 0.7s linear backwards;
+}
+.home-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.home-img img {
+	width: 76px;
+	height: 97px;
+}
+@media (max-width: 768px) {
+	.home-img img {
+		width: 32px;
+		height: 40px;
+	}
+}
+.home-name {
+	color: #27292f;
+	font-family: Mabry Pro;
+	font-size: 67px;
+	font-weight: 400;
+	line-height: 54px;
+	text-align: center;
+}
+@media (max-width: 768px) {
+	.home-name {
+		font-size: 35px;
+		line-height: 34px;
+	}
+}
+.home-link {
+	display: block;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	font-size: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0px);
+	}
+	25% {
+		transform: translateY(-40px);
+	}
+	50% {
+		transform: translateY(0px);
+	}
+	75% {
+		transform: translateY(-20px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+.logo {
+	display: grid;
+	grid-gap: 7px;
+	justify-content: center;
+	position: absolute;
+	right: 100px;
+	bottom: 65px;
+}
+@media (max-width: 992px) {
+	.logo {
+		right: 50px;
+		bottom: 25px;
+	}
+}
+@media (max-width: 768px) {
+	.logo-name {
+		width: 180px;
+	}
+	.logo-text {
+		width: 180px;
+	}
+}
+@media (max-width: 576px) {
+	.logo-name {
+		width: 120px;
+	}
+	.logo-text {
+		width: 120px;
+	}
+}
+@media (max-width: 425px) {
+	.logo {
+		right: 20px;
+		bottom: 40px;
+	}
+}
