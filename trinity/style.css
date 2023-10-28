@@ -23,6 +23,11 @@ img {
 	height: 100%;
 	padding: 20px;
 }
+@media (max-width: 576px) {
+	.home {
+		padding: 20px 20px 80px 20px;
+	}
+}
 
 .home-cards {
 	max-width: 640px;
@@ -45,11 +50,6 @@ img {
 	grid-gap: 14px;
 	justify-content: center;
 	position: relative;
-}
-@media (max-width: 768px) {
-	.home-card {
-		grid-gap: 8px;
-	}
 }
 .home-card:hover .home-img {
 	animation: bounce 0.7s linear backwards;
@@ -95,6 +95,17 @@ img {
 	right: 0;
 	bottom: 0;
 	z-index: 10;
+}
+.home-link.mobile {
+	display: none;
+}
+@media (max-width: 768px) {
+	.home-link.desktop {
+		display: none;
+	}
+	.home-link.mobile {
+		display: block;
+	}
 }
 
 @keyframes bounce {
@@ -147,7 +158,7 @@ img {
 }
 @media (max-width: 435px) {
 	.logo {
-		right: 20px;
+		right: 40px;
 		bottom: 40px;
 	}
 }
