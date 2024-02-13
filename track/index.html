@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Fast Track</title>
+		<link rel="stylesheet" href="./fonts/stylesheet.css" />
+		<link rel="stylesheet" href="./css/layout.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="./css/index.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header-body">
+					<a href="/" class="logo">
+						<div class="logo-img">
+							<img
+								src="./img/logo.png"
+								alt="являемся частью интермодальной цепочки перевозок Азия — Европа/СНГ"
+							/>
+						</div>
+						<span class="logo-line"></span>
+						<span class="logo-text">
+							являемся частью интермодальной цепочки перевозок Азия — Европа/СНГ
+						</span>
+					</a>
+					<a href="./contacts.html" class="header-link">Контакты</a>
+				</div>
+			</div>
+		</header>
+		<div class="header-mobile">
+			<a href="/" class="logo">
+				<div class="logo-img">
+					<img
+						src="./img/logo.png"
+						alt="являемся частью интермодальной цепочки перевозок Азия — Европа/СНГ"
+					/>
+				</div>
+				<span class="logo-line"></span>
+				<span class="logo-text">
+					являемся частью интермодальной цепочки перевозок Азия — Европа/СНГ
+				</span>
+			</a>
+			<button type="button" class="burger"></button>
+		</div>
+		<div class="header-popup">
+			<div class="header-popup__body">
+				<div class="header-popup__cap">
+					<div class="logo-img">
+						<img
+							src="./img/logo.png"
+							alt="являемся частью интермодальной цепочки перевозок Азия — Европа/СНГ"
+						/>
+					</div>
+					<button type="button" class="burger open"></button>
+				</div>
+				<div class="header-popup__links">
+					<a href="/" class="header-link">Главная</a>
+					<a href="./contacts.html" class="header-link">Контакты</a>
+				</div>
+				<button type="button" class="main-btn btn-scroll__form">
+					Оставить заявку
+				</button>
+			</div>
+		</div>
+		<main>
+			<section class="home" id="home">
+				<div class="container">
+					<div class="home-body">
+						<h1 class="home-title">
+							Доставка грузов<br />
+							из Китая в Россию
+						</h1>
+						<div class="home-info">
+							<p class="home-text">
+								Предоставляем полный комплект услуг по первозке, под ключ
+							</p>
+							<button type="button" class="main-btn home-btn btn-scroll__form">
+								Оставить заявку
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="home-img">
+					<video autoplay loop muted playsinline poster="./img/home.png">
+						<source src="./video/fasttrack.MP4" type="video/mp4" />
+						<source src="./video/fasttrack.ogv" type="video/ogg" />
+						<source src="./video/fasttrack.webm" type="video/webm" />
+					</video>
+				</div>
+			</section>
+
+			<section class="transport" id="transport">
+				<div class="container">
+					<div class="transport-cards">
+						<div class="transport-card">
+							<div class="transport-img">
+								<img
+									src="./img/transport/1.png"
+									alt="Авиаперевозки"
+									class="desktop"
+								/>
+								<img
+									src="./img/transport/1-mob.png"
+									alt="Авиаперевозки"
+									class="mobile"
+								/>
+							</div>
+							<h3 class="transport-text">Авиаперевозки</h3>
+						</div>
+						<div class="transport-card">
+							<div class="transport-img">
+								<img
+									src="./img/transport/2.png"
+									alt="Железнодорожные перевозки"
+									class="desktop"
+								/>
+								<img
+									src="./img/transport/2-mob.png"
+									alt="Железнодорожные перевозки"
+									class="mobile"
+								/>
+							</div>
+							<h3 class="transport-text desktop">Железнодорожные перевозки</h3>
+							<h3 class="transport-text mobile">Ж/Д перевозки</h3>
+						</div>
+						<div class="transport-card">
+							<div class="transport-img">
+								<img
+									src="./img/transport/3.png"
+									alt="Морские перевозки"
+									class="desktop"
+								/>
+								<img
+									src="./img/transport/3-mob.png"
+									alt="Морские перевозки"
+									class="mobile"
+								/>
+							</div>
+							<h3 class="transport-text">Морские перевозки</h3>
+						</div>
+						<div class="transport-card">
+							<div class="transport-img">
+								<img
+									src="./img/transport/4.png"
+									alt="Автомобильные перевозки"
+									class="desktop"
+								/>
+								<img
+									src="./img/transport/4-mob.png"
+									alt="Автомобильные перевозки"
+									class="mobile"
+								/>
+							</div>
+							<h3 class="transport-text">Автомобильные перевозки</h3>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="routes" id="routes">
+				<div class="routes-container">
+					<div class="routes-block">
+						<div class="routes-body">
+							<div class="routes-img">
+								<img
+									src="./img/routes.png"
+									alt="Основные маршруты"
+									class="desktop1"
+								/>
+							</div>
+							<div class="container">
+								<div class="routes-wrapper">
+									<div class="routes-info">
+										<h2 class="routes-title">Основные маршруты</h2>
+										<div class="routes-cards">
+											<div class="routes-card">
+												<h4 class="routes-heading">Из китайских портов:</h4>
+												<ul class="routes-list routes-from">
+													<li>Шанхай</li>
+													<li>Шэньчжэнь</li>
+													<li>Циндао</li>
+													<li>Гуанчжоу</li>
+													<li>Тяньцзинь</li>
+													<li>Далянь</li>
+													<li>Баюйцюань</li>
+												</ul>
+											</div>
+											<div class="routes-card">
+												<h4 class="routes-heading">В российские порты:</h4>
+												<ul class="routes-list routes-to">
+													<li>Владивосток</li>
+													<li>Находка</li>
+													<li>Санкт-Петербург</li>
+													<li>Новороссийск</li>
+													<li>Мурманск</li>
+													<li>Нижний Новгород</li>
+													<li>Калининград</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="routes-delivery">
+										<p class="routes-delivery__heading">
+											<span>7-25</span> дней
+										</p>
+										<p class="routes-delivery__text">
+											средний срок груза в пути
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="cargo" id="cargo">
+				<div class="container">
+					<h2 class="cargo-title">Виды перевозимых грузов</h2>
+					<div class="cargo-cards">
+						<div class="cargo-card">
+							<div class="cargo-img">
+								<img src="./img/cargo/1.png" alt="Генеральные" />
+							</div>
+							<h3 class="cargo-text">Генеральные</h3>
+						</div>
+						<div class="cargo-card">
+							<div class="cargo-img">
+								<img src="./img/cargo/2.png" alt="Крупногабаритные" />
+							</div>
+							<h3 class="cargo-text">Крупногабаритные</h3>
+						</div>
+						<div class="cargo-card">
+							<div class="cargo-img">
+								<img src="./img/cargo/3.png" alt="Балкерные" />
+							</div>
+							<h3 class="cargo-text">Балкерные</h3>
+						</div>
+						<div class="cargo-card">
+							<div class="cargo-img">
+								<img src="./img/cargo/4.png" alt="Перевозка шпунта" />
+							</div>
+							<h3 class="cargo-text">Перевозка шпунта</h3>
+						</div>
+						<div class="cargo-card">
+							<div class="cargo-img">
+								<img src="./img/cargo/5.png" alt="Контейнерные" />
+							</div>
+							<h3 class="cargo-text">Контейнерные</h3>
+						</div>
+						<div class="cargo-card">
+							<div class="cargo-img">
+								<img src="./img/cargo/6.png" alt="Сборные" />
+							</div>
+							<h3 class="cargo-text">Сборные</h3>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="gallery" id="gallery">
+				<div class="container">
+					<div class="gallery-cap">
+						<h2 class="gallery-title">галерея</h2>
+						<div class="gallery-btns">
+							<button class="gallery-btn prev gallery-btn__prev"></button>
+							<button class="gallery-btn next gallery-btn__next"></button>
+						</div>
+					</div>
+				</div>
+				<div class="swiper gallery-swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide gallery-swiper__slide">
+							<img src="./img/gallery/1.png" alt="name" />
+							<div class="gallery-swiper__link">
+								<div class="gallery-swiper__link-body">
+									<div class="gallery-swiper__link-video">
+										<svg
+											width="30"
+											height="34"
+											viewBox="0 0 30 34"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M28.4211 14.2387C30.5263 15.4659 30.5263 18.5341 28.4211 19.7613L4.73684 33.5681C2.63158 34.7953 8.70686e-07 33.2612 9.77977e-07 30.8067L2.185e-06 3.19328C2.29229e-06 0.738752 2.63158 -0.795327 4.73684 0.431937L28.4211 14.2387Z"
+												fill="white"
+											/>
+										</svg>
+									</div>
+									<span class="gallery-swiper__link-text">смотреть видео</span>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide gallery-swiper__slide">
+							<img src="./img/gallery/2.png" alt="name" />
+							<div class="gallery-swiper__link">
+								<div class="gallery-swiper__link-body">
+									<div class="gallery-swiper__link-img">
+										<svg
+											width="30"
+											height="30"
+											viewBox="0 0 30 30"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<g clip-path="url(#clip0_2263_1043)">
+												<path
+													d="M29.6334 27.866L21.1023 19.3348C22.7548 17.2936 23.7497 14.6999 23.7497 11.8749C23.7497 5.32747 18.4223 0 11.8748 0C5.32741 0 0 5.32741 0 11.8748C0 18.4223 5.32747 23.7497 11.8749 23.7497C14.6999 23.7497 17.2936 22.7548 19.3348 21.1023L27.866 29.6334C28.1097 29.8772 28.4297 29.9997 28.7497 29.9997C29.0698 29.9997 29.3898 29.8772 29.6335 29.6334C30.1222 29.1447 30.1222 28.3547 29.6334 27.866ZM11.8749 21.2498C6.70493 21.2498 2.5 17.0448 2.5 11.8748C2.5 6.70488 6.70493 2.49994 11.8749 2.49994C17.0449 2.49994 21.2498 6.70488 21.2498 11.8748C21.2498 17.0448 17.0448 21.2498 11.8749 21.2498Z"
+													fill="white"
+												/>
+											</g>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M10.6829 17.6429L10.6829 6.18359L13.1289 6.18359L13.1289 17.6429L10.6829 17.6429Z"
+												fill="white"
+											/>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M6.17548 10.6902L17.6348 10.6902L17.6348 13.1367L6.17548 13.1367L6.17548 10.6902Z"
+												fill="white"
+											/>
+											<defs>
+												<clipPath id="clip0_2263_1043">
+													<rect width="30" height="30" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</div>
+									<span class="gallery-swiper__link-text">Смотреть фото</span>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide gallery-swiper__slide">
+							<img src="./img/gallery/3.png" alt="name" />
+							<div class="gallery-swiper__link">
+								<div class="gallery-swiper__link-body">
+									<div class="gallery-swiper__link-img">
+										<svg
+											width="30"
+											height="30"
+											viewBox="0 0 30 30"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<g clip-path="url(#clip0_2263_1043)">
+												<path
+													d="M29.6334 27.866L21.1023 19.3348C22.7548 17.2936 23.7497 14.6999 23.7497 11.8749C23.7497 5.32747 18.4223 0 11.8748 0C5.32741 0 0 5.32741 0 11.8748C0 18.4223 5.32747 23.7497 11.8749 23.7497C14.6999 23.7497 17.2936 22.7548 19.3348 21.1023L27.866 29.6334C28.1097 29.8772 28.4297 29.9997 28.7497 29.9997C29.0698 29.9997 29.3898 29.8772 29.6335 29.6334C30.1222 29.1447 30.1222 28.3547 29.6334 27.866ZM11.8749 21.2498C6.70493 21.2498 2.5 17.0448 2.5 11.8748C2.5 6.70488 6.70493 2.49994 11.8749 2.49994C17.0449 2.49994 21.2498 6.70488 21.2498 11.8748C21.2498 17.0448 17.0448 21.2498 11.8749 21.2498Z"
+													fill="white"
+												/>
+											</g>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M10.6829 17.6429L10.6829 6.18359L13.1289 6.18359L13.1289 17.6429L10.6829 17.6429Z"
+												fill="white"
+											/>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M6.17548 10.6902L17.6348 10.6902L17.6348 13.1367L6.17548 13.1367L6.17548 10.6902Z"
+												fill="white"
+											/>
+											<defs>
+												<clipPath id="clip0_2263_1043">
+													<rect width="30" height="30" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</div>
+									<span class="gallery-swiper__link-text">Смотреть фото</span>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide gallery-swiper__slide">
+							<img src="./img/gallery/4.png" alt="name" />
+							<div class="gallery-swiper__link">
+								<div class="gallery-swiper__link-body">
+									<div class="gallery-swiper__link-video">
+										<svg
+											width="30"
+											height="34"
+											viewBox="0 0 30 34"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M28.4211 14.2387C30.5263 15.4659 30.5263 18.5341 28.4211 19.7613L4.73684 33.5681C2.63158 34.7953 8.70686e-07 33.2612 9.77977e-07 30.8067L2.185e-06 3.19328C2.29229e-06 0.738752 2.63158 -0.795327 4.73684 0.431937L28.4211 14.2387Z"
+												fill="white"
+											/>
+										</svg>
+									</div>
+									<span class="gallery-swiper__link-text">смотреть видео</span>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide gallery-swiper__slide">
+							<img src="./img/gallery/5.png" alt="name" />
+							<div class="gallery-swiper__link">
+								<div class="gallery-swiper__link-body">
+									<div class="gallery-swiper__link-img">
+										<svg
+											width="30"
+											height="30"
+											viewBox="0 0 30 30"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<g clip-path="url(#clip0_2263_1043)">
+												<path
+													d="M29.6334 27.866L21.1023 19.3348C22.7548 17.2936 23.7497 14.6999 23.7497 11.8749C23.7497 5.32747 18.4223 0 11.8748 0C5.32741 0 0 5.32741 0 11.8748C0 18.4223 5.32747 23.7497 11.8749 23.7497C14.6999 23.7497 17.2936 22.7548 19.3348 21.1023L27.866 29.6334C28.1097 29.8772 28.4297 29.9997 28.7497 29.9997C29.0698 29.9997 29.3898 29.8772 29.6335 29.6334C30.1222 29.1447 30.1222 28.3547 29.6334 27.866ZM11.8749 21.2498C6.70493 21.2498 2.5 17.0448 2.5 11.8748C2.5 6.70488 6.70493 2.49994 11.8749 2.49994C17.0449 2.49994 21.2498 6.70488 21.2498 11.8748C21.2498 17.0448 17.0448 21.2498 11.8749 21.2498Z"
+													fill="white"
+												/>
+											</g>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M10.6829 17.6429L10.6829 6.18359L13.1289 6.18359L13.1289 17.6429L10.6829 17.6429Z"
+												fill="white"
+											/>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M6.17548 10.6902L17.6348 10.6902L17.6348 13.1367L6.17548 13.1367L6.17548 10.6902Z"
+												fill="white"
+											/>
+											<defs>
+												<clipPath id="clip0_2263_1043">
+													<rect width="30" height="30" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</div>
+									<span class="gallery-swiper__link-text">Смотреть фото</span>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide gallery-swiper__slide">
+							<img src="./img/gallery/6.png" alt="name" />
+							<div class="gallery-swiper__link">
+								<div class="gallery-swiper__link-body">
+									<div class="gallery-swiper__link-img">
+										<svg
+											width="30"
+											height="30"
+											viewBox="0 0 30 30"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<g clip-path="url(#clip0_2263_1043)">
+												<path
+													d="M29.6334 27.866L21.1023 19.3348C22.7548 17.2936 23.7497 14.6999 23.7497 11.8749C23.7497 5.32747 18.4223 0 11.8748 0C5.32741 0 0 5.32741 0 11.8748C0 18.4223 5.32747 23.7497 11.8749 23.7497C14.6999 23.7497 17.2936 22.7548 19.3348 21.1023L27.866 29.6334C28.1097 29.8772 28.4297 29.9997 28.7497 29.9997C29.0698 29.9997 29.3898 29.8772 29.6335 29.6334C30.1222 29.1447 30.1222 28.3547 29.6334 27.866ZM11.8749 21.2498C6.70493 21.2498 2.5 17.0448 2.5 11.8748C2.5 6.70488 6.70493 2.49994 11.8749 2.49994C17.0449 2.49994 21.2498 6.70488 21.2498 11.8748C21.2498 17.0448 17.0448 21.2498 11.8749 21.2498Z"
+													fill="white"
+												/>
+											</g>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M10.6829 17.6429L10.6829 6.18359L13.1289 6.18359L13.1289 17.6429L10.6829 17.6429Z"
+												fill="white"
+											/>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M6.17548 10.6902L17.6348 10.6902L17.6348 13.1367L6.17548 13.1367L6.17548 10.6902Z"
+												fill="white"
+											/>
+											<defs>
+												<clipPath id="clip0_2263_1043">
+													<rect width="30" height="30" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</div>
+									<span class="gallery-swiper__link-text">Смотреть фото</span>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide gallery-swiper__slide">
+							<img src="./img/gallery/7.png" alt="name" />
+							<div class="gallery-swiper__link">
+								<div class="gallery-swiper__link-body">
+									<div class="gallery-swiper__link-video">
+										<svg
+											width="30"
+											height="34"
+											viewBox="0 0 30 34"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M28.4211 14.2387C30.5263 15.4659 30.5263 18.5341 28.4211 19.7613L4.73684 33.5681C2.63158 34.7953 8.70686e-07 33.2612 9.77977e-07 30.8067L2.185e-06 3.19328C2.29229e-06 0.738752 2.63158 -0.795327 4.73684 0.431937L28.4211 14.2387Z"
+												fill="white"
+											/>
+										</svg>
+									</div>
+									<span class="gallery-swiper__link-text">смотреть видео</span>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide gallery-swiper__slide">
+							<img src="./img/gallery/8.png" alt="name" />
+							<div class="gallery-swiper__link">
+								<div class="gallery-swiper__link-body">
+									<div class="gallery-swiper__link-img">
+										<svg
+											width="30"
+											height="30"
+											viewBox="0 0 30 30"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<g clip-path="url(#clip0_2263_1043)">
+												<path
+													d="M29.6334 27.866L21.1023 19.3348C22.7548 17.2936 23.7497 14.6999 23.7497 11.8749C23.7497 5.32747 18.4223 0 11.8748 0C5.32741 0 0 5.32741 0 11.8748C0 18.4223 5.32747 23.7497 11.8749 23.7497C14.6999 23.7497 17.2936 22.7548 19.3348 21.1023L27.866 29.6334C28.1097 29.8772 28.4297 29.9997 28.7497 29.9997C29.0698 29.9997 29.3898 29.8772 29.6335 29.6334C30.1222 29.1447 30.1222 28.3547 29.6334 27.866ZM11.8749 21.2498C6.70493 21.2498 2.5 17.0448 2.5 11.8748C2.5 6.70488 6.70493 2.49994 11.8749 2.49994C17.0449 2.49994 21.2498 6.70488 21.2498 11.8748C21.2498 17.0448 17.0448 21.2498 11.8749 21.2498Z"
+													fill="white"
+												/>
+											</g>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M10.6829 17.6429L10.6829 6.18359L13.1289 6.18359L13.1289 17.6429L10.6829 17.6429Z"
+												fill="white"
+											/>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M6.17548 10.6902L17.6348 10.6902L17.6348 13.1367L6.17548 13.1367L6.17548 10.6902Z"
+												fill="white"
+											/>
+											<defs>
+												<clipPath id="clip0_2263_1043">
+													<rect width="30" height="30" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</div>
+									<span class="gallery-swiper__link-text">Смотреть фото</span>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide gallery-swiper__slide">
+							<img src="./img/gallery/9.png" alt="name" />
+							<div class="gallery-swiper__link">
+								<div class="gallery-swiper__link-body">
+									<div class="gallery-swiper__link-img">
+										<svg
+											width="30"
+											height="30"
+											viewBox="0 0 30 30"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<g clip-path="url(#clip0_2263_1043)">
+												<path
+													d="M29.6334 27.866L21.1023 19.3348C22.7548 17.2936 23.7497 14.6999 23.7497 11.8749C23.7497 5.32747 18.4223 0 11.8748 0C5.32741 0 0 5.32741 0 11.8748C0 18.4223 5.32747 23.7497 11.8749 23.7497C14.6999 23.7497 17.2936 22.7548 19.3348 21.1023L27.866 29.6334C28.1097 29.8772 28.4297 29.9997 28.7497 29.9997C29.0698 29.9997 29.3898 29.8772 29.6335 29.6334C30.1222 29.1447 30.1222 28.3547 29.6334 27.866ZM11.8749 21.2498C6.70493 21.2498 2.5 17.0448 2.5 11.8748C2.5 6.70488 6.70493 2.49994 11.8749 2.49994C17.0449 2.49994 21.2498 6.70488 21.2498 11.8748C21.2498 17.0448 17.0448 21.2498 11.8749 21.2498Z"
+													fill="white"
+												/>
+											</g>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M10.6829 17.6429L10.6829 6.18359L13.1289 6.18359L13.1289 17.6429L10.6829 17.6429Z"
+												fill="white"
+											/>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M6.17548 10.6902L17.6348 10.6902L17.6348 13.1367L6.17548 13.1367L6.17548 10.6902Z"
+												fill="white"
+											/>
+											<defs>
+												<clipPath id="clip0_2263_1043">
+													<rect width="30" height="30" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</div>
+									<span class="gallery-swiper__link-text">Смотреть фото</span>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide gallery-swiper__slide">
+							<img src="./img/gallery/10.png" alt="name" />
+							<div class="gallery-swiper__link">
+								<div class="gallery-swiper__link-body">
+									<div class="gallery-swiper__link-video">
+										<svg
+											width="30"
+											height="34"
+											viewBox="0 0 30 34"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M28.4211 14.2387C30.5263 15.4659 30.5263 18.5341 28.4211 19.7613L4.73684 33.5681C2.63158 34.7953 8.70686e-07 33.2612 9.77977e-07 30.8067L2.185e-06 3.19328C2.29229e-06 0.738752 2.63158 -0.795327 4.73684 0.431937L28.4211 14.2387Z"
+												fill="white"
+											/>
+										</svg>
+									</div>
+									<span class="gallery-swiper__link-text">смотреть видео</span>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide gallery-swiper__slide">
+							<img src="./img/gallery/11.png" alt="name" />
+							<div class="gallery-swiper__link">
+								<div class="gallery-swiper__link-body">
+									<div class="gallery-swiper__link-img">
+										<svg
+											width="30"
+											height="30"
+											viewBox="0 0 30 30"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<g clip-path="url(#clip0_2263_1043)">
+												<path
+													d="M29.6334 27.866L21.1023 19.3348C22.7548 17.2936 23.7497 14.6999 23.7497 11.8749C23.7497 5.32747 18.4223 0 11.8748 0C5.32741 0 0 5.32741 0 11.8748C0 18.4223 5.32747 23.7497 11.8749 23.7497C14.6999 23.7497 17.2936 22.7548 19.3348 21.1023L27.866 29.6334C28.1097 29.8772 28.4297 29.9997 28.7497 29.9997C29.0698 29.9997 29.3898 29.8772 29.6335 29.6334C30.1222 29.1447 30.1222 28.3547 29.6334 27.866ZM11.8749 21.2498C6.70493 21.2498 2.5 17.0448 2.5 11.8748C2.5 6.70488 6.70493 2.49994 11.8749 2.49994C17.0449 2.49994 21.2498 6.70488 21.2498 11.8748C21.2498 17.0448 17.0448 21.2498 11.8749 21.2498Z"
+													fill="white"
+												/>
+											</g>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M10.6829 17.6429L10.6829 6.18359L13.1289 6.18359L13.1289 17.6429L10.6829 17.6429Z"
+												fill="white"
+											/>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M6.17548 10.6902L17.6348 10.6902L17.6348 13.1367L6.17548 13.1367L6.17548 10.6902Z"
+												fill="white"
+											/>
+											<defs>
+												<clipPath id="clip0_2263_1043">
+													<rect width="30" height="30" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</div>
+									<span class="gallery-swiper__link-text">Смотреть фото</span>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide gallery-swiper__slide">
+							<img src="./img/gallery/12.png" alt="name" />
+							<div class="gallery-swiper__link">
+								<div class="gallery-swiper__link-body">
+									<div class="gallery-swiper__link-img">
+										<svg
+											width="30"
+											height="30"
+											viewBox="0 0 30 30"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<g clip-path="url(#clip0_2263_1043)">
+												<path
+													d="M29.6334 27.866L21.1023 19.3348C22.7548 17.2936 23.7497 14.6999 23.7497 11.8749C23.7497 5.32747 18.4223 0 11.8748 0C5.32741 0 0 5.32741 0 11.8748C0 18.4223 5.32747 23.7497 11.8749 23.7497C14.6999 23.7497 17.2936 22.7548 19.3348 21.1023L27.866 29.6334C28.1097 29.8772 28.4297 29.9997 28.7497 29.9997C29.0698 29.9997 29.3898 29.8772 29.6335 29.6334C30.1222 29.1447 30.1222 28.3547 29.6334 27.866ZM11.8749 21.2498C6.70493 21.2498 2.5 17.0448 2.5 11.8748C2.5 6.70488 6.70493 2.49994 11.8749 2.49994C17.0449 2.49994 21.2498 6.70488 21.2498 11.8748C21.2498 17.0448 17.0448 21.2498 11.8749 21.2498Z"
+													fill="white"
+												/>
+											</g>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M10.6829 17.6429L10.6829 6.18359L13.1289 6.18359L13.1289 17.6429L10.6829 17.6429Z"
+												fill="white"
+											/>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M6.17548 10.6902L17.6348 10.6902L17.6348 13.1367L6.17548 13.1367L6.17548 10.6902Z"
+												fill="white"
+											/>
+											<defs>
+												<clipPath id="clip0_2263_1043">
+													<rect width="30" height="30" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</div>
+									<span class="gallery-swiper__link-text">Смотреть фото</span>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide gallery-swiper__slide">
+							<img src="./img/gallery/13.png" alt="name" />
+							<div class="gallery-swiper__link">
+								<div class="gallery-swiper__link-body">
+									<div class="gallery-swiper__link-video">
+										<svg
+											width="30"
+											height="34"
+											viewBox="0 0 30 34"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M28.4211 14.2387C30.5263 15.4659 30.5263 18.5341 28.4211 19.7613L4.73684 33.5681C2.63158 34.7953 8.70686e-07 33.2612 9.77977e-07 30.8067L2.185e-06 3.19328C2.29229e-06 0.738752 2.63158 -0.795327 4.73684 0.431937L28.4211 14.2387Z"
+												fill="white"
+											/>
+										</svg>
+									</div>
+									<span class="gallery-swiper__link-text">смотреть видео</span>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide gallery-swiper__slide">
+							<img src="./img/gallery/14.png" alt="name" />
+							<div class="gallery-swiper__link">
+								<div class="gallery-swiper__link-body">
+									<div class="gallery-swiper__link-img">
+										<svg
+											width="30"
+											height="30"
+											viewBox="0 0 30 30"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<g clip-path="url(#clip0_2263_1043)">
+												<path
+													d="M29.6334 27.866L21.1023 19.3348C22.7548 17.2936 23.7497 14.6999 23.7497 11.8749C23.7497 5.32747 18.4223 0 11.8748 0C5.32741 0 0 5.32741 0 11.8748C0 18.4223 5.32747 23.7497 11.8749 23.7497C14.6999 23.7497 17.2936 22.7548 19.3348 21.1023L27.866 29.6334C28.1097 29.8772 28.4297 29.9997 28.7497 29.9997C29.0698 29.9997 29.3898 29.8772 29.6335 29.6334C30.1222 29.1447 30.1222 28.3547 29.6334 27.866ZM11.8749 21.2498C6.70493 21.2498 2.5 17.0448 2.5 11.8748C2.5 6.70488 6.70493 2.49994 11.8749 2.49994C17.0449 2.49994 21.2498 6.70488 21.2498 11.8748C21.2498 17.0448 17.0448 21.2498 11.8749 21.2498Z"
+													fill="white"
+												/>
+											</g>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M10.6829 17.6429L10.6829 6.18359L13.1289 6.18359L13.1289 17.6429L10.6829 17.6429Z"
+												fill="white"
+											/>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M6.17548 10.6902L17.6348 10.6902L17.6348 13.1367L6.17548 13.1367L6.17548 10.6902Z"
+												fill="white"
+											/>
+											<defs>
+												<clipPath id="clip0_2263_1043">
+													<rect width="30" height="30" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</div>
+									<span class="gallery-swiper__link-text">Смотреть фото</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="gallery-popup">
+				<div class="gallery-popup__body">
+					<button type="button" class="gallery-popup__close"></button>
+					<button class="gallery-btn prev gallery-popup__btn-prev"></button>
+					<button class="gallery-btn next gallery-popup__btn-next"></button>
+					<div class="swiper gallery-popup__swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide gallery-popup__swiper-slide">
+								<video
+									src="./img/gallery/open/1.mp4"
+									loop
+									muted
+									playsinline
+									controls
+								></video>
+							</div>
+							<div class="swiper-slide gallery-popup__swiper-slide">
+								<img src="./img/gallery/open/2.png" alt="name" />
+							</div>
+							<div class="swiper-slide gallery-popup__swiper-slide">
+								<img src="./img/gallery/open/3.png" alt="name" />
+							</div>
+							<div class="swiper-slide gallery-popup__swiper-slide">
+								<video
+									src="./img/gallery/open/4.mp4"
+									loop
+									muted
+									playsinline
+									controls
+								></video>
+							</div>
+							<div class="swiper-slide gallery-popup__swiper-slide">
+								<img src="./img/gallery/open/5.png" alt="name" />
+							</div>
+							<div class="swiper-slide gallery-popup__swiper-slide">
+								<img src="./img/gallery/open/6.png" alt="name" />
+							</div>
+							<div class="swiper-slide gallery-popup__swiper-slide">
+								<video
+									src="./img/gallery/open/7.mp4"
+									loop
+									muted
+									playsinline
+									controls
+								></video>
+							</div>
+							<div class="swiper-slide gallery-popup__swiper-slide">
+								<img src="./img/gallery/open/8.png" alt="name" />
+							</div>
+							<div class="swiper-slide gallery-popup__swiper-slide">
+								<img src="./img/gallery/open/9.png" alt="name" />
+							</div>
+							<div class="swiper-slide gallery-popup__swiper-slide">
+								<video
+									src="./img/gallery/open/10.mp4"
+									loop
+									muted
+									playsinline
+									controls
+								></video>
+							</div>
+							<div class="swiper-slide gallery-popup__swiper-slide">
+								<img src="./img/gallery/open/11.png" alt="name" />
+							</div>
+							<div class="swiper-slide gallery-popup__swiper-slide">
+								<img src="./img/gallery/open/12.png" alt="name" />
+							</div>
+							<div class="swiper-slide gallery-popup__swiper-slide">
+								<video
+									src="./img/gallery/open/13.mp4"
+									loop
+									muted
+									playsinline
+									controls
+								></video>
+							</div>
+							<div class="swiper-slide gallery-popup__swiper-slide">
+								<img src="./img/gallery/open/14.png" alt="name" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="contacts" id="contacts">
+				<div class="container">
+					<div class="contacts-body">
+						<form action="./form/send.php" method="post" class="contacts-form">
+							<div class="contacts-content">
+								<h2 class="contacts-title">
+									Узнайте стоимость и условия доставки:
+								</h2>
+
+								<div class="contacts-wrapper">
+									<div class="contacts-row">
+										<h3 class="contacts-heading icon-info">
+											Контактная информация
+										</h3>
+										<div class="contacts-grid">
+											<div class="main-input__wrapper">
+												<input
+													type="text"
+													name="name"
+													placeholder="Имя *"
+													class="main-input"
+												/>
+											</div>
+											<div class="main-input__wrapper">
+												<input
+													type="tel"
+													name="phone"
+													placeholder="Телефон *"
+													class="main-input"
+													data-tel-input
+													maxlength="18"
+												/>
+											</div>
+											<div class="main-input__wrapper">
+												<input
+													type="email"
+													name="email"
+													placeholder="E-mail *"
+													class="main-input"
+												/>
+											</div>
+										</div>
+									</div>
+									<div class="contacts-row">
+										<h3 class="contacts-heading icon-decr">Описание груза</h3>
+										<div class="contacts-grid">
+											<div class="main-input__wrapper">
+												<textarea
+													name="description"
+													placeholder="Опишите что нужно доставить"
+													class="main-textarea"
+												></textarea>
+											</div>
+										</div>
+									</div>
+									<div class="contacts-row">
+										<h3 class="contacts-heading icon-route">Маршрут</h3>
+										<div class="contacts-grid">
+											<div class="main-input__wrapper">
+												<input
+													type="text"
+													name="sending"
+													placeholder="Город отправки *"
+													class="main-input"
+												/>
+											</div>
+											<div class="main-input__wrapper">
+												<input
+													type="text"
+													name="appointments"
+													placeholder="Город назначения *"
+													class="main-input"
+												/>
+											</div>
+											<button type="submit" class="main-btn contacts-btn">
+												Отправить заявку
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-body">
+					<a href="/" class="logo">
+						<div class="logo-img">
+							<img
+								src="./img/logo.png"
+								alt="являемся частью интермодальной цепочки перевозок Азия — Европа/СНГ"
+							/>
+						</div>
+						<span class="logo-line"></span>
+						<span class="logo-text">
+							являемся частью интермодальной цепочки перевозок Азия — Европа/СНГ
+						</span>
+					</a>
+					<div class="footer-links">
+						<a href="/" class="footer-link">Главная</a>
+						<a href="/contacts.html" class="footer-link">Контакты</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="success-popup">
+			<div class="success-popup__body">
+				<button type="button" class="success-popup__close"></button>
+				<div class="success-popup__img">
+					<img src="./img/popup.svg" alt="Ваша заявка отправлена" />
+				</div>
+				<h3 class="success-popup__title">Ваша заявка отправлена</h3>
+				<p class="success-popup__text">Мы свяжемся с вами в течение дня</p>
+			</div>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+		<script src="./js/master.js"></script>
+	</body>
+</html>

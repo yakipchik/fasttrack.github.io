@@ -1,215 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Fast Track</title>
+		<title>Атлас профессий</title>
 		<link rel="stylesheet" href="./fonts/stylesheet.css" />
-		<link rel="stylesheet" href="./css/layout.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-		/>
+		<link rel="stylesheet" href="./css/scroll.css" />
 		<link rel="stylesheet" href="./css/index.css" />
 	</head>
 	<body>
-		<header class="header">
-			<div class="container">
-				<div class="header-body">
-					<a href="/" class="logo">
-						<div class="logo-img">
-							<img
-								src="./img/logo.png"
-								alt="являемся частью интермодальной цепочки перевозок Азия — Европа/СНГ"
-							/>
-						</div>
-						<span class="logo-line"></span>
-						<span class="logo-text">
-							являемся частью интермодальной цепочки перевозок Азия — Европа/СНГ
-						</span>
-					</a>
-					<a href="./contacts.html" class="header-link">Контакты</a>
-				</div>
-			</div>
-		</header>
-		<div class="header-mobile">
-			<a href="/" class="logo">
-				<div class="logo-img">
-					<img
-						src="./img/logo.png"
-						alt="являемся частью интермодальной цепочки перевозок Азия — Европа/СНГ"
-					/>
-				</div>
-				<span class="logo-line"></span>
-				<span class="logo-text">
-					являемся частью интермодальной цепочки перевозок Азия — Европа/СНГ
-				</span>
-			</a>
-			<button type="button" class="burger"></button>
-		</div>
-		<div class="header-popup">
-			<div class="header-popup__body">
-				<div class="header-popup__cap">
-					<div class="logo-img">
-						<img
-							src="./img/logo.png"
-							alt="являемся частью интермодальной цепочки перевозок Азия — Европа/СНГ"
-						/>
-					</div>
-					<button type="button" class="burger open"></button>
-				</div>
-				<div class="header-popup__links">
-					<a href="/" class="header-link">Главная</a>
-					<a href="./contacts.html" class="header-link">Контакты</a>
-				</div>
-				<button type="button" class="main-btn btn-scroll__form">
-					Оставить заявку
-				</button>
-			</div>
-		</div>
-		<main>
-			<section class="home" id="home">
-				<div class="container">
-					<div class="home-body">
-						<h1 class="home-title">
-							Доставка грузов<br />
-							из Китая в Россию
-						</h1>
+		<section class="home" id="home">
+			<div class="cont">
+				<h1 class="home-title">Атлас профессий</h1>
+				<div class="home-cards">
+					<div class="home-card" data-card="pilot">
+						<img src="./img/1.png" alt="Пилот" class="home-img" />
 						<div class="home-info">
-							<p class="home-text">
-								Предоставляем полный комплект услуг по первозке, под ключ
-							</p>
-							<button type="button" class="main-btn home-btn btn-scroll__form">
-								Оставить заявку
-							</button>
+							<h2 class="home-heading">Пилот</h2>
+							<button class="home-btn">подробнее</button>
+						</div>
+					</div>
+					<div class="home-card" data-card="voenosluz">
+						<img src="./img/2.png" alt="Военнослужащий" class="home-img" />
+						<div class="home-info">
+							<h2 class="home-heading">Военнослужащий</h2>
+							<button class="home-btn">подробнее</button>
+						</div>
+					</div>
+					<div class="home-card" data-card="inziner">
+						<img src="./img/3.png" alt="Инженер" class="home-img" />
+						<div class="home-info">
+							<h2 class="home-heading">Инженер</h2>
+							<button class="home-btn">подробнее</button>
+						</div>
+					</div>
+					<div class="home-card" data-card="programist">
+						<img src="./img/4.png" alt="Программист" class="home-img" />
+						<div class="home-info">
+							<h2 class="home-heading">Программист</h2>
+							<button class="home-btn">подробнее</button>
 						</div>
 					</div>
 				</div>
-				<div class="home-img">
-					<video autoplay loop muted playsinline poster="./img/home.png">
-						<source src="./video/fasttrack.MP4" type="video/mp4" />
-						<source src="./video/fasttrack.ogv" type="video/ogg" />
-						<source src="./video/fasttrack.webm" type="video/webm" />
-					</video>
-				</div>
-			</section>
-
-			<section class="transport" id="transport">
-				<div class="container">
-					<div class="transport-cards">
-						<div class="transport-card">
-							<div class="transport-img">
-								<img
-									src="./img/transport/1.png"
-									alt="Авиаперевозки"
-									class="desktop"
-								/>
-								<img
-									src="./img/transport/1-mob.png"
-									alt="Авиаперевозки"
-									class="mobile"
-								/>
-							</div>
-							<h3 class="transport-text">Авиаперевозки</h3>
-						</div>
-						<div class="transport-card">
-							<div class="transport-img">
-								<img
-									src="./img/transport/2.png"
-									alt="Железнодорожные перевозки"
-									class="desktop"
-								/>
-								<img
-									src="./img/transport/2-mob.png"
-									alt="Железнодорожные перевозки"
-									class="mobile"
-								/>
-							</div>
-							<h3 class="transport-text desktop">Железнодорожные перевозки</h3>
-							<h3 class="transport-text mobile">Ж/Д перевозки</h3>
-						</div>
-						<div class="transport-card">
-							<div class="transport-img">
-								<img
-									src="./img/transport/3.png"
-									alt="Морские перевозки"
-									class="desktop"
-								/>
-								<img
-									src="./img/transport/3-mob.png"
-									alt="Морские перевозки"
-									class="mobile"
-								/>
-							</div>
-							<h3 class="transport-text">Морские перевозки</h3>
-						</div>
-						<div class="transport-card">
-							<div class="transport-img">
-								<img
-									src="./img/transport/4.png"
-									alt="Автомобильные перевозки"
-									class="desktop"
-								/>
-								<img
-									src="./img/transport/4-mob.png"
-									alt="Автомобильные перевозки"
-									class="mobile"
-								/>
-							</div>
-							<h3 class="transport-text">Автомобильные перевозки</h3>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="routes" id="routes">
-				<div class="routes-container">
-					<div class="routes-block">
-						<div class="routes-body">
-							<div class="routes-img">
-								<img
-									src="./img/routes.png"
-									alt="Основные маршруты"
-									class="desktop1"
-								/>
-							</div>
-							<div class="container">
-								<div class="routes-wrapper">
-									<div class="routes-info">
-										<h2 class="routes-title">Основные маршруты</h2>
-										<div class="routes-cards">
-											<div class="routes-card">
-												<h4 class="routes-heading">Из китайских портов:</h4>
-												<ul class="routes-list routes-from">
-													<li>Шанхай</li>
-													<li>Шэньчжэнь</li>
-													<li>Циндао</li>
-													<li>Гуанчжоу</li>
-													<li>Тяньцзинь</li>
-													<li>Далянь</li>
-													<li>Баюйцюань</li>
-												</ul>
-											</div>
-											<div class="routes-card">
-												<h4 class="routes-heading">В российские порты:</h4>
-												<ul class="routes-list routes-to">
-													<li>Владивосток</li>
-													<li>Находка</li>
-													<li>Санкт-Петербург</li>
-													<li>Новороссийск</li>
-													<li>Мурманск</li>
-													<li>Нижний Новгород</li>
-													<li>Калининград</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="routes-delivery">
-										<p class="routes-delivery__heading">
-											<span>7-25</span> дней
+			</div>
+		</section>
+		<div class="popup" data-popup="pilot">
+			<div class="popup-wrapper">
+				<div class="popup-body">
+					<button type="button" class="popup-close"></button>
+					<div class="popup-scroll" id="popup-scroll">
+						<img
+							src="./img/open/1.png"
+							alt="Преимущества профессии пилота"
+							class="popup-img"
+						/>
+						<div class="popup-content">
+							<div class="popup-section">
+								<h3 class="popup-title">Преимущества профессии пилота</h3>
+								<div class="popup-ul">
+									<div class="popup-li">
+										<h4 class="popup-li__title">Увлекательная профессия</h4>
+										<p class="popup-li__text">
+											Пилот - это увлекательная профессия, которая позволяет
+											летать по всему миру и видеть удивительные виды с небес
 										</p>
-										<p class="routes-delivery__text">
-											средний срок груза в пути
+									</div>
+									<div class="popup-li">
+										<h4 class="popup-li__title">Высокий уровень заработка</h4>
+										<p class="popup-li__text">
+											Профессия пилота обычно связана со значительным уровнем
+											заработка, особенно на более высоких уровнях
+										</p>
+									</div>
+									<div class="popup-li">
+										<h4 class="popup-li__title">Личное развитие</h4>
+										<p class="popup-li__text">
+											Пилот занимается постоянным обучением и развитием навыков,
+											что способствует личному и профессиональному росту
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="popup-section">
+								<h3 class="popup-title">Недостатки профессии пилота</h3>
+								<div class="popup-ul">
+									<div class="popup-li">
+										<h4 class="popup-li__title">Требуемые квалификации</h4>
+										<p class="popup-li__text">
+											Чтобы стать пилотом, необходимо пройти обширную тренировку
+											и получить лицензию. Это требует значительных временных и
+											финансовых вложений. Кроме того, для поддержания лицензии
+											и продолжения карьеры, пилот должен проходить регулярные
+											обучения и медицинские проверки
+										</p>
+									</div>
+									<div class="popup-li">
+										<h4 class="popup-li__title">Отрыв от семьи и друзей</h4>
+										<p class="popup-li__text">
+											Работа пилота часто связана с длительными отсутствиями от
+											дома и частыми перелетами. Это может привести к социальной
+											изоляции и сложностям в поддержании стабильных отношений
 										</p>
 									</div>
 								</div>
@@ -217,753 +107,283 @@
 						</div>
 					</div>
 				</div>
-			</section>
-
-			<section class="cargo" id="cargo">
-				<div class="container">
-					<h2 class="cargo-title">Виды перевозимых грузов</h2>
-					<div class="cargo-cards">
-						<div class="cargo-card">
-							<div class="cargo-img">
-								<img src="./img/cargo/1.png" alt="Генеральные" />
-							</div>
-							<h3 class="cargo-text">Генеральные</h3>
-						</div>
-						<div class="cargo-card">
-							<div class="cargo-img">
-								<img src="./img/cargo/2.png" alt="Крупногабаритные" />
-							</div>
-							<h3 class="cargo-text">Крупногабаритные</h3>
-						</div>
-						<div class="cargo-card">
-							<div class="cargo-img">
-								<img src="./img/cargo/3.png" alt="Балкерные" />
-							</div>
-							<h3 class="cargo-text">Балкерные</h3>
-						</div>
-						<div class="cargo-card">
-							<div class="cargo-img">
-								<img src="./img/cargo/4.png" alt="Перевозка шпунта" />
-							</div>
-							<h3 class="cargo-text">Перевозка шпунта</h3>
-						</div>
-						<div class="cargo-card">
-							<div class="cargo-img">
-								<img src="./img/cargo/5.png" alt="Контейнерные" />
-							</div>
-							<h3 class="cargo-text">Контейнерные</h3>
-						</div>
-						<div class="cargo-card">
-							<div class="cargo-img">
-								<img src="./img/cargo/6.png" alt="Сборные" />
-							</div>
-							<h3 class="cargo-text">Сборные</h3>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="gallery" id="gallery">
-				<div class="container">
-					<div class="gallery-cap">
-						<h2 class="gallery-title">галерея</h2>
-						<div class="gallery-btns">
-							<button class="gallery-btn prev gallery-btn__prev"></button>
-							<button class="gallery-btn next gallery-btn__next"></button>
-						</div>
-					</div>
-				</div>
-				<div class="swiper gallery-swiper">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide gallery-swiper__slide">
-							<img src="./img/gallery/1.png" alt="name" />
-							<div class="gallery-swiper__link">
-								<div class="gallery-swiper__link-body">
-									<div class="gallery-swiper__link-video">
-										<svg
-											width="30"
-											height="34"
-											viewBox="0 0 30 34"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<path
-												d="M28.4211 14.2387C30.5263 15.4659 30.5263 18.5341 28.4211 19.7613L4.73684 33.5681C2.63158 34.7953 8.70686e-07 33.2612 9.77977e-07 30.8067L2.185e-06 3.19328C2.29229e-06 0.738752 2.63158 -0.795327 4.73684 0.431937L28.4211 14.2387Z"
-												fill="white"
-											/>
-										</svg>
-									</div>
-									<span class="gallery-swiper__link-text">смотреть видео</span>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide gallery-swiper__slide">
-							<img src="./img/gallery/2.png" alt="name" />
-							<div class="gallery-swiper__link">
-								<div class="gallery-swiper__link-body">
-									<div class="gallery-swiper__link-img">
-										<svg
-											width="30"
-											height="30"
-											viewBox="0 0 30 30"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<g clip-path="url(#clip0_2263_1043)">
-												<path
-													d="M29.6334 27.866L21.1023 19.3348C22.7548 17.2936 23.7497 14.6999 23.7497 11.8749C23.7497 5.32747 18.4223 0 11.8748 0C5.32741 0 0 5.32741 0 11.8748C0 18.4223 5.32747 23.7497 11.8749 23.7497C14.6999 23.7497 17.2936 22.7548 19.3348 21.1023L27.866 29.6334C28.1097 29.8772 28.4297 29.9997 28.7497 29.9997C29.0698 29.9997 29.3898 29.8772 29.6335 29.6334C30.1222 29.1447 30.1222 28.3547 29.6334 27.866ZM11.8749 21.2498C6.70493 21.2498 2.5 17.0448 2.5 11.8748C2.5 6.70488 6.70493 2.49994 11.8749 2.49994C17.0449 2.49994 21.2498 6.70488 21.2498 11.8748C21.2498 17.0448 17.0448 21.2498 11.8749 21.2498Z"
-													fill="white"
-												/>
-											</g>
-											<path
-												fill-rule="evenodd"
-												clip-rule="evenodd"
-												d="M10.6829 17.6429L10.6829 6.18359L13.1289 6.18359L13.1289 17.6429L10.6829 17.6429Z"
-												fill="white"
-											/>
-											<path
-												fill-rule="evenodd"
-												clip-rule="evenodd"
-												d="M6.17548 10.6902L17.6348 10.6902L17.6348 13.1367L6.17548 13.1367L6.17548 10.6902Z"
-												fill="white"
-											/>
-											<defs>
-												<clipPath id="clip0_2263_1043">
-													<rect width="30" height="30" fill="white" />
-												</clipPath>
-											</defs>
-										</svg>
-									</div>
-									<span class="gallery-swiper__link-text">Смотреть фото</span>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide gallery-swiper__slide">
-							<img src="./img/gallery/3.png" alt="name" />
-							<div class="gallery-swiper__link">
-								<div class="gallery-swiper__link-body">
-									<div class="gallery-swiper__link-img">
-										<svg
-											width="30"
-											height="30"
-											viewBox="0 0 30 30"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<g clip-path="url(#clip0_2263_1043)">
-												<path
-													d="M29.6334 27.866L21.1023 19.3348C22.7548 17.2936 23.7497 14.6999 23.7497 11.8749C23.7497 5.32747 18.4223 0 11.8748 0C5.32741 0 0 5.32741 0 11.8748C0 18.4223 5.32747 23.7497 11.8749 23.7497C14.6999 23.7497 17.2936 22.7548 19.3348 21.1023L27.866 29.6334C28.1097 29.8772 28.4297 29.9997 28.7497 29.9997C29.0698 29.9997 29.3898 29.8772 29.6335 29.6334C30.1222 29.1447 30.1222 28.3547 29.6334 27.866ZM11.8749 21.2498C6.70493 21.2498 2.5 17.0448 2.5 11.8748C2.5 6.70488 6.70493 2.49994 11.8749 2.49994C17.0449 2.49994 21.2498 6.70488 21.2498 11.8748C21.2498 17.0448 17.0448 21.2498 11.8749 21.2498Z"
-													fill="white"
-												/>
-											</g>
-											<path
-												fill-rule="evenodd"
-												clip-rule="evenodd"
-												d="M10.6829 17.6429L10.6829 6.18359L13.1289 6.18359L13.1289 17.6429L10.6829 17.6429Z"
-												fill="white"
-											/>
-											<path
-												fill-rule="evenodd"
-												clip-rule="evenodd"
-												d="M6.17548 10.6902L17.6348 10.6902L17.6348 13.1367L6.17548 13.1367L6.17548 10.6902Z"
-												fill="white"
-											/>
-											<defs>
-												<clipPath id="clip0_2263_1043">
-													<rect width="30" height="30" fill="white" />
-												</clipPath>
-											</defs>
-										</svg>
-									</div>
-									<span class="gallery-swiper__link-text">Смотреть фото</span>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide gallery-swiper__slide">
-							<img src="./img/gallery/4.png" alt="name" />
-							<div class="gallery-swiper__link">
-								<div class="gallery-swiper__link-body">
-									<div class="gallery-swiper__link-video">
-										<svg
-											width="30"
-											height="34"
-											viewBox="0 0 30 34"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<path
-												d="M28.4211 14.2387C30.5263 15.4659 30.5263 18.5341 28.4211 19.7613L4.73684 33.5681C2.63158 34.7953 8.70686e-07 33.2612 9.77977e-07 30.8067L2.185e-06 3.19328C2.29229e-06 0.738752 2.63158 -0.795327 4.73684 0.431937L28.4211 14.2387Z"
-												fill="white"
-											/>
-										</svg>
-									</div>
-									<span class="gallery-swiper__link-text">смотреть видео</span>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide gallery-swiper__slide">
-							<img src="./img/gallery/5.png" alt="name" />
-							<div class="gallery-swiper__link">
-								<div class="gallery-swiper__link-body">
-									<div class="gallery-swiper__link-img">
-										<svg
-											width="30"
-											height="30"
-											viewBox="0 0 30 30"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<g clip-path="url(#clip0_2263_1043)">
-												<path
-													d="M29.6334 27.866L21.1023 19.3348C22.7548 17.2936 23.7497 14.6999 23.7497 11.8749C23.7497 5.32747 18.4223 0 11.8748 0C5.32741 0 0 5.32741 0 11.8748C0 18.4223 5.32747 23.7497 11.8749 23.7497C14.6999 23.7497 17.2936 22.7548 19.3348 21.1023L27.866 29.6334C28.1097 29.8772 28.4297 29.9997 28.7497 29.9997C29.0698 29.9997 29.3898 29.8772 29.6335 29.6334C30.1222 29.1447 30.1222 28.3547 29.6334 27.866ZM11.8749 21.2498C6.70493 21.2498 2.5 17.0448 2.5 11.8748C2.5 6.70488 6.70493 2.49994 11.8749 2.49994C17.0449 2.49994 21.2498 6.70488 21.2498 11.8748C21.2498 17.0448 17.0448 21.2498 11.8749 21.2498Z"
-													fill="white"
-												/>
-											</g>
-											<path
-												fill-rule="evenodd"
-												clip-rule="evenodd"
-												d="M10.6829 17.6429L10.6829 6.18359L13.1289 6.18359L13.1289 17.6429L10.6829 17.6429Z"
-												fill="white"
-											/>
-											<path
-												fill-rule="evenodd"
-												clip-rule="evenodd"
-												d="M6.17548 10.6902L17.6348 10.6902L17.6348 13.1367L6.17548 13.1367L6.17548 10.6902Z"
-												fill="white"
-											/>
-											<defs>
-												<clipPath id="clip0_2263_1043">
-													<rect width="30" height="30" fill="white" />
-												</clipPath>
-											</defs>
-										</svg>
-									</div>
-									<span class="gallery-swiper__link-text">Смотреть фото</span>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide gallery-swiper__slide">
-							<img src="./img/gallery/6.png" alt="name" />
-							<div class="gallery-swiper__link">
-								<div class="gallery-swiper__link-body">
-									<div class="gallery-swiper__link-img">
-										<svg
-											width="30"
-											height="30"
-											viewBox="0 0 30 30"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<g clip-path="url(#clip0_2263_1043)">
-												<path
-													d="M29.6334 27.866L21.1023 19.3348C22.7548 17.2936 23.7497 14.6999 23.7497 11.8749C23.7497 5.32747 18.4223 0 11.8748 0C5.32741 0 0 5.32741 0 11.8748C0 18.4223 5.32747 23.7497 11.8749 23.7497C14.6999 23.7497 17.2936 22.7548 19.3348 21.1023L27.866 29.6334C28.1097 29.8772 28.4297 29.9997 28.7497 29.9997C29.0698 29.9997 29.3898 29.8772 29.6335 29.6334C30.1222 29.1447 30.1222 28.3547 29.6334 27.866ZM11.8749 21.2498C6.70493 21.2498 2.5 17.0448 2.5 11.8748C2.5 6.70488 6.70493 2.49994 11.8749 2.49994C17.0449 2.49994 21.2498 6.70488 21.2498 11.8748C21.2498 17.0448 17.0448 21.2498 11.8749 21.2498Z"
-													fill="white"
-												/>
-											</g>
-											<path
-												fill-rule="evenodd"
-												clip-rule="evenodd"
-												d="M10.6829 17.6429L10.6829 6.18359L13.1289 6.18359L13.1289 17.6429L10.6829 17.6429Z"
-												fill="white"
-											/>
-											<path
-												fill-rule="evenodd"
-												clip-rule="evenodd"
-												d="M6.17548 10.6902L17.6348 10.6902L17.6348 13.1367L6.17548 13.1367L6.17548 10.6902Z"
-												fill="white"
-											/>
-											<defs>
-												<clipPath id="clip0_2263_1043">
-													<rect width="30" height="30" fill="white" />
-												</clipPath>
-											</defs>
-										</svg>
-									</div>
-									<span class="gallery-swiper__link-text">Смотреть фото</span>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide gallery-swiper__slide">
-							<img src="./img/gallery/7.png" alt="name" />
-							<div class="gallery-swiper__link">
-								<div class="gallery-swiper__link-body">
-									<div class="gallery-swiper__link-video">
-										<svg
-											width="30"
-											height="34"
-											viewBox="0 0 30 34"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<path
-												d="M28.4211 14.2387C30.5263 15.4659 30.5263 18.5341 28.4211 19.7613L4.73684 33.5681C2.63158 34.7953 8.70686e-07 33.2612 9.77977e-07 30.8067L2.185e-06 3.19328C2.29229e-06 0.738752 2.63158 -0.795327 4.73684 0.431937L28.4211 14.2387Z"
-												fill="white"
-											/>
-										</svg>
-									</div>
-									<span class="gallery-swiper__link-text">смотреть видео</span>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide gallery-swiper__slide">
-							<img src="./img/gallery/8.png" alt="name" />
-							<div class="gallery-swiper__link">
-								<div class="gallery-swiper__link-body">
-									<div class="gallery-swiper__link-img">
-										<svg
-											width="30"
-											height="30"
-											viewBox="0 0 30 30"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<g clip-path="url(#clip0_2263_1043)">
-												<path
-													d="M29.6334 27.866L21.1023 19.3348C22.7548 17.2936 23.7497 14.6999 23.7497 11.8749C23.7497 5.32747 18.4223 0 11.8748 0C5.32741 0 0 5.32741 0 11.8748C0 18.4223 5.32747 23.7497 11.8749 23.7497C14.6999 23.7497 17.2936 22.7548 19.3348 21.1023L27.866 29.6334C28.1097 29.8772 28.4297 29.9997 28.7497 29.9997C29.0698 29.9997 29.3898 29.8772 29.6335 29.6334C30.1222 29.1447 30.1222 28.3547 29.6334 27.866ZM11.8749 21.2498C6.70493 21.2498 2.5 17.0448 2.5 11.8748C2.5 6.70488 6.70493 2.49994 11.8749 2.49994C17.0449 2.49994 21.2498 6.70488 21.2498 11.8748C21.2498 17.0448 17.0448 21.2498 11.8749 21.2498Z"
-													fill="white"
-												/>
-											</g>
-											<path
-												fill-rule="evenodd"
-												clip-rule="evenodd"
-												d="M10.6829 17.6429L10.6829 6.18359L13.1289 6.18359L13.1289 17.6429L10.6829 17.6429Z"
-												fill="white"
-											/>
-											<path
-												fill-rule="evenodd"
-												clip-rule="evenodd"
-												d="M6.17548 10.6902L17.6348 10.6902L17.6348 13.1367L6.17548 13.1367L6.17548 10.6902Z"
-												fill="white"
-											/>
-											<defs>
-												<clipPath id="clip0_2263_1043">
-													<rect width="30" height="30" fill="white" />
-												</clipPath>
-											</defs>
-										</svg>
-									</div>
-									<span class="gallery-swiper__link-text">Смотреть фото</span>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide gallery-swiper__slide">
-							<img src="./img/gallery/9.png" alt="name" />
-							<div class="gallery-swiper__link">
-								<div class="gallery-swiper__link-body">
-									<div class="gallery-swiper__link-img">
-										<svg
-											width="30"
-											height="30"
-											viewBox="0 0 30 30"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<g clip-path="url(#clip0_2263_1043)">
-												<path
-													d="M29.6334 27.866L21.1023 19.3348C22.7548 17.2936 23.7497 14.6999 23.7497 11.8749C23.7497 5.32747 18.4223 0 11.8748 0C5.32741 0 0 5.32741 0 11.8748C0 18.4223 5.32747 23.7497 11.8749 23.7497C14.6999 23.7497 17.2936 22.7548 19.3348 21.1023L27.866 29.6334C28.1097 29.8772 28.4297 29.9997 28.7497 29.9997C29.0698 29.9997 29.3898 29.8772 29.6335 29.6334C30.1222 29.1447 30.1222 28.3547 29.6334 27.866ZM11.8749 21.2498C6.70493 21.2498 2.5 17.0448 2.5 11.8748C2.5 6.70488 6.70493 2.49994 11.8749 2.49994C17.0449 2.49994 21.2498 6.70488 21.2498 11.8748C21.2498 17.0448 17.0448 21.2498 11.8749 21.2498Z"
-													fill="white"
-												/>
-											</g>
-											<path
-												fill-rule="evenodd"
-												clip-rule="evenodd"
-												d="M10.6829 17.6429L10.6829 6.18359L13.1289 6.18359L13.1289 17.6429L10.6829 17.6429Z"
-												fill="white"
-											/>
-											<path
-												fill-rule="evenodd"
-												clip-rule="evenodd"
-												d="M6.17548 10.6902L17.6348 10.6902L17.6348 13.1367L6.17548 13.1367L6.17548 10.6902Z"
-												fill="white"
-											/>
-											<defs>
-												<clipPath id="clip0_2263_1043">
-													<rect width="30" height="30" fill="white" />
-												</clipPath>
-											</defs>
-										</svg>
-									</div>
-									<span class="gallery-swiper__link-text">Смотреть фото</span>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide gallery-swiper__slide">
-							<img src="./img/gallery/10.png" alt="name" />
-							<div class="gallery-swiper__link">
-								<div class="gallery-swiper__link-body">
-									<div class="gallery-swiper__link-video">
-										<svg
-											width="30"
-											height="34"
-											viewBox="0 0 30 34"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<path
-												d="M28.4211 14.2387C30.5263 15.4659 30.5263 18.5341 28.4211 19.7613L4.73684 33.5681C2.63158 34.7953 8.70686e-07 33.2612 9.77977e-07 30.8067L2.185e-06 3.19328C2.29229e-06 0.738752 2.63158 -0.795327 4.73684 0.431937L28.4211 14.2387Z"
-												fill="white"
-											/>
-										</svg>
-									</div>
-									<span class="gallery-swiper__link-text">смотреть видео</span>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide gallery-swiper__slide">
-							<img src="./img/gallery/11.png" alt="name" />
-							<div class="gallery-swiper__link">
-								<div class="gallery-swiper__link-body">
-									<div class="gallery-swiper__link-img">
-										<svg
-											width="30"
-											height="30"
-											viewBox="0 0 30 30"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<g clip-path="url(#clip0_2263_1043)">
-												<path
-													d="M29.6334 27.866L21.1023 19.3348C22.7548 17.2936 23.7497 14.6999 23.7497 11.8749C23.7497 5.32747 18.4223 0 11.8748 0C5.32741 0 0 5.32741 0 11.8748C0 18.4223 5.32747 23.7497 11.8749 23.7497C14.6999 23.7497 17.2936 22.7548 19.3348 21.1023L27.866 29.6334C28.1097 29.8772 28.4297 29.9997 28.7497 29.9997C29.0698 29.9997 29.3898 29.8772 29.6335 29.6334C30.1222 29.1447 30.1222 28.3547 29.6334 27.866ZM11.8749 21.2498C6.70493 21.2498 2.5 17.0448 2.5 11.8748C2.5 6.70488 6.70493 2.49994 11.8749 2.49994C17.0449 2.49994 21.2498 6.70488 21.2498 11.8748C21.2498 17.0448 17.0448 21.2498 11.8749 21.2498Z"
-													fill="white"
-												/>
-											</g>
-											<path
-												fill-rule="evenodd"
-												clip-rule="evenodd"
-												d="M10.6829 17.6429L10.6829 6.18359L13.1289 6.18359L13.1289 17.6429L10.6829 17.6429Z"
-												fill="white"
-											/>
-											<path
-												fill-rule="evenodd"
-												clip-rule="evenodd"
-												d="M6.17548 10.6902L17.6348 10.6902L17.6348 13.1367L6.17548 13.1367L6.17548 10.6902Z"
-												fill="white"
-											/>
-											<defs>
-												<clipPath id="clip0_2263_1043">
-													<rect width="30" height="30" fill="white" />
-												</clipPath>
-											</defs>
-										</svg>
-									</div>
-									<span class="gallery-swiper__link-text">Смотреть фото</span>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide gallery-swiper__slide">
-							<img src="./img/gallery/12.png" alt="name" />
-							<div class="gallery-swiper__link">
-								<div class="gallery-swiper__link-body">
-									<div class="gallery-swiper__link-img">
-										<svg
-											width="30"
-											height="30"
-											viewBox="0 0 30 30"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<g clip-path="url(#clip0_2263_1043)">
-												<path
-													d="M29.6334 27.866L21.1023 19.3348C22.7548 17.2936 23.7497 14.6999 23.7497 11.8749C23.7497 5.32747 18.4223 0 11.8748 0C5.32741 0 0 5.32741 0 11.8748C0 18.4223 5.32747 23.7497 11.8749 23.7497C14.6999 23.7497 17.2936 22.7548 19.3348 21.1023L27.866 29.6334C28.1097 29.8772 28.4297 29.9997 28.7497 29.9997C29.0698 29.9997 29.3898 29.8772 29.6335 29.6334C30.1222 29.1447 30.1222 28.3547 29.6334 27.866ZM11.8749 21.2498C6.70493 21.2498 2.5 17.0448 2.5 11.8748C2.5 6.70488 6.70493 2.49994 11.8749 2.49994C17.0449 2.49994 21.2498 6.70488 21.2498 11.8748C21.2498 17.0448 17.0448 21.2498 11.8749 21.2498Z"
-													fill="white"
-												/>
-											</g>
-											<path
-												fill-rule="evenodd"
-												clip-rule="evenodd"
-												d="M10.6829 17.6429L10.6829 6.18359L13.1289 6.18359L13.1289 17.6429L10.6829 17.6429Z"
-												fill="white"
-											/>
-											<path
-												fill-rule="evenodd"
-												clip-rule="evenodd"
-												d="M6.17548 10.6902L17.6348 10.6902L17.6348 13.1367L6.17548 13.1367L6.17548 10.6902Z"
-												fill="white"
-											/>
-											<defs>
-												<clipPath id="clip0_2263_1043">
-													<rect width="30" height="30" fill="white" />
-												</clipPath>
-											</defs>
-										</svg>
-									</div>
-									<span class="gallery-swiper__link-text">Смотреть фото</span>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide gallery-swiper__slide">
-							<img src="./img/gallery/13.png" alt="name" />
-							<div class="gallery-swiper__link">
-								<div class="gallery-swiper__link-body">
-									<div class="gallery-swiper__link-video">
-										<svg
-											width="30"
-											height="34"
-											viewBox="0 0 30 34"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<path
-												d="M28.4211 14.2387C30.5263 15.4659 30.5263 18.5341 28.4211 19.7613L4.73684 33.5681C2.63158 34.7953 8.70686e-07 33.2612 9.77977e-07 30.8067L2.185e-06 3.19328C2.29229e-06 0.738752 2.63158 -0.795327 4.73684 0.431937L28.4211 14.2387Z"
-												fill="white"
-											/>
-										</svg>
-									</div>
-									<span class="gallery-swiper__link-text">смотреть видео</span>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide gallery-swiper__slide">
-							<img src="./img/gallery/14.png" alt="name" />
-							<div class="gallery-swiper__link">
-								<div class="gallery-swiper__link-body">
-									<div class="gallery-swiper__link-img">
-										<svg
-											width="30"
-											height="30"
-											viewBox="0 0 30 30"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<g clip-path="url(#clip0_2263_1043)">
-												<path
-													d="M29.6334 27.866L21.1023 19.3348C22.7548 17.2936 23.7497 14.6999 23.7497 11.8749C23.7497 5.32747 18.4223 0 11.8748 0C5.32741 0 0 5.32741 0 11.8748C0 18.4223 5.32747 23.7497 11.8749 23.7497C14.6999 23.7497 17.2936 22.7548 19.3348 21.1023L27.866 29.6334C28.1097 29.8772 28.4297 29.9997 28.7497 29.9997C29.0698 29.9997 29.3898 29.8772 29.6335 29.6334C30.1222 29.1447 30.1222 28.3547 29.6334 27.866ZM11.8749 21.2498C6.70493 21.2498 2.5 17.0448 2.5 11.8748C2.5 6.70488 6.70493 2.49994 11.8749 2.49994C17.0449 2.49994 21.2498 6.70488 21.2498 11.8748C21.2498 17.0448 17.0448 21.2498 11.8749 21.2498Z"
-													fill="white"
-												/>
-											</g>
-											<path
-												fill-rule="evenodd"
-												clip-rule="evenodd"
-												d="M10.6829 17.6429L10.6829 6.18359L13.1289 6.18359L13.1289 17.6429L10.6829 17.6429Z"
-												fill="white"
-											/>
-											<path
-												fill-rule="evenodd"
-												clip-rule="evenodd"
-												d="M6.17548 10.6902L17.6348 10.6902L17.6348 13.1367L6.17548 13.1367L6.17548 10.6902Z"
-												fill="white"
-											/>
-											<defs>
-												<clipPath id="clip0_2263_1043">
-													<rect width="30" height="30" fill="white" />
-												</clipPath>
-											</defs>
-										</svg>
-									</div>
-									<span class="gallery-swiper__link-text">Смотреть фото</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<div class="gallery-popup">
-				<div class="gallery-popup__body">
-					<button type="button" class="gallery-popup__close"></button>
-					<button class="gallery-btn prev gallery-popup__btn-prev"></button>
-					<button class="gallery-btn next gallery-popup__btn-next"></button>
-					<div class="swiper gallery-popup__swiper">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide gallery-popup__swiper-slide">
-								<video
-									src="./img/gallery/open/1.mp4"
-									loop
-									muted
-									playsinline
-									controls
-								></video>
-							</div>
-							<div class="swiper-slide gallery-popup__swiper-slide">
-								<img src="./img/gallery/open/2.png" alt="name" />
-							</div>
-							<div class="swiper-slide gallery-popup__swiper-slide">
-								<img src="./img/gallery/open/3.png" alt="name" />
-							</div>
-							<div class="swiper-slide gallery-popup__swiper-slide">
-								<video
-									src="./img/gallery/open/4.mp4"
-									loop
-									muted
-									playsinline
-									controls
-								></video>
-							</div>
-							<div class="swiper-slide gallery-popup__swiper-slide">
-								<img src="./img/gallery/open/5.png" alt="name" />
-							</div>
-							<div class="swiper-slide gallery-popup__swiper-slide">
-								<img src="./img/gallery/open/6.png" alt="name" />
-							</div>
-							<div class="swiper-slide gallery-popup__swiper-slide">
-								<video
-									src="./img/gallery/open/7.mp4"
-									loop
-									muted
-									playsinline
-									controls
-								></video>
-							</div>
-							<div class="swiper-slide gallery-popup__swiper-slide">
-								<img src="./img/gallery/open/8.png" alt="name" />
-							</div>
-							<div class="swiper-slide gallery-popup__swiper-slide">
-								<img src="./img/gallery/open/9.png" alt="name" />
-							</div>
-							<div class="swiper-slide gallery-popup__swiper-slide">
-								<video
-									src="./img/gallery/open/10.mp4"
-									loop
-									muted
-									playsinline
-									controls
-								></video>
-							</div>
-							<div class="swiper-slide gallery-popup__swiper-slide">
-								<img src="./img/gallery/open/11.png" alt="name" />
-							</div>
-							<div class="swiper-slide gallery-popup__swiper-slide">
-								<img src="./img/gallery/open/12.png" alt="name" />
-							</div>
-							<div class="swiper-slide gallery-popup__swiper-slide">
-								<video
-									src="./img/gallery/open/13.mp4"
-									loop
-									muted
-									playsinline
-									controls
-								></video>
-							</div>
-							<div class="swiper-slide gallery-popup__swiper-slide">
-								<img src="./img/gallery/open/14.png" alt="name" />
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<section class="contacts" id="contacts">
-				<div class="container">
-					<div class="contacts-body">
-						<form action="./form/send.php" method="post" class="contacts-form">
-							<div class="contacts-content">
-								<h2 class="contacts-title">
-									Узнайте стоимость и условия доставки:
-								</h2>
-
-								<div class="contacts-wrapper">
-									<div class="contacts-row">
-										<h3 class="contacts-heading icon-info">
-											Контактная информация
-										</h3>
-										<div class="contacts-grid">
-											<div class="main-input__wrapper">
-												<input
-													type="text"
-													name="name"
-													placeholder="Имя *"
-													class="main-input"
-												/>
-											</div>
-											<div class="main-input__wrapper">
-												<input
-													type="tel"
-													name="phone"
-													placeholder="Телефон *"
-													class="main-input"
-													data-tel-input
-													maxlength="18"
-												/>
-											</div>
-											<div class="main-input__wrapper">
-												<input
-													type="email"
-													name="email"
-													placeholder="E-mail *"
-													class="main-input"
-												/>
-											</div>
-										</div>
-									</div>
-									<div class="contacts-row">
-										<h3 class="contacts-heading icon-decr">Описание груза</h3>
-										<div class="contacts-grid">
-											<div class="main-input__wrapper">
-												<textarea
-													name="description"
-													placeholder="Опишите что нужно доставить"
-													class="main-textarea"
-												></textarea>
-											</div>
-										</div>
-									</div>
-									<div class="contacts-row">
-										<h3 class="contacts-heading icon-route">Маршрут</h3>
-										<div class="contacts-grid">
-											<div class="main-input__wrapper">
-												<input
-													type="text"
-													name="sending"
-													placeholder="Город отправки *"
-													class="main-input"
-												/>
-											</div>
-											<div class="main-input__wrapper">
-												<input
-													type="text"
-													name="appointments"
-													placeholder="Город назначения *"
-													class="main-input"
-												/>
-											</div>
-											<button type="submit" class="main-btn contacts-btn">
-												Отправить заявку
-											</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</section>
-		</main>
-		<footer class="footer">
-			<div class="container">
-				<div class="footer-body">
-					<a href="/" class="logo">
-						<div class="logo-img">
-							<img
-								src="./img/logo.png"
-								alt="являемся частью интермодальной цепочки перевозок Азия — Европа/СНГ"
-							/>
-						</div>
-						<span class="logo-line"></span>
-						<span class="logo-text">
-							являемся частью интермодальной цепочки перевозок Азия — Европа/СНГ
-						</span>
-					</a>
-					<div class="footer-links">
-						<a href="/" class="footer-link">Главная</a>
-						<a href="/contacts.html" class="footer-link">Контакты</a>
-					</div>
-				</div>
-			</div>
-		</footer>
-
-		<div class="success-popup">
-			<div class="success-popup__body">
-				<button type="button" class="success-popup__close"></button>
-				<div class="success-popup__img">
-					<img src="./img/popup.svg" alt="Ваша заявка отправлена" />
-				</div>
-				<h3 class="success-popup__title">Ваша заявка отправлена</h3>
-				<p class="success-popup__text">Мы свяжемся с вами в течение дня</p>
 			</div>
 		</div>
-
-		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-		<script src="./js/master.js"></script>
+		<div class="popup" data-popup="voenosluz">
+			<div class="popup-wrapper">
+				<div class="popup-body">
+					<button type="button" class="popup-close"></button>
+					<div class="popup-scroll" id="popup-scroll">
+						<img
+							src="./img/open/2.png"
+							alt="Преимущества профессии военнослужащего"
+							class="popup-img"
+						/>
+						<div class="popup-content">
+							<div class="popup-section">
+								<h3 class="popup-title">
+									Преимущества профессии военнослужащего
+								</h3>
+								<div class="popup-ul">
+									<div class="popup-li">
+										<h4 class="popup-li__title">Служба на благо общества</h4>
+										<p class="popup-li__text">
+											Помогает защитить страну и обеспечить безопасность граждан
+										</p>
+									</div>
+									<div class="popup-li">
+										<h4 class="popup-li__title">Профессиональная дисциплина</h4>
+										<p class="popup-li__text">
+											Обучение дисциплине, ответственности и управлению стрессом
+										</p>
+									</div>
+									<div class="popup-li">
+										<h4 class="popup-li__title">
+											Возможности для карьерного роста
+										</h4>
+										<p class="popup-li__text">
+											Множество специализаций и возможностей продвижения по
+											службе
+										</p>
+									</div>
+									<div class="popup-li">
+										<h4 class="popup-li__title">
+											Стабильный доход и социальные льготы
+										</h4>
+										<p class="popup-li__text">
+											Обеспечение зарплатой, медицинским страхованием и
+											пенсионными программами
+										</p>
+									</div>
+									<div class="popup-li">
+										<h4 class="popup-li__title">Разнообразие задач</h4>
+										<p class="popup-li__text">
+											Работа в различных сферах, от технических специальностей
+											до командно-штабных операций
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="popup-section">
+								<h3 class="popup-title">
+									Недостатки профессии военнослужащего
+								</h3>
+								<div class="popup-ul">
+									<div class="popup-li">
+										<h4 class="popup-li__title">
+											Физическая и эмоциональная нагрузка
+										</h4>
+										<p class="popup-li__text">
+											Риск травм, стресса и психологических проблем
+										</p>
+									</div>
+									<div class="popup-li">
+										<h4 class="popup-li__title">Разлука с семьей</h4>
+										<p class="popup-li__text">
+											Длительные периоды разлуки из-за учений или военных задач
+										</p>
+									</div>
+									<div class="popup-li">
+										<h4 class="popup-li__title">Риск жизни</h4>
+										<p class="popup-li__text">
+											Сложности и опасности, связанные с возможностью быть в
+											зоне боевых действий
+										</p>
+									</div>
+									<div class="popup-li">
+										<h4 class="popup-li__title">Дисциплина и иерархия</h4>
+										<p class="popup-li__text">
+											Строгие правила, ограничивающие свободу и личное
+											самовыражение
+										</p>
+									</div>
+									<div class="popup-li">
+										<h4 class="popup-li__title">Моральные дилеммы</h4>
+										<p class="popup-li__text">
+											Необходимость соблюдения кодекса воинской чести и участие
+											в военных операциях, возможно не согласующихся с личными
+											убеждениями
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" data-popup="inziner">
+			<div class="popup-wrapper">
+				<div class="popup-body">
+					<button type="button" class="popup-close"></button>
+					<div class="popup-scroll" id="popup-scroll">
+						<img
+							src="./img/open/3.png"
+							alt="Преимущества профессии инженера"
+							class="popup-img"
+						/>
+						<div class="popup-content">
+							<div class="popup-section">
+								<h3 class="popup-title">Преимущества профессии инженера</h3>
+								<div class="popup-ul">
+									<div class="popup-li">
+										<h4 class="popup-li__title">Творческий потенциал</h4>
+										<p class="popup-li__text">
+											Инженеры часто работают над уникальными проектами, что
+											открывает возможности для творчества и инноваций
+										</p>
+									</div>
+									<div class="popup-li">
+										<h4 class="popup-li__title">Высокий спрос</h4>
+										<p class="popup-li__text">
+											Инженеры всегда востребованы на рынке труда из-за своих
+											специализированных навыков
+										</p>
+									</div>
+									<div class="popup-li">
+										<h4 class="popup-li__title">Финансовая стабильность</h4>
+										<p class="popup-li__text">
+											Инженеры обычно зарабатывают достойные заработные платы и
+											имеют хорошие перспективы карьерного роста
+										</p>
+									</div>
+									<div class="popup-li">
+										<h4 class="popup-li__title">Разнообразие специализаций</h4>
+										<p class="popup-li__text">
+											Есть множество областей, в которых можно стать инженером,
+											от машиностроения до программирования, что позволяет
+											выбрать наиболее интересное направление
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="popup-section">
+								<h3 class="popup-title">Недостатки профессии инженера</h3>
+								<div class="popup-ul">
+									<div class="popup-li">
+										<h4 class="popup-li__title">Высокие требования</h4>
+										<p class="popup-li__text">
+											Инженеры должны обладать высоким уровнем профессиональной
+											подготовки и быть готовыми к непрерывному обучению и
+											совершенствованию
+										</p>
+									</div>
+									<div class="popup-li">
+										<h4 class="popup-li__title">Ответственность</h4>
+										<p class="popup-li__text">
+											Ошибки инженера могут иметь серьезные последствия, поэтому
+											работа требует высокой ответственности и внимательности
+										</p>
+									</div>
+									<div class="popup-li">
+										<h4 class="popup-li__title">Рутинная работа обучения</h4>
+										<p class="popup-li__text">
+											В зависимости от специализации инженера, работа иногда
+											может быть рутинной и требовать многократного повторения
+											одного и того же вида задач
+										</p>
+									</div>
+									<div class="popup-li">
+										<h4 class="popup-li__title">Долгие рабочие часы</h4>
+										<p class="popup-li__text">
+											Некоторые специализации инженерии могут потребовать долгих
+											рабочих часов и работу по выходным для выполнения проектов
+											в срок
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" data-popup="programist">
+			<div class="popup-wrapper">
+				<div class="popup-body">
+					<button type="button" class="popup-close"></button>
+					<div class="popup-scroll" id="popup-scroll">
+						<img
+							src="./img/open/4.png"
+							alt="Преимущества профессии программиста"
+							class="popup-img"
+						/>
+						<div class="popup-content">
+							<div class="popup-section">
+								<h3 class="popup-title">Преимущества профессии программиста</h3>
+								<div class="popup-ul">
+									<div class="popup-li">
+										<h4 class="popup-li__title">Высокий спрос:</h4>
+										<p class="popup-li__text">
+											Спрос на специалистов в области программирования постоянно
+											растет, что обеспечивает множество возможностей для
+											трудоустройства
+										</p>
+									</div>
+									<div class="popup-li">
+										<h4 class="popup-li__title">Высокая зарплата</h4>
+										<p class="popup-li__text">
+											Программисты обычно получают хорошую оплату за свою
+											работу, особенно если они обладают специализированными
+											навыками
+										</p>
+									</div>
+									<div class="popup-li">
+										<h4 class="popup-li__title">Творческий потенциал</h4>
+										<p class="popup-li__text">
+											Создание программ и разработка новых решений позволяют
+											программистам проявлять свои творческие способности
+										</p>
+									</div>
+									<div class="popup-li">
+										<h4 class="popup-li__title">Гибкий график</h4>
+										<p class="popup-li__text">
+											В некоторых случаях программисты могут работать удаленно
+											или выбирать гибкий график работы
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="popup-section">
+								<h3 class="popup-title">Недостатки профессии программиста</h3>
+								<div class="popup-ul">
+									<div class="popup-li">
+										<h4 class="popup-li__title">Монотонность</h4>
+										<p class="popup-li__text">
+											Некоторые аспекты программирования могут быть монотонными
+											и требовать длительных периодов концентрации
+										</p>
+									</div>
+									<div class="popup-li">
+										<h4 class="popup-li__title">Стресс</h4>
+										<p class="popup-li__text">
+											Работа в области информационных технологий может быть
+											стрессовой из-за сроков и требований проектов
+										</p>
+									</div>
+									<div class="popup-li">
+										<h4 class="popup-li__title">Необходимость обучения</h4>
+										<p class="popup-li__text">
+											Быстрые изменения и постоянное развитие технологий требуют
+											постоянного обучения и саморазвития
+										</p>
+									</div>
+									<div class="popup-li">
+										<h4 class="popup-li__title">Сидячий образ жизни</h4>
+										<p class="popup-li__text">
+											Длительные часы, проведенные за компьютером, могут
+											привести к проблемам со здоровьем, связанными с сидячим
+											образом жизни
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/scroll.js"></script>
+		<script src="./js/index.js"></script>
 	</body>
 </html>
