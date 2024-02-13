@@ -44,7 +44,7 @@ img {
 }
 
 .home {
-	padding-top: 120px;
+	padding-top: 90px;
 }
 .home-title {
 	font-size: 100px;
@@ -77,13 +77,15 @@ img {
 }
 .home-heading {
 	color: #fff;
-	font-size: 25px;
+	font-size: 50px;
+	font-weight: 500;
 	margin-bottom: 32px;
 	line-height: 35px;
 }
 .home-btn {
 	color: #fff;
 	font-size: 25px;
+	font-weight: 400;
 	line-height: 18px;
 	background-color: transparent;
 	outline: none;
