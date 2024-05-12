@@ -1,389 +1,295 @@
-<!DOCTYPE html>
-<html lang="ru">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Атлас профессий</title>
-		<link rel="stylesheet" href="./fonts/stylesheet.css" />
-		<link rel="stylesheet" href="./css/scroll.css" />
-		<link rel="stylesheet" href="./css/index.css" />
-	</head>
-	<body>
-		<section class="home" id="home">
-			<div class="cont">
-				<h1 class="home-title">Атлас профессий</h1>
-				<div class="home-cards">
-					<div class="home-card" data-card="pilot">
-						<img src="./img/1.png" alt="Пилот" class="home-img" />
-						<div class="home-info">
-							<h2 class="home-heading">Пилот</h2>
-							<button class="home-btn">подробнее</button>
-						</div>
-					</div>
-					<div class="home-card" data-card="voenosluz">
-						<img src="./img/2.png" alt="Военнослужащий" class="home-img" />
-						<div class="home-info">
-							<h2 class="home-heading">Военнослужащий</h2>
-							<button class="home-btn">подробнее</button>
-						</div>
-					</div>
-					<div class="home-card" data-card="inziner">
-						<img src="./img/3.png" alt="Инженер" class="home-img" />
-						<div class="home-info">
-							<h2 class="home-heading">Инженер</h2>
-							<button class="home-btn">подробнее</button>
-						</div>
-					</div>
-					<div class="home-card" data-card="programist">
-						<img src="./img/4.png" alt="Программист" class="home-img" />
-						<div class="home-info">
-							<h2 class="home-heading">Программист</h2>
-							<button class="home-btn">подробнее</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<div class="popup" data-popup="pilot">
-			<div class="popup-wrapper">
-				<div class="popup-body">
-					<button type="button" class="popup-close"></button>
-					<div class="popup-scroll" id="popup-scroll">
-						<img
-							src="./img/open/1.png"
-							alt="Преимущества профессии пилота"
-							class="popup-img"
-						/>
-						<div class="popup-content">
-							<div class="popup-section">
-								<h3 class="popup-title">Преимущества профессии пилота</h3>
-								<div class="popup-ul">
-									<div class="popup-li">
-										<h4 class="popup-li__title">Увлекательная профессия</h4>
-										<p class="popup-li__text">
-											Пилот - это увлекательная профессия, которая позволяет
-											летать по всему миру и видеть удивительные виды с небес
-										</p>
-									</div>
-									<div class="popup-li">
-										<h4 class="popup-li__title">Высокий уровень заработка</h4>
-										<p class="popup-li__text">
-											Профессия пилота обычно связана со значительным уровнем
-											заработка, особенно на более высоких уровнях
-										</p>
-									</div>
-									<div class="popup-li">
-										<h4 class="popup-li__title">Личное развитие</h4>
-										<p class="popup-li__text">
-											Пилот занимается постоянным обучением и развитием навыков,
-											что способствует личному и профессиональному росту
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="popup-section">
-								<h3 class="popup-title">Недостатки профессии пилота</h3>
-								<div class="popup-ul">
-									<div class="popup-li">
-										<h4 class="popup-li__title">Требуемые квалификации</h4>
-										<p class="popup-li__text">
-											Чтобы стать пилотом, необходимо пройти обширную тренировку
-											и получить лицензию. Это требует значительных временных и
-											финансовых вложений. Кроме того, для поддержания лицензии
-											и продолжения карьеры, пилот должен проходить регулярные
-											обучения и медицинские проверки
-										</p>
-									</div>
-									<div class="popup-li">
-										<h4 class="popup-li__title">Отрыв от семьи и друзей</h4>
-										<p class="popup-li__text">
-											Работа пилота часто связана с длительными отсутствиями от
-											дома и частыми перелетами. Это может привести к социальной
-											изоляции и сложностям в поддержании стабильных отношений
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="popup" data-popup="voenosluz">
-			<div class="popup-wrapper">
-				<div class="popup-body">
-					<button type="button" class="popup-close"></button>
-					<div class="popup-scroll" id="popup-scroll">
-						<img
-							src="./img/open/2.png"
-							alt="Преимущества профессии военнослужащего"
-							class="popup-img"
-						/>
-						<div class="popup-content">
-							<div class="popup-section">
-								<h3 class="popup-title">
-									Преимущества профессии военнослужащего
-								</h3>
-								<div class="popup-ul">
-									<div class="popup-li">
-										<h4 class="popup-li__title">Служба на благо общества</h4>
-										<p class="popup-li__text">
-											Помогает защитить страну и обеспечить безопасность граждан
-										</p>
-									</div>
-									<div class="popup-li">
-										<h4 class="popup-li__title">Профессиональная дисциплина</h4>
-										<p class="popup-li__text">
-											Обучение дисциплине, ответственности и управлению стрессом
-										</p>
-									</div>
-									<div class="popup-li">
-										<h4 class="popup-li__title">
-											Возможности для карьерного роста
-										</h4>
-										<p class="popup-li__text">
-											Множество специализаций и возможностей продвижения по
-											службе
-										</p>
-									</div>
-									<div class="popup-li">
-										<h4 class="popup-li__title">
-											Стабильный доход и социальные льготы
-										</h4>
-										<p class="popup-li__text">
-											Обеспечение зарплатой, медицинским страхованием и
-											пенсионными программами
-										</p>
-									</div>
-									<div class="popup-li">
-										<h4 class="popup-li__title">Разнообразие задач</h4>
-										<p class="popup-li__text">
-											Работа в различных сферах, от технических специальностей
-											до командно-штабных операций
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="popup-section">
-								<h3 class="popup-title">
-									Недостатки профессии военнослужащего
-								</h3>
-								<div class="popup-ul">
-									<div class="popup-li">
-										<h4 class="popup-li__title">
-											Физическая и эмоциональная нагрузка
-										</h4>
-										<p class="popup-li__text">
-											Риск травм, стресса и психологических проблем
-										</p>
-									</div>
-									<div class="popup-li">
-										<h4 class="popup-li__title">Разлука с семьей</h4>
-										<p class="popup-li__text">
-											Длительные периоды разлуки из-за учений или военных задач
-										</p>
-									</div>
-									<div class="popup-li">
-										<h4 class="popup-li__title">Риск жизни</h4>
-										<p class="popup-li__text">
-											Сложности и опасности, связанные с возможностью быть в
-											зоне боевых действий
-										</p>
-									</div>
-									<div class="popup-li">
-										<h4 class="popup-li__title">Дисциплина и иерархия</h4>
-										<p class="popup-li__text">
-											Строгие правила, ограничивающие свободу и личное
-											самовыражение
-										</p>
-									</div>
-									<div class="popup-li">
-										<h4 class="popup-li__title">Моральные дилеммы</h4>
-										<p class="popup-li__text">
-											Необходимость соблюдения кодекса воинской чести и участие
-											в военных операциях, возможно не согласующихся с личными
-											убеждениями
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="popup" data-popup="inziner">
-			<div class="popup-wrapper">
-				<div class="popup-body">
-					<button type="button" class="popup-close"></button>
-					<div class="popup-scroll" id="popup-scroll">
-						<img
-							src="./img/open/3.png"
-							alt="Преимущества профессии инженера"
-							class="popup-img"
-						/>
-						<div class="popup-content">
-							<div class="popup-section">
-								<h3 class="popup-title">Преимущества профессии инженера</h3>
-								<div class="popup-ul">
-									<div class="popup-li">
-										<h4 class="popup-li__title">Творческий потенциал</h4>
-										<p class="popup-li__text">
-											Инженеры часто работают над уникальными проектами, что
-											открывает возможности для творчества и инноваций
-										</p>
-									</div>
-									<div class="popup-li">
-										<h4 class="popup-li__title">Высокий спрос</h4>
-										<p class="popup-li__text">
-											Инженеры всегда востребованы на рынке труда из-за своих
-											специализированных навыков
-										</p>
-									</div>
-									<div class="popup-li">
-										<h4 class="popup-li__title">Финансовая стабильность</h4>
-										<p class="popup-li__text">
-											Инженеры обычно зарабатывают достойные заработные платы и
-											имеют хорошие перспективы карьерного роста
-										</p>
-									</div>
-									<div class="popup-li">
-										<h4 class="popup-li__title">Разнообразие специализаций</h4>
-										<p class="popup-li__text">
-											Есть множество областей, в которых можно стать инженером,
-											от машиностроения до программирования, что позволяет
-											выбрать наиболее интересное направление
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="popup-section">
-								<h3 class="popup-title">Недостатки профессии инженера</h3>
-								<div class="popup-ul">
-									<div class="popup-li">
-										<h4 class="popup-li__title">Высокие требования</h4>
-										<p class="popup-li__text">
-											Инженеры должны обладать высоким уровнем профессиональной
-											подготовки и быть готовыми к непрерывному обучению и
-											совершенствованию
-										</p>
-									</div>
-									<div class="popup-li">
-										<h4 class="popup-li__title">Ответственность</h4>
-										<p class="popup-li__text">
-											Ошибки инженера могут иметь серьезные последствия, поэтому
-											работа требует высокой ответственности и внимательности
-										</p>
-									</div>
-									<div class="popup-li">
-										<h4 class="popup-li__title">Рутинная работа обучения</h4>
-										<p class="popup-li__text">
-											В зависимости от специализации инженера, работа иногда
-											может быть рутинной и требовать многократного повторения
-											одного и того же вида задач
-										</p>
-									</div>
-									<div class="popup-li">
-										<h4 class="popup-li__title">Долгие рабочие часы</h4>
-										<p class="popup-li__text">
-											Некоторые специализации инженерии могут потребовать долгих
-											рабочих часов и работу по выходным для выполнения проектов
-											в срок
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="popup" data-popup="programist">
-			<div class="popup-wrapper">
-				<div class="popup-body">
-					<button type="button" class="popup-close"></button>
-					<div class="popup-scroll" id="popup-scroll">
-						<img
-							src="./img/open/4.png"
-							alt="Преимущества профессии программиста"
-							class="popup-img"
-						/>
-						<div class="popup-content">
-							<div class="popup-section">
-								<h3 class="popup-title">Преимущества профессии программиста</h3>
-								<div class="popup-ul">
-									<div class="popup-li">
-										<h4 class="popup-li__title">Высокий спрос:</h4>
-										<p class="popup-li__text">
-											Спрос на специалистов в области программирования постоянно
-											растет, что обеспечивает множество возможностей для
-											трудоустройства
-										</p>
-									</div>
-									<div class="popup-li">
-										<h4 class="popup-li__title">Высокая зарплата</h4>
-										<p class="popup-li__text">
-											Программисты обычно получают хорошую оплату за свою
-											работу, особенно если они обладают специализированными
-											навыками
-										</p>
-									</div>
-									<div class="popup-li">
-										<h4 class="popup-li__title">Творческий потенциал</h4>
-										<p class="popup-li__text">
-											Создание программ и разработка новых решений позволяют
-											программистам проявлять свои творческие способности
-										</p>
-									</div>
-									<div class="popup-li">
-										<h4 class="popup-li__title">Гибкий график</h4>
-										<p class="popup-li__text">
-											В некоторых случаях программисты могут работать удаленно
-											или выбирать гибкий график работы
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="popup-section">
-								<h3 class="popup-title">Недостатки профессии программиста</h3>
-								<div class="popup-ul">
-									<div class="popup-li">
-										<h4 class="popup-li__title">Монотонность</h4>
-										<p class="popup-li__text">
-											Некоторые аспекты программирования могут быть монотонными
-											и требовать длительных периодов концентрации
-										</p>
-									</div>
-									<div class="popup-li">
-										<h4 class="popup-li__title">Стресс</h4>
-										<p class="popup-li__text">
-											Работа в области информационных технологий может быть
-											стрессовой из-за сроков и требований проектов
-										</p>
-									</div>
-									<div class="popup-li">
-										<h4 class="popup-li__title">Необходимость обучения</h4>
-										<p class="popup-li__text">
-											Быстрые изменения и постоянное развитие технологий требуют
-											постоянного обучения и саморазвития
-										</p>
-									</div>
-									<div class="popup-li">
-										<h4 class="popup-li__title">Сидячий образ жизни</h4>
-										<p class="popup-li__text">
-											Длительные часы, проведенные за компьютером, могут
-											привести к проблемам со здоровьем, связанными с сидячим
-											образом жизни
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script src="./js/scroll.js"></script>
-		<script src="./js/index.js"></script>
-	</body>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./css/main.min.css?_v=20240512080936"/>
+    <title>Первый в России бренд жидкостей для ЭСДН, созданный с помощью нейросети</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240512080936"/>
+  </head>
+  <body>
+    <div class="html-wrapper">
+      <header class="header">
+        <div class="header-body">
+          <div class="cont">
+            <div class="header-content">
+              <div class="header-left"><a class="header-logo" href="./index.html"><img src="./img/logo.png" alt="Первый в России бренд жидкостей для ЭСДН, созданный с помощью нейросети"/></a>
+                <nav class="header-nav"><a class="header-link mem-nav__link" href="./index.html#about">О нас</a><a class="header-link" href="./tastes.html">Вкусы</a><a class="header-link header-scroll" href="#footer">Контакты</a></nav>
+              </div>
+              <div class="header-right">
+                <div class="header-social mem-social"><a class="mem-social__inst" href="#"></a><a class="mem-social__tg" href="#"></a><a class="mem-social__vk" href="#"></a></div>
+                <div class="header-btns">
+                  <button class="header-btn line opop-buy" type="button">Купить оптом</button>
+                  <button class="header-btn white opop-feedback" type="button">Предложить вкус</button>
+                </div>
+                <button class="header-burger" type="button"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-mob">
+          <div class="header-mob__body">
+            <button class="header-mob__close" type="button"></button>
+            <div class="header-mob__title">МЕНЮ</div>
+            <nav class="header-nav"><a class="header-link" href="./index.html">Главная</a><a class="header-link mem-nav__link" href="./index.html#about">О нас</a><a class="header-link" href="./tastes.html">Вкусы</a><a class="header-link header-scroll" href="#footer">Контакты</a></nav>
+            <div class="header-social mem-social"><a class="mem-social__inst" href="#"></a><a class="mem-social__tg" href="#"></a><a class="mem-social__vk" href="#"></a></div>
+            <div class="header-btns">
+              <button class="header-btn line opop-buy" type="button">Купить оптом</button>
+              <button class="header-btn white opop-feedback" type="button">Предложить вкус</button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="page home">
+        <section class="mem-home" id="mem-home">
+          <div class="mem-home__logo"><img class="mem-home__logo-one" src="./img/home/home/logo.png" alt="name"/><img class="mem-home__logo-two" src="./img/home/home/otaku.png" alt="name"/></div><img class="mem-home__bt-one" src="./img/home/home/bottle-1.png" alt="name"/><img class="mem-home__bt-two" src="./img/home/home/bottle-2.png" alt="name"/><img class="mem-home__bt-three" src="./img/home/home/bottle-3.png" alt="name"/><img class="mem-home__bt-four" src="./img/home/home/bottle-4.png" alt="name"/><img class="mem-home__bt-five" src="./img/home/home/bottle-5.png" alt="name"/><img class="mem-home__cl-one" src="./img/home/home/cloud-bg-l.png" alt="name"/><img class="mem-home__cl-two" src="./img/home/home/cloud-l.png" alt="name"/><img class="mem-home__cl-three" src="./img/home/home/cloud-bg-r.png" alt="name"/><img class="mem-home__cl-four" src="./img/home/home/cloud-r.png" alt="name"/>
+          <div class="cont">
+            <div class="mem-home__body">
+              <h1 class="mem-home__title">Первый в России бренд жидкостей для ЭСДН, <span class="help">созданный с помощью нейросети</span></h1>
+              <button class="mem-home__btn opop-buy">Купить оптом</button>
+            </div>
+          </div>
+        </section>
+        <div class="body-wrapper">
+          <section class="mem-about" id="about">
+            <div class="cont">
+              <h2 class="mem-about__title mem-title">Всё началось с простой идеи, пары друзей, любви к мемам и желания творить</h2><img class="mem-about__cat" src="./img/home/cat.png" alt="Одновременно с этим, мы решили бросить вызов серому рынку жидкостей, используя нашу любовь  к мемам."/><img class="mem-about__lol" src="./img/home/lol.png" alt="Первые партии разошлись мгновенно среди друзей и знакомых. Вкус и оригинальность зацепили, сарафанное радио заработало."/>
+              <div class="mem-about__chat">
+                <div class="mem-about__chat-left">
+                  <div class="mem-about__chat-user"><img src="./img/home/about/one.png" alt="name"/></div>
+                  <div class="mem-about__chat-content">
+                    <div class="mem-about__chat-block first">
+                      <div class="mem-about__chat-text">
+                        <p>Чувак, а ты не думал о том, чтобы делать свои жидкости?</p>
+                        <div class="mem-about__chat-sent"><span>Sent</span><span>4:19</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mem-about__chat-right">
+                  <div class="mem-about__chat-content">
+                    <div class="mem-about__chat-block">
+                      <div class="mem-about__chat-text">
+                        <p>Лооол</p>
+                      </div>
+                    </div>
+                    <div class="mem-about__chat-block first">
+                      <div class="mem-about__chat-text">
+                        <p>Я как раз недавно думал о том же!!! Давай попробуем</p>
+                        <div class="mem-about__chat-sent"><span>Sent</span><span>4:20</span><img src="./img/home/about/success.svg" alt="Sent"/></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mem-about__chat-user"><img src="./img/home/about/two.png" alt="name"/></div>
+                </div>
+              </div>
+              <div class="mem-about__cards">
+                <div class="mem-about__card mem-about__card-one"><img class="mem-about__img-one" src="./img/home/text.png" alt="Эксперименты на кухне"/>
+                  <div class="mem-about__card-bg">
+                    <div class="mem-about__card-text">
+                      <p>Эксперименты на кухне, дегустации с друзьями, изучение химии ароматизаторов — всё это стало нашим новым хобби. Каждый день рождались новые рецепты.</p>
+                      <p class="mem-medium">Одновременно с этим, мы решили бросить вызов серому рынку жидкостей, используя нашу любовь  к мемам.</p>
+                      <p>Первые партии разошлись мгновенно среди друзей и знакомых. Вкус и оригинальность зацепили, сарафанное радио заработало.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="mem-about__card mem-about__card-two"><img class="mem-about__img-two" src="./img/home/power.png" alt="Эксперименты на кухне"/>
+                  <div class="mem-about__card-bg">
+                    <div class="mem-about__card-text">
+                      <p>Небольшая лаборатория на кухне превратилась в настоящее производство, где непрерывно кипит работа.</p>
+                      <p>Сегодня наши жидкости можно найти в вейп-шопах по всей стране. А начиналось всё с простой идеи двух друзей, старых добрых мемов и желания творить.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="mem-collection">
+            <div class="cont">
+              <h2 class="mem-collection__title mem-title">Коллекция <span class="help">MEM’s</span> включает в себя <span class="br-des"></span> 27 совершенных вкусов, сочетания которых <span class="br-des"></span> оставят яркое и запоминающееся послевкусие</h2>
+            </div>
+            <div class="swiper mem-collection__swiper">
+              <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="./img/home/collection/1.png" alt="Вафли со сгущёнкой"/>
+                            <div class="mem-collection__card">
+                              <div class="mem-collection__name">Вафли со сгущёнкой</div>
+                              <div class="mem-collection__down">
+                                <div class="mem-collection__view">SALT</div>
+                                <div class="mem-collection__circle"></div>
+                                <div class="mem-collection__quantity">30 ml</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide"><img src="./img/home/collection/1.png" alt="Вафли со сгущёнкой"/>
+                            <div class="mem-collection__card">
+                              <div class="mem-collection__name">Вафли со сгущёнкой</div>
+                              <div class="mem-collection__down">
+                                <div class="mem-collection__view">SALT</div>
+                                <div class="mem-collection__circle"></div>
+                                <div class="mem-collection__quantity">30 ml</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide"><img src="./img/home/collection/1.png" alt="Вафли со сгущёнкой"/>
+                            <div class="mem-collection__card">
+                              <div class="mem-collection__name">Вафли со сгущёнкой</div>
+                              <div class="mem-collection__down">
+                                <div class="mem-collection__view">SALT</div>
+                                <div class="mem-collection__circle"></div>
+                                <div class="mem-collection__quantity">30 ml</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide"><img src="./img/home/collection/1.png" alt="Вафли со сгущёнкой"/>
+                            <div class="mem-collection__card">
+                              <div class="mem-collection__name">Вафли со сгущёнкой</div>
+                              <div class="mem-collection__down">
+                                <div class="mem-collection__view">SALT</div>
+                                <div class="mem-collection__circle"></div>
+                                <div class="mem-collection__quantity">30 ml</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide"><img src="./img/home/collection/1.png" alt="Вафли со сгущёнкой"/>
+                            <div class="mem-collection__card">
+                              <div class="mem-collection__name">Вафли со сгущёнкой</div>
+                              <div class="mem-collection__down">
+                                <div class="mem-collection__view">SALT</div>
+                                <div class="mem-collection__circle"></div>
+                                <div class="mem-collection__quantity">30 ml</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide"><img src="./img/home/collection/1.png" alt="Вафли со сгущёнкой"/>
+                            <div class="mem-collection__card">
+                              <div class="mem-collection__name">Вафли со сгущёнкой</div>
+                              <div class="mem-collection__down">
+                                <div class="mem-collection__view">SALT</div>
+                                <div class="mem-collection__circle"></div>
+                                <div class="mem-collection__quantity">30 ml</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide"><img src="./img/home/collection/1.png" alt="Вафли со сгущёнкой"/>
+                            <div class="mem-collection__card">
+                              <div class="mem-collection__name">Вафли со сгущёнкой</div>
+                              <div class="mem-collection__down">
+                                <div class="mem-collection__view">SALT</div>
+                                <div class="mem-collection__circle"></div>
+                                <div class="mem-collection__quantity">30 ml</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide"><img src="./img/home/collection/1.png" alt="Вафли со сгущёнкой"/>
+                            <div class="mem-collection__card">
+                              <div class="mem-collection__name">Вафли со сгущёнкой</div>
+                              <div class="mem-collection__down">
+                                <div class="mem-collection__view">SALT</div>
+                                <div class="mem-collection__circle"></div>
+                                <div class="mem-collection__quantity">30 ml</div>
+                              </div>
+                            </div>
+                          </div>
+              </div>
+            </div>
+            <div class="cont">
+              <div class="mem-collection__control">
+                <div class="swiper-btn mem-collection__prev"></div><a class="mem-collection__btn" href="./tastes.html">Заценить все вкусы</a>
+                <div class="swiper-btn mem-collection__next"></div>
+              </div>
+            </div>
+          </section>
+          <section class="mem-author">
+            <div class="cont">
+              <div class="mem-author__body">
+                <div class="mem-author__img"><img class="mem-author__img-bg" src="./img/home/author/bg.png" alt="СТАНЬ АВТОРОМ ВКУСА!"/><img class="mem-author__img-bt__one" src="./img/home/author/bottle-1.png" alt="name"/><img class="mem-author__img-bt__two" src="./img/home/author/bottle-2.png" alt="name"/></div>
+                <div class="mem-author__content">
+                  <h2 class="mem-author__title mem-title">СТАНЬ АВТОРОМ ВКУСА!</h2>
+                  <div class="mem-author__text">
+                    <p>Присылай свои интересные и неординарные предложения по новым сочетаниям мемов и вкусов, а также по изменениям существующих.</p>
+                    <p>Самые крутые идеи мы обязательно воплотим в жизнь. Ты сможешь попасть к нам в лабораторию и поучаствовать в создании новинки!</p>
+                    <p>Тебя, как автора идеи, я отмечу на КАЖДОЙ упаковке с новым вкусом: имя, город, ссылки на социальные сети.</p>
+                  </div>
+                  <p class="mem-author__invitation">Присоединяйся к нашему комьюнити! Участвуй и побеждай!</p>
+                  <button class="mem-author__btn opop-feedback" type="button">Предложить вкус</button>
+                </div>
+              </div>
+            </div><img class="mem-author__sponge" src="./img/home/sponge.png" alt="Присоединяйся к нашему комьюнити! Участвуй и побеждай!"/>
+          </section>
+        </div>
+      </main>
+      <footer class="footer" id="footer">
+        <div class="cont">
+          <div class="footer-body">
+            <div class="footer-start"><a class="footer-logo" href="./index.html"><img src="./img/logo-f.png" alt="name"/></a><img class="footer-age" src="./img/18.svg" alt="name"/></div>
+            <div class="footer-center">
+              <nav class="footer-nav"><a class="footer-link" href="./index.html">Главная</a><a class="footer-link mem-nav__link" href="#about">О нас</a><a class="footer-link" href="./tastes.html">Вкусы</a><a class="footer-link mem-nav__link" href="#footer">Контакты</a></nav>
+              <div class="footer-btns">
+                <button class="footer-btn line opop-buy" type="button">Купить оптом</button>
+                <button class="footer-btn line opop-feedback" type="button">Предложить вкус</button>
+              </div>
+            </div>
+            <div class="footer-end"><a class="footer-email" href="mailto:otaku.vape.info@gmail.com">otaku.vape.info@gmail.com</a>
+              <div class="footer-social mem-social"><a class="mem-social__inst" href="#"></a><a class="mem-social__tg" href="#"></a><a class="mem-social__vk" href="#"></a></div>
+              <button class="footer-btn white opop-feedback" type="button">Обратная связь</button>
+            </div>
+          </div>
+          <div class="footer-down">
+            <div class="footer-down__left"><a class="footer-down__link" href="./politics.html">Политика конфиденциальности</a><a class="footer-down__link" href="https://akcent.agency/">Разработано <span class="help">akcent.agency</span></a></div>
+            <button class="footer-scroll" type="button">Наверх</button>
+          </div>
+        </div>
+      </footer>
+      <div class="popup popup-buy">
+        <div class="popup-body">
+          <div class="popup-block">
+            <button class="popup-close" type="button"></button>
+            <div class="popup-title">КУПИТЬ ОПТОМ</div>
+            <div class="popup-text">Укажите свои контактные данные и наш менеджер свяжется с вами в ближайшее время</div>
+            <div class="popup-inputs">
+              <div class="popup-input">
+                <input type="text" placeholder="Ваше имя *"/>
+              </div>
+              <div class="popup-input">
+                <input type="tel" placeholder="Номер телефона *"/>
+              </div>
+              <div class="popup-input">
+                <textarea placeholder="Комментарий"></textarea>
+              </div>
+            </div>
+            <button class="popup-btn" type="button">Отправить</button>
+            <p class="popup-politics">Нажимая кнопку «Отправить» вы соглашаетесь с <a href="./politics.html">политикой конфиденциальности</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup-feedback">
+        <div class="popup-body">
+          <div class="popup-block">
+            <button class="popup-close" type="button"></button>
+            <div class="popup-title">ОБРАТНАЯ СВЯЗЬ</div>
+            <div class="popup-text">Укажите свои контактные данные и наш менеджер свяжется с вами в ближайшее время</div>
+            <div class="popup-inputs">
+              <div class="popup-input">
+                <input type="text" placeholder="Ваше имя *"/>
+              </div>
+              <div class="popup-input">
+                <input type="tel" placeholder="Номер телефона *"/>
+              </div>
+              <div class="popup-input">
+                <input type="email" placeholder="E-mail *"/>
+              </div>
+              <div class="popup-input">
+                <textarea placeholder="Комментарий или вопрос *"></textarea>
+              </div>
+            </div>
+            <button class="popup-btn" type="button">Отправить</button>
+            <p class="popup-politics">Нажимая кнопку «Отправить» вы соглашаетесь с <a href="./politics.html">политикой конфиденциальности</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240512080936"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js?_v=20240512080936"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js?_v=20240512080936"></script>
+    <script src="js/main.min.js?_v=20240512080936"></script>
+  </body>
 </html>
