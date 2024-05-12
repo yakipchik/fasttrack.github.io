@@ -15,6 +15,15 @@ body {
   font-style: normal;
 }
 
+.disable-scroll {
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
 .body-wrapper {
   position: relative;
   z-index: 55;
@@ -520,6 +529,8 @@ img {
   top: 0;
   z-index: 150;
   background: rgba(16, 13, 18, 0.65);
+  padding: 20px;
+  overflow: auto;
 }
 
 .popup.open {
@@ -719,7 +730,7 @@ img {
   width: 329px;
   height: auto;
   position: absolute;
-  z-index: 4;
+  z-index: 5;
   left: 0;
   top: 0;
 }
@@ -840,6 +851,7 @@ img {
   color: #FFF;
   font-size: 40px;
   font-weight: 500;
+  margin-right: 20px;
 }
 
 .mem-home__title .help {
@@ -864,6 +876,7 @@ img {
   letter-spacing: -0.3px;
   -webkit-transition: background 0.3s;
   transition: background 0.3s;
+  white-space: nowrap;
 }
 
 .mem-home__btn:hover,
@@ -1667,6 +1680,10 @@ img {
   padding-top: 250px;
 }
 
+.mem-politics__title {
+  margin-bottom: 70px;
+}
+
 .mem-politics__content {
   display: -ms-grid;
   display: grid;
@@ -1681,10 +1698,24 @@ img {
 
 .mem-politics__header {
   color: #FFF;
+  font-size: 16px;
   font-weight: 600;
 }
 
 @media (max-width: 1600px) {
+  .mem-home__body {
+    padding-bottom: 140px;
+  }
+
+  .mem-home__bt-three {
+    left: -20px;
+  }
+
+  .mem-home__bt-four {
+    top: 47%;
+    right: -50px;
+  }
+
   .mem-about__img-one {
     left: auto;
     top: -39px;
@@ -1700,6 +1731,16 @@ img {
 }
 
 @media (max-width: 1366px) {
+  .mem-home__bt-three {
+    width: 274px;
+    left: -40px;
+  }
+
+  .mem-home__bt-four {
+    width: 346px;
+    right: -80px;
+  }
+
   .mem-about__card-one .mem-about__card-bg {
     padding: 105px 115px;
   }
@@ -1858,6 +1899,38 @@ img {
   }
 }
 
+@media (max-width: 1150px) {
+  .mem-home__body {
+    padding-bottom: 220px;
+  }
+
+  .mem-home__logo {
+    top: 33%;
+  }
+
+  .mem-home__logo-one {
+    width: 570px;
+  }
+
+  .mem-home__bt-one {
+    width: 224px;
+  }
+
+  .mem-home__bt-two {
+    width: 110px;
+  }
+
+  .mem-home__bt-three {
+    width: 214px;
+    left: -80px;
+  }
+
+  .mem-home__bt-four {
+    width: 266px;
+    right: -140px;
+  }
+}
+
 @media (max-width: 1050px) {
   .mem-about__chat {
     -ms-grid-columns: 1fr;
@@ -1900,6 +1973,25 @@ img {
     top: 15px;
   }
 
+  .mem-home__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-bottom: 160px;
+  }
+
+  .mem-home__title {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+
   .mem-about {
     margin-bottom: 200px;
   }
@@ -1935,6 +2027,10 @@ img {
   .mem-politics {
     padding-top: 155px;
   }
+
+  .mem-politics__title {
+    margin-bottom: 35px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1946,6 +2042,44 @@ img {
     justify-items: start;
     padding-top: 25px;
     margin-top: 40px;
+  }
+
+  .mem-home {
+    min-height: 620px;
+  }
+
+  .mem-home__body {
+    padding-bottom: 80px;
+  }
+
+  .mem-home__logo-one {
+    width: 222px;
+  }
+
+  .mem-home__logo-two {
+    width: 64px;
+    margin-top: -10px;
+  }
+
+  .mem-home__bt-three {
+    width: 160px;
+    left: -40px;
+  }
+
+  .mem-home__bt-four {
+    width: 220px;
+  }
+
+  .mem-home__bt-five {
+    width: 170px;
+  }
+
+  .mem-home__title {
+    font-size: 30px;
+  }
+
+  .mem-home__btn {
+    padding: 25px 70px;
   }
 
   .mem-about {
@@ -2192,6 +2326,128 @@ img {
     font-size: 14px;
   }
 
+  .popup-block {
+    max-width: 400px;
+    border-radius: 20px;
+    padding: 30px 20px;
+  }
+
+  .popup-close {
+    width: 15px;
+    height: 15px;
+    right: 15px;
+    top: 15px;
+  }
+
+  .popup-title {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .popup-text {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  .popup-inputs {
+    grid-gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .popup-input input,
+  .popup-input textarea {
+    font-size: 14px;
+    padding: 20px;
+  }
+
+  .popup-input textarea {
+    min-height: 90px;
+    border-radius: 20px;
+  }
+
+  .popup-btn {
+    width: 100%;
+    font-size: 13px;
+    padding: 20px 70px;
+  }
+
+  .popup-btn:after {
+    width: 9px;
+    height: 9px;
+  }
+
+  .popup-politics {
+    margin: 25px auto 0 auto;
+  }
+
+  .mem-home {
+    padding-bottom: 40px;
+  }
+
+  .mem-home__body {
+    padding-bottom: 45px;
+  }
+
+  .mem-home__logo {
+    top: 37%;
+  }
+
+  .mem-home__cl-one {
+    width: 85px;
+  }
+
+  .mem-home__cl-two {
+    width: 150px;
+  }
+
+  .mem-home__cl-three {
+    width: 60px;
+    bottom: 20px;
+  }
+
+  .mem-home__cl-four {
+    width: 156px;
+  }
+
+  .mem-home__bt-one {
+    left: 50%;
+    width: 86px;
+  }
+
+  .mem-home__bt-two {
+    width: 77px;
+  }
+
+  .mem-home__bt-three {
+    width: 116px;
+  }
+
+  .mem-home__bt-four {
+    right: -90px;
+    width: 163px;
+  }
+
+  .mem-home__bt-five {
+    width: 88px;
+  }
+
+  .mem-home__title {
+    font-size: 20px;
+  }
+
+  .mem-home__btn {
+    font-size: 13px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 20px 50px;
+  }
+
+  .mem-home__btn:after {
+    width: 9px;
+    height: 9px;
+  }
+
   .mem-about {
     margin-bottom: 110px;
   }
@@ -2345,6 +2601,12 @@ img {
     top: calc(100% + 29px);
   }
 
+  .tastes .body-wrapper {
+    border-radius: 0 0 30px 30px;
+    padding: 0 0 110px 0;
+    margin: 0 0 -40px 0;
+  }
+
   .mem-tastes {
     padding-top: 105px;
   }
@@ -2384,6 +2646,28 @@ img {
 
   .mem-tastes__swiper img {
     border-radius: 20px;
+  }
+
+  .politics .body-wrapper {
+    border-radius: 0 0 30px 30px;
+    padding: 0 0 110px 0;
+    margin: 0 0 -40px 0;
+  }
+
+  .mem-politics {
+    padding-top: 106px;
+  }
+
+  .mem-politics__title {
+    font-size: 20px;
+  }
+
+  .mem-politics__content {
+    grid-gap: 30px;
+  }
+
+  .mem-politics__header {
+    font-size: 13px;
   }
 }
 
