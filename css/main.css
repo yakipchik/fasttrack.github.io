@@ -1353,10 +1353,10 @@ img {
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
-.mem-collection__swiper .swiper-slide:hover img {
-  -webkit-transform: scale(1.8);
-      -ms-transform: scale(1.8);
-          transform: scale(1.8);
+.mem-collection__swiper .swiper-slide.hov img {
+  -webkit-transform: scale(1.6);
+      -ms-transform: scale(1.6);
+          transform: scale(1.6);
 }
 
 .mem-collection__swiper .swiper-slide:hover:before {
@@ -1739,10 +1739,10 @@ img {
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
-.mem-tastes__card-img:hover img {
-  -webkit-transform: scale(1.8);
-      -ms-transform: scale(1.8);
-          transform: scale(1.8);
+.mem-tastes__card-img.hov img {
+  -webkit-transform: scale(1.6);
+      -ms-transform: scale(1.6);
+          transform: scale(1.6);
 }
 
 .mem-tastes__card-name {
@@ -1869,6 +1869,20 @@ img {
   color: #FFF;
   font-size: 16px;
   font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .mem-collection__swiper .swiper-slide:hover img {
+    -webkit-transform: scale(1.8);
+        -ms-transform: scale(1.8);
+            transform: scale(1.8);
+  }
+
+  .mem-tastes__card-img:hover img {
+    -webkit-transform: scale(1.8);
+        -ms-transform: scale(1.8);
+            transform: scale(1.8);
+  }
 }
 
 @media (max-width: 1600px) {
