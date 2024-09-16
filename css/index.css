@@ -1,0 +1,754 @@
+/* главная начало */
+.home {
+	display: grid;
+	position: relative;
+	margin-bottom: 80px;
+}
+
+.home-wrapper {
+	padding: 124px 0 130px 0;
+	background: #E9DED4;
+	position: relative;
+}
+
+.home-img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.home-img img {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+.home-img .mobile {
+	display: none;
+}
+
+.home-content {
+	max-width: 542px;
+	position: relative;
+	z-index: 5;
+}
+
+.home-title {
+	display: flex;
+	flex-direction: column;
+	color: #313131;
+	font-size: 60px;
+	font-weight: 400;
+	line-height: 66px;
+	margin-bottom: 24px;
+	text-transform: uppercase;
+}
+
+.home-title span {
+	text-align: center;
+}
+
+.home-title__last {
+	align-self: end;
+}
+
+.home-text {
+	font-family: "Golos Text", sans-serif;
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.home-btns {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: 1fr;
+	grid-gap: 16px;
+}
+
+.home-btn {
+	color: #FFF;
+	font-family: "Golos Text", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 20.8px;
+	background: #1F1F1F;
+	border: 2px solid #1F1F1F;
+	border-radius: 66px;
+	padding: 16px 45px;
+	transition: color .2s, background-color .2s, border .2s;
+}
+
+.home-btn:hover,
+.home-btn:focus-visible {
+	color: #1F1F1F;
+	background: #FBCE51;
+	border-color: #FBCE51;
+}
+
+.home-btn.line {
+	color: #1F1F1F;
+	background: transparent;
+}
+
+.home-btn.line:hover,
+.home-btn.line:focus-visible {
+	color: #FFF;
+	background: #1F1F1F;
+	border-color: transparent;
+}
+
+@media (max-width: 1200px) {
+	.home-wrapper {
+		padding: 124px 0 130px 0;
+	}
+
+	.home-btn.line {
+		border-color: transparent;
+		background: rgba(255, 255, 255, .9);
+	}
+}
+
+@media (max-width: 992px) {
+	.home {
+		margin-bottom: 48px;
+	}
+
+	.home-content {
+		max-width: 335px;
+	}
+
+	.home-title {
+		font-size: 36px;
+		line-height: 39.6px;
+	}
+
+	.home-text {
+		line-height: 23.4px;
+		text-align: left;
+	}
+
+	.home-btns {
+		grid-auto-flow: row;
+	}
+
+	.home-btn {
+		padding: 13px;
+	}
+
+	.home-btn br {
+		display: contents;
+	}
+}
+
+@media (max-width: 576px) {
+	.home-img .desktop {
+		display: none;
+	}
+
+	.home-img .mobile {
+		display: block;
+	}
+}
+
+/* главная конец */
+
+
+/* баннер начало */
+.banner-wrapper {
+	width: 100%;
+	background: #F54932;
+	overflow: hidden;
+}
+
+.banner {
+	width: 100%;
+	display: grid;
+	grid-auto-flow: column;
+	grid-gap: 12px;
+	justify-content: start;
+	align-items: center;
+	background: #F54932;
+	padding: 18px 12px;
+}
+
+.banner-item {
+	color: #FFF;
+	font-size: 22px;
+	font-weight: 400;
+	display: grid;
+	grid-auto-flow: column;
+	grid-gap: 12px;
+	justify-content: start;
+	align-items: center;
+	white-space: nowrap;
+}
+
+.banner-item:not(:last-child):after {
+	content: '';
+	width: 6px;
+	height: 6px;
+	background: #FFF;
+	border-radius: 50%;
+}
+
+@media (max-width: 992px) {
+	.banner {
+		padding: 10px 12px;
+	}
+
+	.banner-item {
+		font-size: 16px;
+		line-height: 17.6px;
+	}
+}
+
+/* баннер конец */
+
+/* сеансы начало */
+.session-title {
+	display: contents;
+}
+
+.session-cap {
+	display: grid;
+	grid-template-columns: minmax(500px, 764px) minmax(300px, 394px);
+	grid-gap: 20px;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 60px;
+}
+
+.session-cap__img {
+	width: 100%;
+}
+
+.session-title {
+	color: #313131;
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 48.6px;
+	text-transform: uppercase;
+}
+
+.session-title span {
+	color: #F54932;
+	font-weight: 700;
+}
+
+.session-content {
+	display: grid;
+	grid-template-columns: minmax(300px, 609px) minmax(500px, 704px);
+	grid-gap: 10px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.session-content__img {
+	width: 100%;
+}
+
+.session-table {
+	margin-top: 60px;
+	margin-bottom: 48px;
+}
+
+.session-table__row {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	font-family: "Golos Text", sans-serif;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.session-table__row:not(:last-child) {
+	border-bottom: 1px solid #D0D0D0;
+}
+
+.session-table__heading {
+	opacity: .7;
+	padding: 16px 16px 16px 0;
+	border-right: 1px solid #D0D0D0;
+}
+
+.session-table__row:first-child .session-table__heading {
+	padding: 0 16px 16px 0;
+}
+
+.session-table__row:last-child .session-table__heading {
+	padding: 16px 16px 0 0;
+}
+
+.session-table__text {
+	display: flex;
+	gap: 12px;
+	font-weight: 600;
+	padding: 16px 0 16px 16px;
+}
+
+.session-table__row:first-child .session-table__text {
+	padding: 0 0 16px 16px;
+}
+
+.session-table__row:last-child .session-table__text {
+	padding: 16px 0 0 16px;
+}
+
+.session-link {
+	color: #3057A2;
+	font-family: "Golos Text", sans-serif;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+@media (max-width: 1200px) {
+	.session-content {
+		grid-template-columns: 1fr;
+	}
+
+	.session-content__img {
+		max-width: 500px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 992px) {
+	.session-cap {
+		grid-template-columns: 1fr;
+		grid-gap: 24px;
+	}
+
+	.session-cap__img {
+		max-width: 400px;
+		grid-row-start: 2;
+		margin: 0 auto;
+	}
+
+	.session-title {
+		display: block;
+	}
+
+	.session-title__wrapper {
+		display: contents;
+	}
+}
+
+@media (max-width: 768px) {
+	.session-title {
+		font-size: 28px;
+		line-height: 37.8px;
+	}
+
+	.session-table {
+		margin-top: 45px;
+		margin-bottom: 40px;
+	}
+
+	.session-link {
+		font-size: 18px;
+		line-height: 21.6px;
+	}
+}
+
+@media (max-width: 576px) {
+	.session-table__row {
+		grid-template-columns: 1fr;
+	}
+
+
+	.session-table__heading {
+		opacity: .7;
+		padding: 16px 0 6px 0;
+
+		border-right: 0;
+	}
+
+	.session-table__row:first-child .session-table__heading {
+		padding: 0 0 12px 0;
+	}
+
+	.session-table__row:last-child .session-table__heading {
+		padding: 16px 0 0 0;
+	}
+
+	.session-table__text {
+		display: flex;
+		gap: 12px;
+		font-weight: 600;
+		padding: 6px 0 16px 0;
+	}
+
+	.session-table__row:first-child .session-table__text {
+		padding: 0 0 16px 0;
+	}
+
+	.session-table__row:last-child .session-table__text {
+		padding: 12px 0 0 0;
+	}
+}
+
+/* сеансы конец */
+
+/* этапы начало */
+.stages-title {
+	max-width: 806px;
+	margin-bottom: 54px;
+}
+
+.stages-wrapper {
+	position: relative;
+}
+
+
+@media (min-width: 768px) {
+	.stages-slider .c-slider__track {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 20px;
+	}
+
+	.stages-slider .c-slider__slide {
+		width: 100%;
+	}
+
+	.stages-slider .c-slider__slide:nth-child(1) {
+		grid-column: 1/3;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 20px;
+	}
+
+	.stages-slider .c-slider__slide:nth-child(2) {
+		grid-column: 3/4;
+		grid-row: 1/3;
+	}
+
+	.stages-slider .c-slider__slide:nth-child(3) {
+		grid-column: 1/3;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 20px;
+	}
+
+	.stages-slider .c-slider__slide:nth-child(4) {
+		grid-column: 1/2;
+	}
+
+	.stages-slider .c-slider__slide:nth-child(5) {
+		grid-column: 2/4;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	.stages-slider .c-slider__track {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 20px;
+	}
+
+	.stages-slider .c-slider__slide:nth-child(2) {
+		grid-column: 1/3;
+		grid-row: auto;
+	}
+
+	.stages-slider .c-slider__slide:nth-child(4) {
+		grid-column: 1/3;
+	}
+
+	.stages-slider .c-slider__slide:nth-child(5) {
+		grid-column: 1/3;
+		grid-row: auto;
+	}
+}
+
+.stages-cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+}
+
+.stages-card {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 36px 1fr;
+	grid-gap: 16px;
+	padding: 20px;
+	background-color: #E9DED4;
+	background-image: url("../imgs/stages/bg-img.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	font-family: "Golos Text", sans-serif;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.stages-card:nth-child(3) {
+	grid-row: 1/3;
+	grid-column-start: 3;
+}
+
+.stages-card:nth-child(7) {
+	grid-column: 2/4;
+}
+
+.stages-card__number {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	background: #FFF;
+	font-weight: 600;
+	border-radius: 50%;
+}
+
+.stages-card__text {
+	max-width: 446px;
+	font-weight: 500;
+}
+
+.stages-img {
+	max-width: 400px;
+	position: absolute;
+	left: 910px;
+	bottom: 0;
+	z-index: 5;
+}
+
+.stages-btns {
+	display: none;
+	justify-content: center;
+	grid-gap: 16px;
+}
+
+@media (max-width: 1200px) {
+	.stages-img {
+		left: 870px;
+		bottom: 20px;
+	}
+}
+
+@media (max-width: 1050px) {
+	.stages-card__text {
+		max-width: 100%;
+	}
+
+	.stages-img {
+		top: -190px;
+		left: auto;
+		right: -20px;
+		bottom: auto;
+	}
+}
+
+@media (max-width: 992px) {
+	.stages-cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.stages-card:nth-child(3) {
+		grid-row: auto;
+		grid-column: 1/3;
+	}
+
+	.stages-card:nth-child(6) {
+		grid-column: 1/3;
+	}
+
+	.stages-card:nth-child(7) {
+		grid-column: 1/3;
+	}
+}
+
+@media (max-width: 910px) {
+	.stages-title {
+		margin-bottom: 150px;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.stages-cards {
+		grid-auto-flow: column;
+		grid-template-columns: auto;
+		overflow: hidden;
+	}
+
+	.stages-card:nth-child(3) {
+		grid-row: auto;
+		grid-column: auto;
+	}
+
+	.stages-card:nth-child(6) {
+		grid-column: auto;
+	}
+
+	.stages-card:nth-child(7) {
+		grid-column: auto;
+	}
+
+	.stages-img {
+		max-width: 350px;
+		top: -150px;
+	}
+
+	.stages-btns {
+		display: grid;
+	}
+
+	.stages-slider {
+		margin-bottom: 28px;
+	}
+
+	.stages-slider .c-slider__slide {
+		padding: 62px 20px 34px 20px;
+		background-color: #E9DED4;
+		background-image: url("../imgs/stages/bg-img.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.stages-slider .c-slider__slide:nth-child(1),
+	.stages-slider .c-slider__slide:nth-child(3) {
+		display: grid;
+		grid-gap: 28px;
+		align-items: start;
+		align-content: start;
+	}
+
+	.stages-card {
+		padding: 0;
+		background: none;
+	}
+}
+
+/* этапы конец */
+
+/* участники начало */
+.participants {
+	margin-bottom: 140px;
+}
+
+.participants-wrapper {
+	display: grid;
+	grid-template-columns: 1fr auto;
+}
+
+.participants-title {
+	margin-bottom: 0;
+	align-self: center;
+}
+
+.participants-body {
+	grid-row-start: 2;
+	grid-column: 1/3;
+	margin-top: 60px;
+}
+
+.participants-cards {
+	display: grid;
+	grid-auto-columns: minmax(280px, 394px);
+	grid-auto-flow: column;
+	grid-gap: 20px;
+	overflow: hidden;
+}
+
+.participants-card {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 37px;
+}
+
+.participants-card__img {
+	max-width: 320px;
+	width: 100%;
+	max-height: 320px;
+	margin-bottom: 28px;
+}
+
+.participants-card__img img {
+	width: 100%;
+	height: 100%;
+}
+
+.participants-card__name {
+	font-family: "Golos Text", sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 28.8px;
+	margin-bottom: 6px;
+	text-align: center;
+}
+
+.participants-card__post {
+	color: #313131;
+	font-family: "Golos Text", sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 24px;
+	opacity: .6;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.participants-card__btn {
+	color: #3057A2;
+	font-family: "Golos Text", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	border: 1px solid #3057A2;
+	border-radius: 62px;
+	padding: 11px;
+	margin-top: auto;
+	transition: color 0.2s, background-color 0.2s;
+}
+
+.participants-card__btn:hover,
+.participants-card__btn:focus-visible {
+	color: #FFF;
+	background-color: #3057A2;
+}
+
+.participants-btns {
+	align-self: center;
+	justify-content: start;
+}
+
+@media (max-width: 992px) {
+	.participants {
+		margin-bottom: 100px;
+	}
+}
+
+@media (max-width: 768px) {
+	.participants-wrapper {
+		grid-template-columns: 1fr
+	}
+
+	.participants-body {
+		grid-row: auto;
+		grid-column: auto;
+		overflow: hidden;
+	}
+
+	.participants-card {
+		padding: 0 20px;
+	}
+
+	.participants-btns {
+		justify-content: center;
+		margin-top: 40px;
+	}
+}
+
+/* участники конец */

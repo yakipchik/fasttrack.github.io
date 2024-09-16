@@ -1,0 +1,99 @@
+body {
+	color: #313131;
+	font-family: "Merriweather", serif;
+	font-optical-sizing: auto;
+	font-size: 20px;
+	font-weight: 400;
+	background: #FFF;
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.body-wrapper {
+	max-width: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+section {
+	margin-bottom: 200px;
+}
+
+a,
+button {
+	color: inherit;
+	font-size: inherit;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+}
+
+button {
+	border: 0;
+	outline: 0;
+	background: transparent;
+	cursor: pointer;
+}
+
+img {
+	display: block;
+	object-fit: cover;
+}
+
+.cont {
+	max-width: 1262px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.cont.full {
+	max-width: 1222px;
+	padding: 0;
+}
+
+.logo {
+	max-width: 245px;
+}
+
+.logo img {
+	width: 100%;
+}
+
+.hide {
+	display: none !important;
+}
+
+.c-title {
+	font-size: 54px;
+	font-weight: 400;
+	line-height: 64.8px;
+	margin-bottom: 60px;
+	text-transform: uppercase;
+}
+
+
+@media (max-width: 992px) {
+	section {
+		margin-bottom: 120px;
+	}
+}
+
+@media (max-width: 768px) {
+	.logo {
+		max-width: 213px;
+	}
+
+	.c-title {
+		font-size: 36px;
+		line-height: 39.6px;
+	}
+}
