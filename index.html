@@ -51,68 +51,43 @@
     <link rel="stylesheet" href="./assets/css/header.css"/>
 
     <!-- Yandex.Metrika counter -->
-<!--    <script type="text/javascript">-->
-<!--        (function (m, e, t, r, i, k, a) {-->
-<!--            m[i] = m[i]-->
+    <!--    <script type="text/javascript">-->
+    <!--        (function (m, e, t, r, i, k, a) {-->
+    <!--            m[i] = m[i]-->
 
-<!--            function () {-->
-<!--                (m[i].a = m[i].a[]).push(arguments)-->
-<!--            };-->
-<!--            m[i].l = 1 * new Date();-->
-<!--            for (var j = 0; j < document.scripts.length; j++) {-->
-<!--                if (document.scripts[j].src === r) {-->
-<!--                    return;-->
-<!--                }-->
-<!--            }-->
-<!--            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)-->
-<!--        })-->
-<!--        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");-->
+    <!--            function () {-->
+    <!--                (m[i].a = m[i].a[]).push(arguments)-->
+    <!--            };-->
+    <!--            m[i].l = 1 * new Date();-->
+    <!--            for (var j = 0; j < document.scripts.length; j++) {-->
+    <!--                if (document.scripts[j].src === r) {-->
+    <!--                    return;-->
+    <!--                }-->
+    <!--            }-->
+    <!--            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)-->
+    <!--        })-->
+    <!--        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");-->
 
-<!--        ym(98893928, "init", {-->
-<!--            clickmap: true,-->
-<!--            trackLinks: true,-->
-<!--            accurateTrackBounce: true,-->
-<!--            webvisor: true-->
-<!--        });-->
-<!--    </script>-->
-<!--    <noscript-->
-<!--    >-->
-<!--        <div>-->
-<!--            <img-->
-<!--                    src="https://mc.yandex.ru/watch/98893928"-->
-<!--                    style="position: absolute; left: -9999px"-->
-<!--                    alt=""-->
-<!--            /></div-->
-<!--        >-->
-<!--    </noscript>-->
+    <!--        ym(98893928, "init", {-->
+    <!--            clickmap: true,-->
+    <!--            trackLinks: true,-->
+    <!--            accurateTrackBounce: true,-->
+    <!--            webvisor: true-->
+    <!--        });-->
+    <!--    </script>-->
+    <!--    <noscript-->
+    <!--    >-->
+    <!--        <div>-->
+    <!--            <img-->
+    <!--                    src="https://mc.yandex.ru/watch/98893928"-->
+    <!--                    style="position: absolute; left: -9999px"-->
+    <!--                    alt=""-->
+    <!--            /></div-->
+    <!--        >-->
+    <!--    </noscript>-->
     <!-- /Yandex.Metrika counter -->
 </head>
 <body>
-<!-- <form action="./form/send.php" method="post" class="testseas">
-    <input type="text" name="asd" id="asd" placeholder="asd" />
-    <input type="text" name="sfasa" id="sfasa" placeholder="sfasa" />
-    <button type="submit">send</button>
-</form>
-<script defer>
-    const testForm = document.querySelector(".testseas");
-    testForm.addEventListener("submit", (e) => {
-        e.preventDefault();
-
-        const url = window.location.href + "/form/send.php";
-
-        async function send() {
-            let response = await fetch(url);
-            if (response.ok) {
-                let json = await response.json();
-            } else {
-                alert("Ошибка HTTP: " + response.status);
-            }
-        }
-
-        send();
-    });
-</script> -->
-
 <div class="Site Site_main">
     <header class="Header Site-header">
         <div class="Site-wrap Header-wrap">
@@ -1290,13 +1265,13 @@
                                 <form
                                         class="form form_request"
                                         action="./form/send.php"
-                                        method="post"
+                                        method="GET"
                                 >
                                     <div class="form-row form-row_clm2 form-group">
                                         <div class="form-unit">
                                             <input
                                                     class="form-input"
-                                                    id="name"
+                                                    id="nameOne"
                                                     name="name"
                                                     type="text"
                                                     placeholder="Фамилия и имя *"
@@ -1306,7 +1281,7 @@
                                         <div class="form-unit">
                                             <input
                                                     class="form-input"
-                                                    id="phone"
+                                                    id="phoneOne"
                                                     name="phone"
                                                     type="text"
                                                     placeholder="Телефон *"
@@ -1318,7 +1293,7 @@
                                         <div class="form-unit">
                                             <input
                                                     class="form-input"
-                                                    id="mail"
+                                                    id="mailOne"
                                                     name="mail"
                                                     type="text"
                                                     placeholder="Email *"
@@ -1328,7 +1303,7 @@
                                         <div class="form-unit">
                                             <input
                                                     class="form-input"
-                                                    id="company"
+                                                    id="companyOne"
                                                     name="company"
                                                     type="text"
                                                     placeholder="Компания *"
@@ -1340,7 +1315,7 @@
 												<textarea
                                                         class="form-textarea"
                                                         name="comment"
-                                                        id="comment"
+                                                        id="commentOne"
                                                         placeholder="Ваш вопрос или комментарий к заявке  "
                                                 ></textarea>
                                     </div>
@@ -1418,12 +1393,12 @@
                                 <form
                                         class="form form_request form_modal"
                                         action="./form/send.php"
-                                        method="post"
+                                        method="GET"
                                 >
                                     <div class="form-group">
                                         <input
                                                 class="form-input"
-                                                id="name"
+                                                id="nameTwo"
                                                 name="name"
                                                 type="text"
                                                 placeholder="Фамилия и имя *"
@@ -1433,7 +1408,7 @@
                                     <div class="form-group">
                                         <input
                                                 class="form-input"
-                                                id="phone"
+                                                id="phoneTwo"
                                                 name="phone"
                                                 type="text"
                                                 placeholder="Телефон *"
@@ -1443,7 +1418,7 @@
                                     <div class="form-group">
                                         <input
                                                 class="form-input"
-                                                id="mail"
+                                                id="mailTwo"
                                                 name="mail"
                                                 type="text"
                                                 placeholder="Email *"
@@ -1453,7 +1428,7 @@
                                     <div class="form-group">
                                         <input
                                                 class="form-input"
-                                                id="company"
+                                                id="companyTwo"
                                                 name="company"
                                                 type="text"
                                                 placeholder="Компания *"
@@ -1464,7 +1439,7 @@
 												<textarea
                                                         class="form-textarea form-textarea_md"
                                                         name="comment"
-                                                        id="comment"
+                                                        id="commentTwo"
                                                         placeholder="Ваш вопрос или комментарий к заявке  "
                                                 ></textarea>
                                     </div>
@@ -1511,12 +1486,12 @@
                                 <form
                                         class="form form_request form_modal"
                                         action="./form/send.php"
-                                        method="post"
+                                        method="GET"
                                 >
                                     <div class="form-group">
                                         <input
                                                 class="form-input"
-                                                id="name"
+                                                id="nameThree"
                                                 name="name"
                                                 type="text"
                                                 placeholder="Фамилия и имя *"
@@ -1526,7 +1501,7 @@
                                     <div class="form-group">
                                         <input
                                                 class="form-input"
-                                                id="phone"
+                                                id="phoneThree"
                                                 name="phone"
                                                 type="text"
                                                 placeholder="Телефон *"
@@ -1536,7 +1511,7 @@
                                     <div class="form-group">
                                         <input
                                                 class="form-input"
-                                                id="mail"
+                                                id="mailThree"
                                                 name="mail"
                                                 type="text"
                                                 placeholder="Email *"
@@ -1546,7 +1521,7 @@
                                     <div class="form-group">
                                         <input
                                                 class="form-input"
-                                                id="company"
+                                                id="companyThree"
                                                 name="company"
                                                 type="text"
                                                 placeholder="Компания *"
