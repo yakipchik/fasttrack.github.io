@@ -1,12 +1,7 @@
 <?php
-
 require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
-
-use phpmailer\PHPMailer;
-use phpmailer\SMTP;
-use phpmailer\Exception;
 
 $allText = '';
 $name = $_POST['name'] ?? null;
