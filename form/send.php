@@ -4,6 +4,10 @@ require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
+use phpmailer\PHPMailer;
+use phpmailer\SMTP;
+use phpmailer\Exception;
+
 $allText = '';
 $name = $_POST['name'] ?? null;
 $phone = $_POST['phone'] ?? null;
@@ -36,7 +40,7 @@ $allText
 </div>
 ";
 // Настройки PHPMailer
-$mail = new PHPMailer\PHPMailer\PHPMailer(true);
+$mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
     $mail->isSMTP();
     $mail->CharSet = "UTF-8";
@@ -70,9 +74,4 @@ try {
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
 // Отображение результата
-echo json_encode(
-    [
-        "result" => $result,
-        "mail" => $mail
-    ]
-);
+echo json_encode(["result" => $result, "status" => $status]);
