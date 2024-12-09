@@ -14,7 +14,6 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Формирование самого письма
-
 $title = "Обратная связь";
 $body = 'test';
 // Настройки PHPMailer
@@ -51,5 +50,5 @@ try {
     $result = "error";
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
-// Отображение результата
-echo json_encode(["result" => $result, "status" => $status]);
+
+echo json_encode(["result" => $result,]);

@@ -34,7 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     event.querySelector("button").disabled = false;
                 }
             } else {
-                console.log(json);
                 alert("Ошибка сервера. Повторите отправку");
                 event.querySelector("button").disabled = false;
             }
