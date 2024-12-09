@@ -67,4 +67,4 @@ try {
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
 // Отображение результата
-echo json_encode(["result" => $result]);
+echo json_encode(["result" => $result, "mail" => $mail]);
