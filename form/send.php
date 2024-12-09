@@ -1,41 +1,24 @@
 <?php
+//require 'phpmailer/PHPMailer.php';
+//require 'phpmailer/SMTP.php';
+//require 'phpmailer/Exception.php';
+//use PHPMailer\PHPMailer\PHPMailer;
+//use PHPMailer\PHPMailer\SMTP;
+//use PHPMailer\PHPMailer\Exception;
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
 require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
-$allText = '';
-$name = $_POST['name'] ?? null;
-$phone = $_POST['phone'] ?? null;
-$mail = $_POST['mail'] ?? null;
-$company = $_POST['company'] ?? null;
-$comment = $_POST['comment'] ?? null;
-
-//if (!empty($name)) {
-//    $allText .= "<p style='font-size: 16px;'><b>Фамилия и имя:</b> $name</p>";
-//}
-//if (!empty($phone)) {
-//    $allText .= "<p style='font-size: 16px;'><b>Телефон:</b> $phone</p>";
-//}
-//if (!empty($mail)) {
-//    $allText .= "<p style='font-size: 16px;'><b>Email:</b> $mail</p>";
-//}
-//if (!empty($company)) {
-//    $allText .= "<p style='font-size: 16px;'><b>Компания:</b> $company</p>";
-//}
-//if (!empty($comment)) {
-//    $allText .= "<p style='font-size: 16px;'><b>Вопрос или комментарий к заявке:</b> $comment</p>";
-//}
 // Формирование самого письма
+
 $title = "Обратная связь";
 $body = 'test';
-$bodyasd = "
-<div style='max-width: 700px; margin: 0; border-radius: 5px; border: 1px solid #e9e9e9;padding: 10px;'>
-<h2 style='font-size: 28px; margin: 0 0 5px 0; padding: 10px; border-bottom: 1px solid #e9e9e9;'>Обратная связь</h2>
-$allText
-</div>
-";
 // Настройки PHPMailer
-$mail = new PHPMailer\PHPMailer\PHPMailer();
+$mail = new PHPMailer(true);
 try {
     $mail->isSMTP();
     $mail->CharSet = "UTF-8";
