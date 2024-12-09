@@ -1,6 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
     const url = window.location.href + "form/send.php";
 
+    // fetch('http://localhost:50/data', {
+    //     method: 'GET',
+    //     credentials: 'same-origin',
+    //     headers : {
+    //         'Content-Type': 'application/json',
+    //         'Accept': 'application/json'
+    //     }
+    // })
+    //     .then((response) => { return response.json(); })
+    //     .then((result) => {
+    //         console.log(result);
+    //     });
+
     // async function sendFrm() {
     // 	let response = await fetch(url);
     // 	if (response.ok) {
@@ -21,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         event.preventDefault ? event.preventDefault() : (event.returnValue = false);
         var req = new XMLHttpRequest();
-        req.open("POST", php, true);
+        req.open("GET", php, true);
         req.onload = function () {
             if (req.status >= 200 && req.status < 400) {
                 json = JSON.parse(this.response);
