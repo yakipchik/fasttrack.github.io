@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-	const url = window.location.href + "/form/send.php";
+	const url = window.location.href + "./form/send.php";
 
 	// async function sendFrm() {
 	// 	let response = await fetch(url);
