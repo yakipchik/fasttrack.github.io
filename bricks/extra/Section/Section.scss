@@ -1,0 +1,374 @@
+/* funcBegin */
+
+$gapHzReflects: var(--gapHzReflects);
+$widthOneReflects: var(--widthOneReflects);
+:root {
+    --gapHzReflects: 50px;
+    --widthOneReflects: 31cqw;
+}
+
+/* funcEnd */
+.Section {
+    $pdTopDesk: var(--SectionPdTopDesk);
+    $pdBottomDesk: var(--SectionPdBottomDesk);
+    position: relative;
+    padding-top: $pdTopDesk;
+    --SectionPdTopDesk: 0px;
+    --SectionPdBottomDesk: 0px;
+    &-header {
+        position: relative;
+        display: flex;
+        width: 100%;
+        color: #acb1ba;
+        align-items: center;
+        gap: 12px;
+        @media (min-width: 576px) {
+            gap: 20px 20px;
+        }
+        @media (min-width: 576px) and (max-width: 1024px) {
+            letter-spacing: -0.6px;
+        }
+    }
+    &-footer {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+    @media (min-width: 1025px) {
+        --SectionPdTopDesk: 0px;
+        --SectionPdBottomDesk: 0px;
+    }
+    &-wrap {
+        position: relative;
+        min-width: auto;
+    }
+    &-icon {
+        & svg path {
+            transition: all 300ms;
+        }
+        @media (min-width: 1025px) {
+            &:hover {
+                & svg path {
+                    fill: #ffa621;
+                }
+            }
+        }
+    }
+    &-img {
+        height: auto;
+        max-width: 100%;
+    }
+    &-row {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        @media (min-width: 1025px) {
+            gap: 50px;
+            flex-direction: row;
+        }
+        &_promo {
+            align-items: center;
+            @media (min-width: 100px) and (max-width: 575px) {
+                gap: 20px;
+            }
+            > .Section-unit {
+                &_sub {
+                    @media (min-width: 1025px) {
+                        flex-basis: 280px;
+                        margin-left: auto;
+                        flex-shrink: 0;
+                        flex-grow: 0;
+                    }
+                }
+                &_main {
+                    max-width: 1080px;
+                }
+            }
+        }
+        &_benefits {
+            flex-wrap: wrap;
+            gap: 15px;
+            @media (min-width: 576px) and (max-width: 1024px) {
+                gap: 43px;
+            }
+            @media (min-width: 1025px) {
+                align-items: center;
+            }
+            > .Section-unit {
+                &_common {
+                    flex-basis: 100%;
+                    margin-top: 53px;
+                    @media (min-width: 576px) {
+                        margin-top: 64px;
+                        max-width: 700px;
+                    }
+                    @media (min-width: 1025px) {
+                        max-width: 810px;
+                        margin-top: 98px;
+                    }
+                }
+                &_main {
+                    flex-basis: calc(50% - ((1 * 50px) / 2));
+                    @media (min-width: 1025px) {
+                        max-width: 790px;
+                    }
+                }
+                &_sub {
+                    flex-basis: calc(50% - ((1 * 50px) / 2));
+                    max-width: 699px;
+                    @media (min-width: 1025px) {
+                        margin-left: auto;
+                        max-width: 515px;
+                    }
+                }
+            }
+        }
+        &_importSub {
+            justify-content: space-between;
+            gap: 20px;
+            @media (min-width: 576px) {
+                gap: 50px;
+                flex-direction: row;
+            }
+            @media (min-width: 1025px) {
+                min-height: 498px;
+            }
+            > .Section-unit {
+                @media (min-width: 1025px) {
+                    flex-basis: calc(50% - ((1 * 50px) / 2));
+                    flex-grow: 0;
+                }
+                &_main {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 22px;
+                    @media (min-width: 576px) and (max-width: 1024px) {
+                        flex-basis: calc(63% - (0.63 * 50px));
+                    }
+                    @media (min-width: 576px) {
+                        gap: 35px 35px;
+                    }
+                }
+                &_object {
+                    @media (min-width: 576px) and (max-width: 1024px) {
+                        flex-basis: calc(37% - (0.37 * 50px));
+                    }
+                }
+            }
+            .Section-footer {
+                margin-top: auto;
+            }
+        }
+        &_expert {
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+            @media (min-width: 576px) {
+                gap: 30px;
+            }
+            @media (min-width: 1025px) {
+                align-items: center;
+                gap: 40px 50px;
+            }
+            > .Section-header {
+                flex-basis: 100%;
+            }
+            > .Section-unit {
+                flex-basis: calc(50% - ((1 * 50px) / 2));
+                &_main {
+                    max-width: 700px;
+                    @media (min-width: 1025px) {
+                        max-width: 655px;
+                    }
+                }
+                &_sub {
+                    max-width: 700px;
+                    margin-top: 10px;
+                    @media (min-width: 576px) {
+                        margin-top: 0;
+                    }
+                    @media (min-width: 1025px) {
+                        max-width: 520px;
+                    }
+                }
+            }
+        }
+        &_form {
+            justify-content: space-between;
+            gap: 30px 50px;
+            @media (min-width: 576px) {
+                gap: 70px 100px;
+            }
+            > .Section-unit {
+                &_main {
+                    @media (min-width: 1025px) {
+                        max-width: 590px;
+                    }
+                }
+                &_form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 22px;
+                    @media (min-width: 1025px) {
+                        max-width: 790px;
+                    }
+                }
+            }
+        }
+    }
+    &-unit {
+        position: relative;
+        max-width: 100%;
+        flex-shrink: 1;
+        flex-grow: 1;
+        flex-basis: 100%;
+        width: 100%;
+        @media (min-width: 1025px) {
+            flex-basis: inherit;
+            width: inherit;
+        }
+        &_pict, &_video {
+            display: flex;
+            justify-content: center;
+            line-height: 0;
+            @media (min-width: 1025px) {
+                display: block;
+                flex-shrink: 0;
+            }
+        }
+        &_object {
+            line-height: 0;
+            font-size: 0;
+        }
+    }
+    &_benefits, &_steps, &_catalog {
+    }
+    &_fill {
+        margin-left: var(--mgSide);
+        margin-right: var(--mgSide);
+        border-radius: var(--bdrsMD);
+        overflow: hidden;
+        width: calc(100% - (var(--mgSide) * 2));
+        @media (min-width: 100px) and (max-width: 575px) {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            .Section-icon {
+                width: 30px;
+                height: 30px;
+            }
+            .Section-wrap {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+        @media (min-width: 576px) and (max-width: 1024px) {
+            padding-top: 53px;
+            padding-bottom: 50px;
+            .Section-wrap {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+        }
+        @media (min-width: 1025px) {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+        .Section-unit {
+            &_object {
+                margin-bottom: -50px;
+                position: relative;
+                max-height: 272px;
+                @media (min-width: 576px) {
+                    max-height: auto;
+                }
+                @media (min-width: 1025px) {
+                    margin-top: -72px;
+                    margin-bottom: -120px;
+                }
+                .Section-img {
+                    position: relative;
+                    margin-right: -70px;
+                    max-width: calc(100% - -70px);
+                    @media (min-width: 576px) {
+                        margin-top: -10px;
+                        display: block;
+                        position: absolute;
+                        left: -20px;
+                        top: 0;
+                        margin-right: -180px;
+                        max-width: calc(100% - -180px);
+                    }
+                    @media (min-width: 1025px) {
+                        max-width: none;
+                        margin-left: 0;
+                        left: 0;
+                        margin-right: -120px;
+                    }
+                }
+            }
+        }
+        .Section-footer {
+            @media (min-width: 576px) and (max-width: 1024px) {
+                margin-top: 100px;
+            }
+        }
+    }
+    &_banner {
+        padding-bottom: 18px;
+        padding-top: 25px;
+        color: #fff;
+        @media (min-width: 576px) {
+            padding-bottom: 36px;
+            padding-top: 100px;
+        }
+        @media (min-width: 1025px) {
+            padding-bottom: 100px;
+        }
+        .Section-bg {
+            position: absolute;
+            inset: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &_offer {
+        padding-bottom: 19px;
+        padding-top: 23px;
+        @media (min-width: 576px) {
+            padding-bottom: 42px;
+        }
+        @media (min-width: 1025px) {
+            padding-bottom: 94px;
+            padding-top: 115px;
+        }
+        .Section-row {
+            align-items: flex-start;
+            gap: 15px;
+            @media (min-width: 576px) {
+                gap: 25px;
+            }
+            @media (min-width: 1025px) {
+                align-items: center;
+                gap: 50px 110px;
+            }
+        }
+        .Section-unit {
+            &_main {
+                @media (min-width: 1025px) {
+                    flex-basis: 970px;
+                }
+            }
+            &_sub {
+                max-width: 677px;
+                @media (min-width: 1025px) {
+                    max-width: none;
+                    flex-basis: 520px;
+                }
+            }
+        }
+    }
+    &_lt {
+        background: #fff;
+    }
+}

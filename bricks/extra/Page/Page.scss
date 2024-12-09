@@ -1,0 +1,71 @@
+.Page {
+  visibility: visible;
+  font-size: 16px;
+  padding-bottom: 20px;
+  padding-top: 80px;
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background: #fff;
+  z-index: 0;
+  transition: left 800ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  .Page {
+    display: block;
+    min-height: 0;
+    overflow-y: auto;
+    bottom: 0;
+    padding-bottom: 40px;
+  }
+}
+.Page_OPEN {
+  left: 0;
+  transition: left 800ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  z-index: 10;
+}
+.Page_OPEN ~.Page {
+  left: 100%;
+}
+.Page .wrap {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.Page h2 {
+  font-size: 19px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.Page p {
+  line-height: 1.3em;
+}
+.Page ul {
+  margin-top: 14px;
+  padding-left: 0;
+  margin-left: 0;
+  line-height: 1.3em;
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  .Page ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+.Page ul li {
+  padding-left: 0;
+}
+.Page ul li + li {
+  margin-top: 0;
+}
+.Page ul li:after {
+  background: #0047bb;
+  content: '';
+  display: block;
+  width: 12px;
+  height: 2px;
+  left: -17px;
+  top: 12px;
+  position: absolute;
+}

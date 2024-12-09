@@ -1,0 +1,179 @@
+/* funcBegin */
+
+
+/* funcEnd */
+.Site {
+}
+.trigger {
+    visibility: visible;
+    position: relative;
+    cursor: pointer;
+}
+.modal {
+    justify-content: center;
+    display: flex;
+    z-index: 1010;
+    position: fixed;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    align-items: start;
+    max-width: 100%;
+    overflow-y: auto;
+    transition: all 300ms;
+    pointer-events: none;
+    opacity: 0;
+    background-color: rgba(0,0,0,0.6);
+    padding: 20px 0;
+    &-content {
+        position: relative;
+        z-index: 1;
+        overflow-y: visible;
+        display: block;
+        max-width: 100%;
+        max-height: none;
+        width: 100%;
+        height: auto;
+        padding: 28px 20px 27px;
+        @media (min-width: 1025px) {
+            padding: 54px 60px 60px;
+            max-height: none;
+            min-height: auto;
+        }
+    }
+    &-window {
+        position: relative;
+        display: flex;
+        max-width: 90%;
+        min-width: auto;
+        overflow-y: visible;
+        height: auto;
+        overflow: hidden;
+        background-color: #f5f6f9;
+        border-radius: var(--bdrsMD);
+        margin-top: auto;
+        margin-bottom: auto;
+        @media (min-width: 1025px) {
+            min-width: 200px;
+            width: auto;
+            min-height: auto;
+        }
+    }
+    &-close {
+        position: absolute;
+        display: block;
+        border: none;
+        z-index: 20;
+        width: 30px;
+        height: 30px;
+        right: 25px;
+        top: 25px;
+        mask-size: contain;
+        transition: all 300ms;
+        & span {
+            display: block;
+            height: 2px;
+            width: 23px;
+            border-radius: 100px;
+            transition: background-color 300ms;
+            opacity: 1;
+            position: absolute;
+            top: 41%;
+            left: 14%;
+            margin-top: 0px;
+            transform: rotate(45deg);
+            box-shadow: none;
+        }
+        & span + span {
+            margin-top: 0;
+            transform: rotate(-45deg);
+        }
+        &:hover {
+            position: absolute;
+            border: none;
+            & span {
+                transition: background-color 300ms;
+            }
+        }
+        @media (min-width: 576px) {
+            & span {
+                width: 33px;
+            }
+        }
+        &:after {
+            left: 5px;
+            top: 5px;
+            position: absolute;
+            display: block;
+            content: "";
+            width: 20px;
+            height: 20px;
+            background: #d3d8e0;
+            mask: url(('../img/icons/close.svg')) center center no-repeat;
+        }
+        @media (min-width: 1025px) {
+            right: 25px;
+            top: 25px;
+            &:hover {
+                &:after {
+                    background: #acb1ba;
+                }
+            }
+        }
+    }
+    &_OPEN {
+        display: flex;
+        opacity: 1;
+        pointer-events: auto;
+        z-index: 1020;
+    }
+    @media (min-width: 1025px) {
+        align-items: center;
+        overflow: auto;
+        max-width: none;
+        background-color: rgba(0,0,0,0.6);
+    }
+    &-title {
+        width: 100%;
+        display: block;
+        font-weight: normal;
+        line-height: 1.1em;
+        letter-spacing: -1.2px;
+        padding-right: 40px;
+        font-size: var(--fontLG);
+        @media (min-width: 576px) {
+            padding-right: 0;
+        }
+        &_mbSM {
+            @media (min-width: 100px) and (max-width: 575px) {
+                font-size: 22px;
+                padding-right: 33px;
+            }
+        }
+    }
+    &_md {
+        .modal-window {
+            max-width: 90%;
+            @media (min-width: 576px) {
+                max-width: 520px;
+            }
+            @media (min-width: 1025px) {
+                min-width: 400px;
+            }
+        }
+    }
+    &_pict {
+        .modal-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .modal-img {
+            max-height: 100%;
+            max-width: 100%;
+        }
+    }
+}

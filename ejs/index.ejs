@@ -1,0 +1,18 @@
+<%- include('global/loads.gen.ejs') -%>
+<%- include('global/head.ejs') -%>
+<div class="Site Site_main">
+    <%- include('global/Header.gen.ejs', {page: 'main'}) %>
+    <div class="Middle Site-middle">
+        <%- include('index/promoSection.gen.ejs') %>
+        <%- include('index/benefits.gen.ejs') %>
+        <%- include('index/directions.gen.ejs') %>
+        <%- include('index/importSub.gen.ejs') %>
+        <%- include('index/slider.gen.ejs') %>
+        <%- include('index/banner.gen.ejs') %>
+        <%- include('index/offer.gen.ejs') %>
+        <%- include('index/request.gen.ejs') %>
+    </div>
+    <%- include('global/Footer.gen.ejs', {page: 'main'}) %>
+</div>
+<%- include('global/scripts.ejs') %>
+<%- include('global/foot.ejs') %>

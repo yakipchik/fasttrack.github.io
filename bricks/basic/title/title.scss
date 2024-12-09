@@ -1,0 +1,39 @@
+.title {
+    position: relative;
+    display: block;
+    font-weight: 600;
+    line-height: 1.2em;
+    font-size: 28px;
+    color: #373a3c;
+    &-base {
+        font-size: inherit;
+        font-weight: inherit;
+        text-align: inherit;
+        line-height: inherit;
+        display: block;
+        margin: 0;
+    }
+    @media (min-width: 1025px) {
+        font-size: 48px;
+    }
+    &_lg {
+        font-weight: 400;
+        line-height: 1.1em;
+        font-size: var(--fontLGP);
+        letter-spacing: -0.75px;
+        @media (min-width: 576px) {
+            letter-spacing: -1.8px;
+        }
+    }
+    &_md {
+        font-weight: 400;
+        line-height: 1.1em;
+        letter-spacing: -0.6px;
+        font-size: 20px;
+        @media (min-width: 576px) {
+            line-height: 1.1em;
+            letter-spacing: -1.2px;
+            font-size: var(--fontLG);
+        }
+    }
+}

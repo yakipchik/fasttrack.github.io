@@ -1,0 +1,58 @@
+.Promo {
+    &-banner {
+        background: #0c1628;
+        margin-left: var(--mgSide);
+        margin-right: var(--mgSide);
+        border-radius: 30px;
+        overflow: hidden;
+        width: calc(100% - (var(--mgSide) * 2));
+        margin-top: 50px;
+        height: 340px;
+        @media (min-width: 576px) {
+            border-radius: var(--bdrsMD);
+            height: 450px;
+            margin-top: 103px;
+        }
+        @media (min-width: 1025px) {
+            height: 550px;
+        }
+    }
+    &-bannerImg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center bottom;
+    }
+    &-info {
+        order: 0;
+        @media (min-width: 576px) {
+            order: 3;
+        }
+        @media (min-width: 1025px) {
+            order: unset;
+        }
+    }
+    &-footer {
+        order: 0;
+        @media (min-width: 1025px) {
+            margin-top: auto;
+        }
+    }
+    &-column {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        @media (min-width: 576px) {
+            margin-top: 26px;
+            gap: 40px;
+            flex-direction: row;
+            align-items: center;
+        }
+        @media (min-width: 1025px) {
+            flex-direction: column;
+            margin-top: 0;
+            gap: 35px 35px;
+            align-items: flex-start;
+        }
+    }
+}

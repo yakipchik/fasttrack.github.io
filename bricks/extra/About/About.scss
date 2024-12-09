@@ -1,0 +1,84 @@
+.About {
+  position: relative;
+}
+.About:before,
+.About:after {
+  content: "";
+  display: table;
+}
+.About:after {
+  clear: both;
+}
+.About-wrap {
+  display: flex;
+  padding-left: 115px;
+  height: 100%;
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  .About-wrap {
+    padding-left: 15px;
+    display: block;
+  }
+}
+.About-title {
+  margin-bottom: 55px;
+}
+.About-description,
+.About-pict {
+  width: 100%;
+}
+.About-description {
+  padding-top: 38px;
+  margin-right: 20px;
+  line-height: 1.32em;
+  padding-right: 75px;
+  font-size: font-mdm;
+  font-weight: 300;
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  .About-description {
+    margin-right: 0;
+    padding-right: 0;
+  }
+}
+.About-clients {
+  margin-top: 49px;
+}
+.About-img {
+  float: right;
+  margin-left: -100%;
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  .About-img {
+    display: none;
+  }
+}
+.About-pict {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  .About-pict {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+.About-video {
+  position: absolute;
+  top: 50%;
+  width: 397px;
+  height: 264px;
+  margin-top: -140px;
+  box-shadow: -10px 10px 70px rgba(24,55,94,0.3);
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  .About-video {
+    position: static;
+    margin-top: 10px;
+    max-width: 100%;
+  }
+  .About-video iframe {
+    max-width: 100%;
+  }
+}

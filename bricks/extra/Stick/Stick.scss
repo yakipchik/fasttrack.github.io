@@ -1,0 +1,32 @@
+.Stick {
+  visibility: visible;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  transition: top 800ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  .Stick {
+    height: auto;
+    min-height: 100%;
+  }
+}
+.Site_preloader {
+  overflow: hidden;
+}
+@media (min-width: 100px) and (max-width: 575px) {
+  .Site_preloader {
+    overflow: auto;
+  }
+}
+.Site_preloader .Stick {
+  top: 100%;
+  transition: top 800ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+@media (min-width: 100px) and (max-width: 575px) {
+  .Site_preloader .Stick {
+    top: 0;
+  }
+}

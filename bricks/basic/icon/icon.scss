@@ -1,0 +1,78 @@
+/* funcBegin */
+
+// В качестве аргументов нужно писать путь к картинке от корня папки assets/img
+//iconInit()
+//    background-image: imgBase64(arguments)
+//    if (@height)
+//        $phoneImgSz = @height / imgHeight(arguments)
+//        width: $phoneImgSz * imgWidth(arguments)
+//    else if (@width)
+//        $phoneImgSz = @width / imgWidth(arguments)
+//        height: $phoneImgSz * imgHeight(arguments)
+//    else
+//        error('Не задан ни один из размеров иконки в блоке:' +  rSel())
+//widthCalculate()
+//    img
+//    svg
+//        max-width: @width
+//    &.icon_square
+//        max-height: @width
+//    &.icon_fix
+//        img
+//        svg
+//            width: @width
+//            min-width: @width
+//            max-width: @width
+
+
+/* funcEnd */
+.icon {
+    display: inline-flex;
+    align-items: center;
+    width: auto;
+    vertical-align: middle;
+    line-height: 0;
+    font-size: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-height: 100%;
+    & img {
+        max-width: 100%;
+        height: auto;
+    }
+    &_xs {
+        width: 9px;
+        & svg {
+            height: auto;
+        }
+    }
+    &_sm {
+        width: 16px;
+        & svg {
+            height: auto;
+        }
+    }
+    &_md {
+        width: 24px;
+        & svg {
+            height: auto;
+        }
+    }
+    &_mdp {
+        width: 27px;
+        & svg {
+            height: auto;
+        }
+    }
+    & svg {
+        max-height: 100%;
+        display: block;
+    }
+    &_mdm {
+        width: 20px;
+        & svg {
+            height: auto;
+        }
+    }
+}

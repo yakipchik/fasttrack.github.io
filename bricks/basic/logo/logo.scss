@@ -1,0 +1,32 @@
+.logo {
+    border: none !important;
+    line-height: 0;
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    &-image {
+        visibility: visible;
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    &_header {
+        .logo-image {
+            max-width: 117px;
+            @media (min-width: 576px) {
+                max-width: 141px;
+            }
+            @media (min-width: 1025px) {
+                max-width: 100%;
+            }
+        }
+    }
+    &_footer {
+        .logo-image {
+            max-width: 141px;
+            @media (min-width: 1025px) {
+                max-width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.Tag {
+    display: inline-block;
+    font-size: var(--fontNRM);
+    line-height: 1.2em;
+    padding: 7px 12px;
+    border-radius: var(--bdrsMD);
+    border: 1px solid #373a3c;
+    white-space: nowrap;
+    @media (min-width: 576px) {
+        padding: 10px 16px;
+        white-space: unset;
+    }
+    @media (min-width: 1025px) {
+        padding: 10px 17px;
+    }
+    &_invert {
+        border-color: #fff;
+    }
+}
+.Tags {
+    font-size: var(--fontNRP);
+    gap: 5px;
+    display: flex;
+    & & {
+        padding-left: 30px;
+    }
+    @media (min-width: 576px) {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}

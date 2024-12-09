@@ -1,0 +1,175 @@
+.Directions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    @media (min-width: 576px) {
+        gap: 15px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    @media (min-width: 1025px) {
+        gap: 20px;
+    }
+    &-unit {
+        container-type: inline-size;
+        flex-basis: 100%;
+        @media (min-width: 1025px) {
+            flex-basis: calc(50% - ((1 * 20px) / 2));
+        }
+    }
+    &-tags {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.3s linear;
+        margin-top: auto;
+        overflow-x: scroll;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        @media (min-width: 576px) {
+            overflow-x: auto;
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        @media (min-width: 1025px) {
+            margin-top: 0;
+            overflow-x: unset;
+            flex-basis: 0;
+            position: relative;
+        }
+    }
+    &-tagsInner {
+        @media (min-width: 1025px) {
+            display: flex;
+            align-items: flex-end;
+            opacity: 0;
+            overflow: hidden;
+        }
+        @media (min-width: 1400px) {
+            transition: opacity 0.3s linear;
+            overflow: visible;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+    &-title {
+        display: block;
+        line-height: 1.1em;
+        font-size: 20px;
+        letter-spacing: -0.6px;
+        font-weight: normal;
+        transition: all 0.9s 0.1s cubic-bezier(0.33, 1, 0.68, 1);
+        @media (min-width: 576px) {
+            font-size: var(--fontLG);
+            letter-spacing: -1.2px;
+        }
+        @media (min-width: 1025px) {
+            flex-basis: 100%;
+        }
+    }
+    &-bullet {
+        margin-left: 2px;
+        display: inline-block;
+        color: #26d07c;
+        font-weight: bold;
+        font-size: 12px;
+        position: relative;
+        top: -0.5em;
+        letter-spacing: 0;
+        line-height: calc(1.1 * var(--fontLG));
+        @media (min-width: 576px) {
+            top: -0.8em;
+            margin-left: 5px;
+            font-size: var(--fontNRP);
+        }
+    }
+    &-bg {
+        position: absolute;
+        z-index: 0;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: right top;
+    }
+    &-description {
+        font-size: var(--fontNR);
+        line-height: 1.2em;
+        transition: all 0.9s 0.1s cubic-bezier(0.33, 1, 0.68, 1);
+        flex-basis: 0;
+    }
+    &-content {
+        position: relative;
+        z-index: 3;
+        display: flex;
+        transition: all 0.9s 0.1s cubic-bezier(0.33, 1, 0.68, 1);
+        flex-direction: column;
+        gap: 10px;
+        max-width: 100%;
+        @media (min-width: 576px) {
+            gap: 23px;
+        }
+        @media (min-width: 1025px) {
+            gap: 0px;
+        }
+        & p {
+            & + p {
+                margin-top: 1.1em;
+            }
+        }
+    }
+    &-card {
+        background: #fff;
+        border-radius: var(--bdrsMD);
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: stretch;
+        align-items: stretch;
+        padding: 23px 20px;
+        min-height: 360px;
+        &_dark {
+            color: #fff;
+            .Directions-bullet {
+                color: #fff;
+            }
+        }
+        @media (min-width: 576px) {
+            padding: 46px 50px 51px;
+            min-height: 450px;
+        }
+        @media (min-width: 1025px) {
+            padding: 55px 60px 54px;
+            min-height: 88.7cqw;
+            &:hover {
+                .Directions-tags {
+                    grid-template-rows: 1fr;
+                    transition: grid-template-rows 0.1s linear;
+                }
+                .Directions-tagsInner {
+                    opacity: 1;
+                    transition: opacity 0.4s 0.1s linear;
+                }
+                .Directions-content {
+                    gap: 50px;
+                    transition: all 0.9s cubic-bezier(0.33, 1, 0.68, 1);
+                }
+                .Directions-description {
+                    flex-basis: 100%;
+                    transition: all 0.9s cubic-bezier(0.33, 1, 0.68, 1);
+                }
+                .Directions-title {
+                    flex-basis: 0;
+                    transition: all 0.9s cubic-bezier(0.33, 1, 0.68, 1);
+                }
+            }
+        }
+    }
+}

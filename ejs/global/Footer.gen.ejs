@@ -1,0 +1,115 @@
+
+<footer class="Footer Site-footer">
+  <div class="Site-wrap">
+    <div class="Footer-row">
+      <div class="Footer-unit Footer-unit_logo">
+        <div class="logo logo_footer"><img class="logo-image" src="assets/img/logo.svg<%= (process.env.version === 'true' ? '?v=' + opt.version : '') %>" width="155" height="39" alt="logo.svg"/>
+        </div>
+      </div>
+      <div class="Footer-unit Footer-unit_copy">
+        <p class="Footer-copy">© Тринити, 2024
+        </p>
+      </div>
+      <div class="Footer-unit Footer-unit_confident"><a href="#">Политика конфиденциальности</a>
+      </div>
+      <div class="Footer-unit Footer-unit_develop">
+        <div class="Footer-develop">Разработка сайта&#32;<a href="#">akcent.agency</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="modal Site-customScroll modal_md" id="discuss">
+  <div class="modal-window"><a class="modal-close" href="#"></a>
+    <div class="modal-content">
+      <div class="BlockReply BlockReply_modal">
+        <div class="BlockReply-form">
+          <div class="Request Request_modal">
+            <div class="Request-item">
+              <strong class="modal-title">Обсудить проект
+              </strong>
+            </div>
+            <div class="Request-item Request-item_info">
+              <p>Оставьте заявку, мы свяжемся с вами в ближайшее время.
+              </p>
+            </div>
+            <div class="Request-item Request-item_form">
+              <form class="form form_request form_modal" action="#" method="post">
+                <div class="form-group">
+                  <input class="form-input" id="name" name="name" type="text" placeholder="Фамилия и имя *" data-validate="require"/>
+                </div>
+                <div class="form-group">
+                  <input class="form-input" id="phone" name="phone" type="text" placeholder="Телефон *" data-validate="require"/>
+                </div>
+                <div class="form-group">
+                  <input class="form-input" id="mail" name="mail" type="text" placeholder="Email *" data-validate="require"/>
+                </div>
+                <div class="form-group">
+                  <input class="form-input" id="company" name="company" type="text" placeholder="Компания *" data-validate="require"/>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-textarea form-textarea_md" name="comment" id="comment" placeholder="Ваш вопрос или комментарий к заявке  "></textarea>
+                </div>
+                <div class="form-group">
+                  <button class="btn btn_success btn_miwMd btn_full" type="submit">Отправить
+                  </button>
+                </div>
+                <div class="form-group form-group_close">
+                  <p class="form-info">Нажимая кнопку «Отправить», вы соглашаетесь с нашей&#32;<a href="#">Политикой конфиденциальности</a>
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal Site-customScroll modal_md" id="consult">
+  <div class="modal-window"><a class="modal-close" href="#"></a>
+    <div class="modal-content">
+      <div class="BlockReply BlockReply_modal">
+        <div class="BlockReply-form">
+          <div class="Request Request_modal">
+            <div class="Request-item">
+              <strong class="modal-title modal-title_mbSM">Получить консультацию эксперта
+              </strong>
+            </div>
+            <div class="Request-item Request-item_info">
+              <p>Оставьте заявку, мы свяжемся с вами в ближайшее время.
+              </p>
+            </div>
+            <div class="Request-item Request-item_form">
+              <form class="form form_request form_modal" action="#" method="post">
+                <div class="form-group">
+                  <input class="form-input" id="name" name="name" type="text" placeholder="Фамилия и имя *" data-validate="require"/>
+                </div>
+                <div class="form-group">
+                  <input class="form-input" id="phone" name="phone" type="text" placeholder="Телефон *" data-validate="require"/>
+                </div>
+                <div class="form-group">
+                  <input class="form-input" id="mail" name="mail" type="text" placeholder="Email *" data-validate="require"/>
+                </div>
+                <div class="form-group">
+                  <input class="form-input" id="company" name="company" type="text" placeholder="Компания *" data-validate="require"/>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-textarea form-textarea_md" name="comment" id="comment" placeholder="Ваш вопрос или комментарий к заявке  "></textarea>
+                </div>
+                <div class="form-group">
+                  <button class="btn btn_success btn_miwMd btn_full" type="submit">Отправить
+                  </button>
+                </div>
+                <div class="form-group form-group_close">
+                  <p class="form-info">Нажимая кнопку «Отправить», вы соглашаетесь с нашей&#32;<a href="#">Политикой конфиденциальности</a>
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

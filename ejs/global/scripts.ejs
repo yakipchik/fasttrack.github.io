@@ -1,0 +1,7 @@
+<% opt.js.lib.forEach((item) => {%>
+<script src="<%=item + (process.env.version === 'true' ? '?v=' + opt.version : '') %>"></script>
+<% }); %>
+
+<% opt.js.bottom.forEach((item) => {%>
+<script src="<%=item + (process.env.version === 'true' ? '?v=' + opt.version : '') %>"></script>
+<% }); %>

@@ -1,0 +1,112 @@
+.Benefits {
+    display: flex;
+    gap: 16px 20px;
+    flex-wrap: wrap;
+    @media (min-width: 1025px) {
+        gap: 20px 20px;
+    }
+    &-pict {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+    }
+    &-img {
+        @media (min-width: 100px) and (max-width: 1024px) {
+            height: 45px;
+            object-fit: contain;
+        }
+        @media (min-width: 576px) and (max-width: 1024px) {
+            height: 75px;
+        }
+    }
+    &-unit {
+        flex-basis: calc(50% - ((1 * 20px) / 2));
+        container-type: inline-size;
+        @media (min-width: 576px) {
+            flex-basis: calc(33.333333333333336% - ((2 * 20px) / 3));
+        }
+        @media (min-width: 1025px) {
+            flex-basis: calc(33.333333333333336% - ((2 * 36px) / 3));
+        }
+        @media (min-width: 1400px) {
+            flex-basis: calc(20% - ((4 * 36px) / 5));
+        }
+    }
+    &-card {
+        min-height: 100cqw;
+        padding: 28px 15px 23px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        > * {
+            position: relative;
+            z-index: 4;
+        }
+        &:after {
+            display: block;
+            content: "";
+            border-radius: 25px;
+            position: absolute;
+            left: 50%;
+            width: 100%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            height: 100%;
+            background: #fff;
+            z-index: 0;
+            transition: all 300ms;
+            @media (min-width: 576px) {
+                border-radius: var(--bdrsMD);
+            }
+        }
+        @media (min-width: 576px) {
+            min-height: 280px;
+            padding: 30px;
+            gap: 13px;
+        }
+        @media (min-width: 1025px) {
+            padding: 25px;
+            min-height: 100cqw;
+            gap: 20px;
+            &:hover {
+                &:after {
+                    width: calc(100% + 10px);
+                    height: calc(100% + 10px);
+                }
+            }
+        }
+    }
+    &-text {
+        color: #373a3c;
+        line-height: 1.2em;
+        font-size: 13px;
+        @media (min-width: 576px) {
+            font-size: 20px;
+        }
+        @media (min-width: 1025px) {
+            font-size: 24px;
+        }
+    }
+    &_clm4 {
+        gap: 10px;
+        @media (min-width: 576px) {
+            gap: 15px;
+        }
+        @media (min-width: 1025px) {
+            gap: 20px;
+        }
+        .Benefits-unit {
+            flex-basis: calc(50% - ((1 * 10px) / 2));
+            @media (min-width: 576px) {
+                flex-basis: calc(25% - ((3 * 15px) / 4));
+            }
+            @media (min-width: 1025px) {
+                flex-basis: calc(25% - ((3 * 20px) / 4));
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.Request {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    @media (min-width: 576px) {
+        gap: 22px;
+    }
+    &-item {
+        &_info {
+            max-width: 520px;
+        }
+        &_form {
+            margin-top: 9px;
+            @media (min-width: 576px) {
+                margin-top: 20px;
+            }
+            @media (min-width: 1025px) {
+                margin-top: 20px;
+            }
+        }
+    }
+    &_modal {
+        .Request-item {
+            &_form {
+                margin-top: 0;
+                @media (min-width: 1025px) {
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+}

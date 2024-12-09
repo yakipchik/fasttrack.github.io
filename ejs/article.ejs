@@ -1,0 +1,12 @@
+<%- include('global/loads.gen.ejs') -%>
+<%- include('global/head.ejs') -%>
+
+<div class="Site">
+    <%- include('global/Header.gen.ejs', {page: 'article'}) %>
+    <div class="Middle Site-middle">
+        <%- include('article/article.gen.ejs') %>
+    </div>
+    <%- include('global/Footer.gen.ejs', {page: 'article'}) %>
+</div>
+<%- include('global/scripts.ejs') %>
+<%- include('global/foot.ejs') %>

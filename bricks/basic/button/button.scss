@@ -1,0 +1,202 @@
+
+@mixin btnSize($_height: 0, $_line-height: 0, $_bdw: 0, $_survive: false) {     $pvt: calc(($_height - $_line-height - ($_bdw * 2)) / 2);     @if ($_survive) {         padding-top: calc($pvt + 1px);         padding-bottom: calc($pvt - 1px);     } @else {        padding-top: $pvt;         padding-bottom: $pvt;     }    &.btn_square {         min-width: $_height;         padding-left: $pvt;         padding-right: $pvt;     }     &.btn_icon {         padding-top: calc($pvt - 3px);         padding-bottom: calc($pvt - 3px);     } }
+@mixin btnStyle($_color: null, $_text: null) {    background: $_color;    border-color: $_color;    color: $_text;    &:hover,    &:active {        background: $_color;        border-color: $_color;        color: $_text;    }    &.btn_outline {        background: transparent;    }}
+@mixin btnHover(    $_bgc: #0047bb,                    $_bdc: #0047bb,                     $_color: #fff,                     $_colorHover: #fff,                     $_bgcHover: false                     ) {     color: $_color;     background: $_bgc;     border-color: $_bdc;     transition: all 200ms;     .btn-icon_fill svg path {
+        fill: $_color;
+    }
+    &.btn_outline {
+        color: $_bgc;
+        background: transparent;
+        border-color: $_bdc;
+        .btn-icon_fill svg path {
+            fill: $_bgc;
+        }
+    }
+    @media (min-width: 1025px) {
+        &:hover,         &.trigger_OPEN,         &:active {             //&:not(.btn_iconHover):not(.btn_iconRotate) {             &:not(.btn_iconRotate) {                 transition: all 200ms;
+                cursor: pointer;
+                text-decoration: none;
+                @if $_bgcHover {
+                    background-color: $_bgcHover;
+                    border-color: $_bgcHover !important;
+                } @else {
+                    @if lightness($_bgc) > 50% {
+                        background-color: saturate(mix($_bgc, #000000, 20%), 20%);
+                    } @else {
+                        background-color: saturate(mix($_bgc, #ffffff, 20%), 20%);
+                    }
+                    @if lightness($_bdc) > 50% {
+                                    border-color: saturate(mix($_bdc, #000000, 20%), 20%) !important;
+                    } @else {
+                        border-color: saturate(mix($_bdc, #ffffff, 20%), 20%) !important;
+                    }
+                }
+                @if $_colorHover {
+                    color: $_colorHover;
+                    &:not(.btn_stroke) {
+                        & svg path {
+                            fill: $_colorHover;
+                        }
+                    }
+
+                    &.btn_stroke {
+                        & svg path {
+                            stroke: $_colorHover;
+                        }
+                    }
+                }
+            }
+        }
+        &.btn_outline {
+            &:hover,             &.trigger_OPEN,             &:active {                &:not(.btn_iconHover):not(.btn_iconRotate) {                     box-shadow: none;
+                    @if $_colorHover {
+                        color: $_colorHover;
+                    } @else {
+                        color: $_color;
+                    }
+                    border-color: $_bgcHover !important;
+                    background: transparent;
+                }
+            }
+        }
+    }
+}
+
+
+/*----------  Button  ----------*/
+.btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    $btnHeight: 65px;
+    $rootPdHz: 24px;
+    $rootBdColor: #e0e0e0;
+    $rootBdWidth: 1px;
+    $btnLh: calc(1.2 * var(--fontNR));
+    $rootPdVt: calc((65px - $btnLh - 1px * 2) / 2);
+    $btnFz: var(--fontNR);
+    border-radius: var(--bdrsMD);
+    color: #0047bb;
+    font-size: $btnFz;
+    line-height: $btnLh;
+    font-weight: 400;
+    border: $rootBdWidth solid $rootBdColor;
+    background: $rootBdColor;
+    padding: $rootPdVt $rootPdHz;
+    @include btnSize(50px, $btnLh, $rootBdWidth);
+    &-text {
+        line-height: 1.2em;
+    }
+    &-icon {
+        max-height: calc((65px - $rootPdVt * 2) - (1px * 2));
+        & svg, & img {
+            max-height: 100%;
+        }
+    }
+    &_icon {
+        padding-top: calc(($rootPdVt - 3px));
+        padding-bottom: calc(($rootPdVt - 3px));
+        gap: 8px;
+        .btn-icon {
+            min-height: 24px;
+            max-height: 24px;
+            display: flex;
+            align-items: center;
+            & svg, & img {
+                max-height: 100%;
+                & path {
+                    transition: all 300ms;
+                }
+            }
+        }
+        @media (min-width: 1025px) {
+            &:hover {
+                .btn-icon {
+                    & svg path {
+                        transition: all 300ms;
+                    }
+                }
+            }
+        }
+    }
+    &_outline {
+        background-color: transparent;
+    }
+    &_default {
+        @include btnHover((#212121), (#6d6f74), (#6d6f74), (#10bf80), (#10bf80));
+    }
+    &_success {
+        @include btnHover((#26d07c), (#26d07c), (#fff), (#fff), (#10bf80));
+    }
+    &_full {
+        width: 100%;
+    }
+    @media (min-width: 100px) and (max-width: 575px) {
+        font-size: 14px;
+    }
+    @media (min-width: 576px) {
+        $rootPdHz: 40px;
+        padding-left: $rootPdHz;
+        padding-right: $rootPdHz;
+        @include btnSize($btnHeight, $btnLh, $rootBdWidth, true);
+    }
+    @media (min-width: 1025px) {
+        $rootPdHz: 50px;
+        padding-left: $rootPdHz;
+        padding-right: $rootPdHz;
+    }
+    &_miwMd {
+        @media (min-width: 576px) {
+            min-width: 280px;
+        }
+    }
+    &_sm {
+        $btnFz: calc(var(--fontNR) - 1px);
+        $btnLh: calc(1.2 * (var(--fontNR) - 1px));
+        font-size: $btnFz;
+        $rootPdHz: 15px;
+        padding-left: $rootPdHz;
+        padding-right: $rootPdHz;
+        @include btnSize(33px, $btnLh, $rootBdWidth, true);
+        @media (min-width: 576px) {
+            $rootPdHz: 28px;
+            padding-left: $rootPdHz;
+            padding-right: $rootPdHz;
+            @include btnSize(45px, $btnLh, $rootBdWidth, true);
+        }
+        @media (min-width: 1025px) {
+            $rootPdHz: 39px;
+            padding-left: $rootPdHz;
+            padding-right: $rootPdHz;
+        }
+    }
+    &_iconHover {
+        .btn-icon {
+            width: 0;
+            min-width: auto;
+            overflow: hidden;
+            display: flex;
+            transition: all 300ms;
+            & svg {
+                max-width: none;
+            }
+        }
+        &:hover {
+            @media (min-width: 1025px) {
+                .btn-icon {
+                    width: 24px;
+                }
+            }
+        }
+    }
+    &_fontMbSm {
+        font-size: var(--fontNRmS);
+    }
+    &_fullMb {
+        @media (min-width: 100px) and (max-width: 575px) {
+            width: 100%;
+        }
+    }
+}

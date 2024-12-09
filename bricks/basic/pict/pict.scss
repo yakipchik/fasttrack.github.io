@@ -1,0 +1,54 @@
+/*-----------  Обертка картинки  -----------*/
+.pict {
+    display: block;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    & img {
+        max-width: 100%;
+        height: auto;
+    }
+    &_full {
+        display: block;
+        width: 100%;
+        & img {
+            width: 100%;
+        }
+    }
+    &_left,&_right {
+        max-width: none;
+        float: none;
+        margin: 10px 0 35px;
+        @media (min-width: 576px) {
+            margin-bottom: 10px;
+            max-width: 40%;
+        }
+    }
+    &_left {
+        @media (min-width: 576px) {
+            float: left;
+            margin-right: 32px;
+        }
+    }
+    &_right {
+        @media (min-width: 576px) {
+            float: right;
+            margin-left: 32px;
+        }
+    }
+    @media (min-width: 1025px) {
+        width: auto;
+        display: inline-block;
+        text-align: left;
+    }
+    &_fillHeight {
+        @media (min-width: 1025px) {
+            height: 100%;
+            .pict-img {
+                height: 100%;
+            }
+        }
+    }
+}

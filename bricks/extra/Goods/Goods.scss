@@ -1,0 +1,136 @@
+.Goods-wrap {
+  display: flex;
+  padding-top: 71px;
+  padding-left: 112px;
+  padding-bottom: 68px;
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  .Goods-wrap {
+    padding-left: 15px;
+  }
+}
+@media (min-width: 700px) {
+  .Goods-wrap {
+    display: block;
+  }
+}
+.Goods-menu {
+  visibility: visible;
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  .Goods .title {
+    text-align: center;
+  }
+}
+.Goods-category {
+  min-width: 215px;
+  overflow: hidden;
+  margin-right: 25px;
+  padding-top: 190px;
+  margin-bottom: 40px;
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  .Goods-category {
+    padding-top: 0;
+  }
+}
+.Goods-content {
+  width: 100%;
+}
+.Goods-slogan {
+  padding-left: 89px;
+  margin-bottom: 27px;
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  .Goods-slogan {
+    padding-left: 0;
+  }
+}
+.Goods-pict img {
+  max-width: 100%;
+}
+.Goods-description {
+  margin-top: 61px;
+  padding-bottom: 10px;
+}
+.Goods-description ul {
+  padding-left: 20px;
+  margin-top: 22px;
+  line-height: 1.4em;
+}
+.Goods-description ul li {
+  position: relative;
+  padding-left: 29px;
+}
+.Goods-description ul li:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 18px;
+  height: 1px;
+  background: #373a3c;
+  left: 0;
+  top: 13px;
+}
+.Goods-description ul li + li {
+  margin-top: 16px;
+}
+.Goods-description table:last-child {
+  margin-bottom: 0;
+}
+.Goods_bg {
+  background-color: #f6f9ff;
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  .Goods_bg .Goods-wrap {
+    display: block;
+  }
+}
+.Goods_about .Goods-wrap,
+.Goods_article .Goods-wrap {
+  padding-top: 50px;
+}
+.Goods_about .Goods-category,
+.Goods_article .Goods-category {
+  padding-top: 0;
+  min-width: 250px;
+}
+.Goods_about .Goods-content,
+.Goods_article .Goods-content {
+  padding-top: 19px;
+}
+.Goods_about .Goods-pict,
+.Goods_article .Goods-pict {
+  margin-right: 23px;
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  .Goods_about .Goods-pict,
+  .Goods_article .Goods-pict {
+    margin-right: 0;
+  }
+}
+.Goods_about .Goods-price,
+.Goods_article .Goods-price {
+  color: #2c2c2c;
+  font-size: var(--fontMD);
+  margin-bottom: 30px;
+  margin-left: -4px;
+}
+.Goods_about .Goods-buy,
+.Goods_article .Goods-buy {
+  font-size: var(--fontNRM);
+  line-height: 20px;
+}
+.Goods_about .Goods-buy .Goods-btn,
+.Goods_article .Goods-buy .Goods-btn {
+  min-width: 188px;
+  margin-bottom: 25px;
+  margin-left: -4px;
+}
+.Goods_article .Goods-wrap {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.Goods_article .Goods-content {
+  padding-top: 0;
+}

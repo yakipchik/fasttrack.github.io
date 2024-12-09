@@ -1,0 +1,47 @@
+<%
+    var version = opt.version,
+        title = opt.title;
+%>
+
+<title><%= title _%></title>
+<meta name="description" content="Описание страницы">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<link href="favicon.ico" rel="shortcut icon">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta property="og:title" content="<%= title _%>">
+<meta property="og:description" content="Short description">
+<meta property="og:url" content="/">
+<meta property="og:site_name" content="<%= title _%>">
+<% opt.css.forEach((item) => {%>
+    <link href="<%=item + (process.env.version === 'true' ? '?v=' + version : '')%>" rel="stylesheet" type="text/css">
+<% }); %>
+
+<% if(process.env.NODE_ENV === 'debug') { %>
+<link type="text/css" rel="stylesheet" href="assets/css/fonts.css<%=(process.env.version === 'true' ? '?v=' + version : '')%>">
+<link type="text/css" rel="stylesheet" href="assets/css/basic.map.css<%=(process.env.version === 'true' ? '?v=' + version : '')%>">
+<link type="text/css" rel="stylesheet" href="assets/css/extra.map.css<%=(process.env.version === 'true' ? '?v=' + version : '')%>">
+<% } else { %>
+<link type="text/css" rel="stylesheet" href="/assets/css/fonts.min.css<%=(process.env.version === 'true' ? '?v=' + version : '')%>">
+<link type="text/css" rel="stylesheet" href="/assets/css/basic.min.css<%=(process.env.version === 'true' ? '?v=' + version : '')%>">
+<link type="text/css" rel="stylesheet" href="/assets/css/extra.min.css<%=(process.env.version === 'true' ? '?v=' + version : '')%>">
+<% } %>
+
+<% opt.js.top.forEach((item) => {%>
+<script src="<%=item + (process.env.version === 'true' ? '?v=' + version : '')%>"></script>
+<% }); %>
+
+<script defer src="/assets/js/scripts<%= (process.env.NODE_ENV === 'debug' ? '.js':'.min.js') %><%= (process.env.version === 'true' ? '?v=' + version : '')%>"></script>
+<script>
+    document.querySelector('html').style.setProperty('--htmlWidth', window.innerWidth);
+</script>
+<style>
+    @media (min-width: 1025px) and (max-width: 1400px) {
+        .Site {
+            zoom: calc(var(--htmlWidth) / 1400);
+        }
+        .Section_promo {
+            min-height: calc(100vh * (1540 / var(--htmlWidth)))
+        }
+    }
+</style>

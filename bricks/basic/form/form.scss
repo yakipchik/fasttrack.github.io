@@ -1,0 +1,191 @@
+/*-----------  Стилизация текстовых полей формы и текстовых областей  -----------*/
+/* funcBegin */
+
+
+/* funcEnd */
+/*-----------  Формы  -----------*/
+.form {
+    display: block;
+    width: 100%;
+    &-input {
+        padding: calc((35px - (var(--fontNR) * 1.2) - (1px * 2)) / 2) 5px;
+        line-height: calc((var(--fontNR) * 1.2));
+        width: 100%;
+        border-radius: 0px;
+        max-width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #d3d8e0;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        background: transparent;
+        font-size: var(--fontNR);
+        letter-spacing: 0;
+        color: #6d6f74;
+        transition: all 300ms;
+        @media (min-width: 1025px) {
+            padding: calc((38px - (var(--fontNR) * 1.2) - (1px * 2)) / 2) 5px;
+            &:hover {
+                border-bottom-color: #10bf80;
+            }
+        }
+        &::placeholder {
+            line-height: calc((var(--fontNR) * 1.2));
+            font-size: var(--fontNR);
+            color: #acb1ba;
+            opacity: 1;
+            @media (min-width: 100px) and (max-width: 575px) {
+                font-size: 14px;
+                line-height: 1.2em;
+            }
+        }
+        &:focus {
+            outline: none;
+            transition: all 300ms;
+            border-bottom-color: #acb1ba;
+        }
+        @media (min-width: 100px) and (max-width: 575px) {
+            font-size: 14px;
+            letter-spacing: 0;
+            line-height: 1.2em;
+        }
+        &_error {
+            border-color: #f04438;
+        }
+    }
+    &-textarea {
+        @extend .form-input;
+        height: 56px;
+        min-height: 38px;
+        padding-top: calc((var(--fontNR) * 1.2) / 2);
+        padding-bottom: calc((var(--fontNR) * 1.2) / 2);
+        width: 100% !important;
+        @media (min-width: 100px) and (max-width: 1024px) {
+            height: 63px;
+        }
+        &_md {
+            min-height: 76px;
+        }
+    }
+    &-group {
+        position: relative;
+        + .form-group {
+            margin-top: 20px;
+            @media (min-width: 576px) {
+                margin-top: 40px;
+            }
+            &_close {
+                margin-top: 10px;
+                @media (min-width: 576px) {
+                    margin-top: 30px;
+                }
+            }
+            &_away {
+                margin-top: 29px;
+                @media (min-width: 576px) {
+                    margin-top: 54px;
+                }
+            }
+        }
+    }
+    &-row {
+        gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        @media (min-width: 576px) {
+            gap: 80px;
+            flex-wrap: nowrap;
+        }
+        @media (min-width: 1025px) {
+            gap: 50px;
+        }
+        &_clm2 {
+            > .form-unit {
+                flex-basis: 100%;
+                @media (min-width: 576px) {
+                    flex-basis: calc(50% - ((1 * 80px) / 2));
+                }
+                @media (min-width: 1025px) {
+                    flex-basis: calc(50% - ((1 * 50px) / 2));
+                }
+            }
+        }
+        &_submit {
+            align-items: center;
+            gap: 25px;
+            @media (min-width: 576px) {
+                gap: 40px;
+            }
+            > .form-unit {
+                &_info {
+                    max-width: 390px;
+                }
+            }
+        }
+    }
+    &-unit {
+        position: relative;
+        @media (min-width: 100px) and (max-width: 575px) {
+            flex-basis: 100%;
+        }
+    }
+    &-info {
+        line-height: 1.2em;
+        font-size: var(--fontNR);
+        color: #acb1ba;
+        & a {
+            position: relative;
+            color: #acb1ba;
+            box-shadow: inset 0 -1px 0 0 #acb1ba;
+            @media (min-width: 1025px) {
+                &:hover {
+                    color: #0047bb;
+                    &:after {
+                        box-shadow: inset 0 -1px 0 0 #0047bb;
+                    }
+                }
+            }
+        }
+    }
+    &-error {
+        font-size: 13px;
+        color: #f04438;
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            right: 5px;
+            top: 0.8em;
+            background: url(('../img/icons/error.svg')) center center no-repeat;
+            height: 14px;
+            width: 14px;
+            z-index: 5;
+        }
+    }
+    &_modal {
+        .form-info {
+            text-align: center;
+            font-size: 13px;
+            line-height: 1.2em;
+            @media (min-width: 576px) {
+                font-size: 16px;
+            }
+        }
+        .form-group {
+            + .form-group {
+                margin-top: 20px;
+                @media (min-width: 576px) {
+                    margin-top: 35px;
+                }
+                &_close {
+                    margin-top: 10px;
+                    @media (min-width: 576px) {
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+/*--- Выпадающие списки ---*/
+/*--- Чекбоксы ---*/

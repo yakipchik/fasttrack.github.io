@@ -1,0 +1,29 @@
+
+<header class="<%= (page==="product"?"Header_product":"") %> Header Site-header">
+  <div class="Site-wrap Header-wrap">
+    <div class="Header-row Header-row_main">
+      <div class="Header-unit Header-unit_logo">
+        <div class="logo logo_header"><img class="logo-image" src="assets/img/logo.svg<%= (process.env.version === 'true' ? '?v=' + opt.version : '') %>" width="155" height="39" alt="logo.svg"/>
+        </div>
+      </div>
+      <div class="Header-unit Header-unit_menu Header-unit_right">
+        <nav>
+          <ul class="menu menu_header menu_hz">
+            <li class="menu-item"><a class="menu-link ScrollTo" href="#benefits">О нас</a>
+            </li>
+            <li class="menu-item"><a class="menu-link ScrollTo" href="#directions">Направления</a>
+            </li>
+            <li class="menu-item"><a class="menu-link ScrollTo" href="#import">Импортозамещение</a>
+            </li>
+            <li class="menu-item"><a class="menu-link ScrollTo" href="#expert">Отраслевая экспертиза</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="Header-unit Header-unit_buttons">
+        <div class="btn btn_default btn_outline btn_sm btn_fontMbSm trigger" data-event="click" data-href="#consult">Связаться с нами
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

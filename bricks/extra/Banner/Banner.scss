@@ -1,0 +1,46 @@
+.Banner {
+    min-height: 320px;
+    display: flex;
+    align-items: stretch;
+    @media (min-width: 576px) {
+        padding-top: 75px;
+        min-height: none;
+    }
+    @media (min-width: 1025px) {
+        padding-top: 146px;
+    }
+    &-row {
+        display: flex;
+        width: 100%;
+        gap: 30px;
+        align-items: stretch;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100%;
+        @media (min-width: 576px) {
+            height: auto;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        @media (min-width: 1025px) {
+            gap: 50px;
+        }
+    }
+    &-unit {
+        &_main {
+            max-width: 490px;
+            @media (min-width: 1025px) {
+                max-width: 970px;
+                flex-grow: 0;
+            }
+        }
+        &_sub {
+            padding-bottom: 0.6em;
+            flex-shrink: 0;
+            @media (min-width: 1025px) {
+                padding-bottom: 1em;
+            }
+        }
+    }
+}

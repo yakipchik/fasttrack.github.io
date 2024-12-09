@@ -1,0 +1,29 @@
+.FileInsert {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    &-drag {
+        position: relative;
+    }
+    &-input {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        display: block;
+        opacity: 0;
+        z-index: 1;
+        @media (min-width: 1025px) {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    &-text {
+        color: #99a2a9;
+    }
+    &-content {
+        margin-top: 0px;
+    }
+}
